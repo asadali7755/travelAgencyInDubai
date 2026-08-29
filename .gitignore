@@ -40,3 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 design/travel-agency-in-dubai.html
+design/preview.html

@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #17130F; background: #FAF6EF; -webkit-font-smoothing: antialiased; }
+    a { color: #A8722C; } a:hover { color: #7E561F; }
+    .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+    .ph { color: #8A7C68; border-bottom: 1px dashed #C3B49A; }
+    .eyebrow { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #8A7C68; font-weight: 600; }
+    .photo { background-color: #EFE7D9; background-image: repeating-linear-gradient(135deg, #E4D9C6 0 1px, transparent 1px 9px); display: flex; align-items: flex-end; }
+    .photo span { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: #97886F; padding: 8px 10px; }
+    .body-p { font-size: 17px; line-height: 1.68; color: #35302A; margin: 0 0 16px; }
+  </style>
+</helmet>
+
+<div style="width: 390px; background: #FAF6EF;">
+
+  <!-- header -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border-bottom: 1px solid #E7DDCD;">
+    <div class="serif" style="font-size: 19px; line-height: 1.1;">Travel Agency<br><span style="color: #A8722C;">in Dubai</span></div>
+    <div style="width: 44px; height: 44px; background: #17130F; border-radius: 3px; display: flex; align-items: center; justify-content: center;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FAF6EF" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </div>
+  </div>
+
+  <!-- category strip -->
+  <div style="display: flex; gap: 18px; padding: 12px 18px; border-bottom: 1px solid #E7DDCD; background: #F5EFE4; font-size: 14px; color: #4A4238; overflow: hidden; white-space: nowrap;">
+    <span style="font-weight: 700; color: #17130F;">Things to do</span><span>Food &amp; drink</span><span>Where to stay</span><span>Beaches</span><span>Shopping</span>
+  </div>
+
+  <!-- article head -->
+  <div style="padding: 24px 18px 0;">
+    <div class="eyebrow">Things to do · Updated <span class="ph" style="color: #8A7C68;">[month year]</span></div>
+    <h1 class="serif" style="font-size: 40px; line-height: 1.05; margin: 12px 0 0; letter-spacing: -.02em;">40 things to do in Dubai, sorted by what they cost</h1>
+    <p style="font-size: 17px; line-height: 1.55; color: #4A4238; margin: 14px 0 0;">Half of this list is free. The rest we have priced honestly, including the ones we think are not worth the ticket.</p>
+    <div style="display: flex; align-items: center; gap: 12px; margin-top: 18px; font-size: 13px; color: #6C6257;">
+      <div style="width: 34px; height: 34px; border-radius: 999px; background: #E4D9C6;"></div>
+      <div>By <span class="ph">[author]</span> · 14 min read</div>
+    </div>
+  </div>
+
+  <div style="padding: 20px 18px 0;">
+    <div class="photo" style="height: 220px; border-radius: 4px;"><span>photo — skyline at golden hour</span></div>
+  </div>
+
+  <!-- contents -->
+  <div style="padding: 22px 18px 0;">
+    <div style="border: 1px solid #E7DDCD; background: #FFFFFF; border-radius: 4px; padding: 18px;">
+      <div class="eyebrow" style="color: #17130F;">In this guide</div>
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 12px; font-size: 15px; color: #4A4238;">
+        <div style="color: #A8722C; font-weight: 600;">Free things worth doing</div>
+        <div>The paid attractions, ranked</div>
+        <div>Food and drink</div>
+        <div>With kids</div>
+        <div>What to skip</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- body -->
+  <div style="padding: 24px 18px 0;">
+    <p class="body-p">Dubai has a reputation for being expensive, and it can be — but a large part of what makes the city worth visiting costs nothing. Below is what we actually send people when they ask.</p>
+
+    <div class="serif" style="font-size: 30px; margin: 26px 0 14px;">Free things worth doing</div>
+    <p class="body-p"><strong>1. The Dubai Fountain.</strong> Every half hour from six. Stand on the Souk Al Bahar bridge rather than the mall terrace — same view, a fraction of the crowd.</p>
+    <p class="body-p"><strong>2. Cross the Creek on an abra.</strong> One dirham each way, and still the best value in the city.</p>
+    <p class="body-p"><strong>3. Al Fahidi historical district.</strong> Wind towers and courtyard cafés in the old quarter, walkable in an hour.</p>
+
+    <!-- inline tour card -->
+    <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-left: 3px solid #A8722C; border-radius: 4px; padding: 16px; margin: 22px 0;">
+      <div class="eyebrow">Booked through us</div>
+      <div class="serif" style="font-size: 22px; margin-top: 5px; line-height: 1.2;">Evening desert safari, hotel pick-up included</div>
+      <div style="font-size: 14px; color: #4A4238; margin-top: 6px; line-height: 1.5;">The one paid activity almost every first-timer is glad they did. From <span class="serif ph" style="font-size: 18px;">AED [price]</span> per person.</div>
+      <div style="height: 46px; background: #17130F; color: #FAF6EF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; margin-top: 14px;">See the tour</div>
+    </div>
+
+    <div class="serif" style="font-size: 30px; margin: 26px 0 14px;">Food and drink</div>
+    <p class="body-p">This is where Dubai quietly beats its own marketing. You can eat extremely well for twenty dirhams and extremely well for two thousand.</p>
+
+    <div style="display: flex; flex-direction: column; gap: 14px; margin: 20px 0;">
+      <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+        <div class="photo" style="height: 140px;"><span>karak and paratha, Al Karama</span></div>
+        <div style="padding: 14px;">
+          <div style="font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #A8722C; font-weight: 700;">Under AED 30</div>
+          <div class="serif" style="font-size: 21px; margin-top: 4px; line-height: 1.2;">Karak, paratha and shawarma in Al Karama</div>
+        </div>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+        <div class="photo" style="height: 140px;"><span>rooftop dinner, Marina</span></div>
+        <div style="padding: 14px;">
+          <div style="font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #A8722C; font-weight: 700;">Worth booking ahead</div>
+          <div class="serif" style="font-size: 21px; margin-top: 4px; line-height: 1.2;">Rooftops in the Marina and Downtown</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="body-p"><strong>Friday brunch</strong> is the local institution: a set price, several hours, and a far wider spread than the word suggests elsewhere. Book a week out for the well-known ones.</p>
+  </div>
+
+  <!-- read next -->
+  <div style="padding: 20px 18px 0;">
+    <div style="border-top: 2px solid #17130F; padding-top: 16px;">
+      <div class="eyebrow" style="color: #17130F;">Read next</div>
+      <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 14px;">
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <div class="photo" style="width: 92px; height: 68px; border-radius: 3px; flex-shrink: 0;"></div>
+          <div class="serif" style="font-size: 20px; line-height: 1.2;">Best time to visit Dubai, month by month</div>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <div class="photo" style="width: 92px; height: 68px; border-radius: 3px; flex-shrink: 0;"></div>
+          <div class="serif" style="font-size: 20px; line-height: 1.2;">Every mall in Dubai and what each is best for</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="padding: 26px 18px 110px;">
+    <div style="background: #17130F; color: #F3EADC; border-radius: 4px; padding: 24px;">
+      <div class="serif" style="font-size: 28px; line-height: 1.14;">Planning a Dubai trip right now?</div>
+      <div style="font-size: 15px; color: #B7AB99; margin-top: 10px; line-height: 1.55;">Send your dates and who is travelling. We will send a plan with tours, hotels and a total price.</div>
+      <div style="height: 50px; background: #A8722C; color: #FFFFFF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; margin-top: 18px;">Get a free plan</div>
+    </div>
+  </div>
+
+  <!-- sticky bar -->
+  <div style="position: sticky; bottom: 0; border-top: 1px solid #E7DDCD; background: #FFFCF7; padding: 12px 16px 20px; display: flex; gap: 10px;">
+    <div style="flex: 1; height: 52px; background: #A8722C; color: #FFFFFF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700;">Get a free quote</div>
+    <div style="width: 52px; height: 52px; border: 1px solid #17130F; border-radius: 3px; display: flex; align-items: center; justify-content: center;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17130F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

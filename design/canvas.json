@@ -1,6 +1,7 @@
 {
   "pages": [
-    { "id": "page-1", "name": "Website" },
+    { "id": "page-1", "name": "Website — desktop" },
+    { "id": "page-4", "name": "Website — mobile" },
     { "id": "page-2", "name": "Mobile app" },
     { "id": "page-3", "name": "Directions" }
   ],
@@ -10,6 +11,10 @@
     { "file": "PackageDetail.dc.html", "x": 3120, "y": 0, "w": 1440, "h": 2900, "title": "Tour detail", "page": "page-1" },
     { "file": "Guide.dc.html", "x": 4680, "y": 0, "w": 1440, "h": 2700, "title": "Guide article", "page": "page-1" },
     { "file": "Enquiry.dc.html", "x": 6240, "y": 0, "w": 1440, "h": 1400, "title": "Enquiry", "page": "page-1" },
+
+    { "file": "MobileHome.dc.html", "x": 0, "y": 0, "w": 390, "h": 3500, "title": "Home — mobile web", "page": "page-4" },
+    { "file": "MobileTour.dc.html", "x": 510, "y": 0, "w": 390, "h": 2200, "title": "Tour detail — mobile web", "page": "page-4" },
+    { "file": "MobileGuide.dc.html", "x": 1020, "y": 0, "w": 390, "h": 2600, "title": "Guide — mobile web", "page": "page-4" },
 
     { "file": "AppHome.dc.html", "x": 0, "y": 0, "w": 390, "h": 844, "title": "App — Home", "page": "page-2" },
     { "file": "AppExplore.dc.html", "x": 510, "y": 0, "w": 390, "h": 844, "title": "App — Explore", "page": "page-2" },
@@ -30,12 +35,20 @@
       "text": "Everything in [square brackets with a dashed underline] is a real fact we do not have yet: prices, the phone number, the DET licence number, review counts, the office address.\nTell me the values and I will drop them in.\n\nThe crosshatched blocks are photo slots, labelled with the shot each one needs."
     },
     {
+      "id": "mobile-note",
+      "x": 0,
+      "y": -180,
+      "w": 620,
+      "page": "page-4",
+      "text": "The same site at phone width (390px), not a shrunk desktop page.\n\nWhat changes: single column, the enquiry form moves under the headline, tour cards stack, and a sticky bar sits at the bottom of the screen with the quote button and WhatsApp — inside thumb reach. Every tap target is at least 44px."
+    },
+    {
       "id": "direction-note",
       "x": 0,
       "y": -200,
       "w": 640,
       "page": "page-3",
-      "text": "The Website and Mobile app pages are built in Direction A — warm desert editorial (sand ground, ink text, bronze accent, Instrument Serif + Plus Jakarta Sans).\n\nThese two are the alternatives, sketched low-fi so the choice is about direction rather than polish. Say which one you want and I will rebuild the pages in it."
+      "text": "The website and app pages are built in Direction A — warm desert editorial (sand ground, ink text, bronze accent, Instrument Serif + Plus Jakarta Sans).\n\nThese two are the alternatives, sketched low-fi so the choice is about direction rather than polish. Say which one you want and I will rebuild the pages in it."
     }
   ],
   "launch": { "view": "canvas", "page": "page-1" }
