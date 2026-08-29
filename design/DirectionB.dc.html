@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: "Archivo", system-ui, sans-serif; color: #F2F0EC; background: #0E1114; }
+    a { color: #E8B44A; } a:hover { color: #C79429; }
+    .block { background: #1A1F24; border: 1px dashed #39434B; }
+    .lbl { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #7A868F; }
+  </style>
+</helmet>
+
+<div style="width: 900px; height: 700px; background: #0E1114; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px;">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between;">
+    <div style="font-size: 22px; font-weight: 800; letter-spacing: -.01em;">Direction B — Night Dubai</div>
+    <div class="lbl">Low-fi sketch</div>
+  </div>
+  <div style="font-size: 14px; color: #9AA5AD; line-height: 1.5; max-width: 720px;">Dark, photo-led and cinematic. Full-bleed imagery, condensed grotesque type, gold only as a hairline accent. Sells the feeling of the city at night — cruises, skylines, rooftops.</div>
+
+  <!-- sketch -->
+  <div style="flex: 1; border: 1px solid #2A3238; display: flex; flex-direction: column;">
+    <div style="height: 40px; border-bottom: 1px solid #2A3238; display: flex; align-items: center; padding: 0 16px; gap: 20px;">
+      <div style="font-weight: 800; font-size: 13px;">TRAVEL AGENCY IN DUBAI</div>
+      <div style="display: flex; gap: 14px; font-size: 12px; color: #7A868F;"><span>Tours</span><span>Packages</span><span>Hotels</span><span>Guides</span></div>
+      <div style="margin-left: auto; border: 1px solid #E8B44A; color: #E8B44A; padding: 5px 12px; font-size: 11px; font-weight: 700;">WHATSAPP</div>
+    </div>
+
+    <div class="block" style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; padding: 26px; position: relative;">
+      <div class="lbl" style="position: absolute; top: 14px; left: 16px;">full-bleed photo — marina at night</div>
+      <div style="font-size: 46px; font-weight: 800; line-height: 1.02; letter-spacing: -.02em; max-width: 560px;">THE CITY LOOKS<br>BETTER FROM<br>THE WATER.</div>
+      <div style="display: flex; gap: 10px; margin-top: 18px;">
+        <div style="background: #E8B44A; color: #0E1114; padding: 11px 20px; font-size: 13px; font-weight: 800;">BOOK A CRUISE</div>
+        <div style="border: 1px solid #4A555E; padding: 11px 20px; font-size: 13px; font-weight: 700;">ALL TOURS</div>
+      </div>
+    </div>
+
+    <div style="height: 150px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #2A3238; border-top: 1px solid #2A3238;">
+      <div class="block" style="border: none; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="lbl">photo</div><div style="font-size: 15px; font-weight: 700;">Desert safari</div>
+      </div>
+      <div class="block" style="border: none; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="lbl">photo</div><div style="font-size: 15px; font-weight: 700;">Dhow cruise</div>
+      </div>
+      <div class="block" style="border: none; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="lbl">photo</div><div style="font-size: 15px; font-weight: 700;">Yacht charter</div>
+      </div>
+      <div class="block" style="border: none; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="lbl">photo</div><div style="font-size: 15px; font-weight: 700;">City tour</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 26px; font-size: 12px; line-height: 1.5;">
+    <div style="flex: 1;"><span style="color: #6FCF97; font-weight: 700;">Good for</span> <span style="color: #9AA5AD;">— premium feel, cruises and nightlife content, strong on phones where photos dominate.</span></div>
+    <div style="flex: 1;"><span style="color: #E88A6F; font-weight: 700;">Tradeoff</span> <span style="color: #9AA5AD;">— lives or dies on photography. Needs real, high-quality images from day one, and long guide articles read harder on dark backgrounds.</span></div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #17130F; background: #FAF6EF; -webkit-font-smoothing: antialiased; }
+    a { color: #A8722C; text-decoration: none; }
+    a:hover { color: #7E561F; }
+    .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+    .ph { color: #8A7C68; border-bottom: 1px dashed #C3B49A; }
+    .eyebrow { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #8A7C68; font-weight: 600; }
+    .photo { background-color: #EFE7D9; background-image: repeating-linear-gradient(135deg, #E4D9C6 0 1px, transparent 1px 9px); display: flex; align-items: flex-end; }
+    .photo span { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #97886F; padding: 10px 12px; }
+    .tick { flex-shrink: 0; margin-top: 2px; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #FAF6EF;">
+
+  <!-- header -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 64px; border-bottom: 1px solid #E7DDCD;">
+    <div class="serif" style="font-size: 25px;">Travel Agency <span style="color: #A8722C;">in Dubai</span></div>
+    <div style="display: flex; align-items: center; gap: 30px; font-size: 15px; font-weight: 500;">
+      <span style="border-bottom: 2px solid #A8722C; padding-bottom: 3px;">Tours</span><span>Packages</span><span>Hotels</span><span>Visa</span><span>Transfers</span><span>Guides</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; background: #17130F; color: #FAF6EF; padding: 12px 20px; border-radius: 2px; font-size: 15px; font-weight: 600;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+      WhatsApp
+    </div>
+  </div>
+
+  <div style="padding: 30px 64px 0; font-size: 13px; color: #8A7C68;">Home &nbsp;›&nbsp; Dubai tours &nbsp;›&nbsp; <span style="color: #17130F;">Evening desert safari</span></div>
+
+  <!-- title -->
+  <div style="padding: 16px 64px 26px;">
+    <div class="eyebrow">Desert safari · Operated by us</div>
+    <h1 class="serif" style="font-size: 60px; line-height: 1.05; margin: 10px 0 0; letter-spacing: -.02em; max-width: 900px;">Evening Desert Safari with BBQ dinner</h1>
+    <div style="display: flex; align-items: center; gap: 22px; margin-top: 16px; font-size: 15px; color: #4A4238;">
+      <div style="display: flex; align-items: center; gap: 7px;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="#A8722C"><path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-3-5.3 3 1.1-6L3.4 9.4l6-.8z"/></svg>
+        <span class="ph">[4.x]</span> · <span class="ph">[N]</span> reviews
+      </div>
+      <div style="width: 1px; height: 16px; background: #DDD2BF;"></div>
+      <div>6 hours</div>
+      <div style="width: 1px; height: 16px; background: #DDD2BF;"></div>
+      <div>Hotel pick-up across Dubai</div>
+      <div style="width: 1px; height: 16px; background: #DDD2BF;"></div>
+      <div>Daily, 15:00 — 21:00</div>
+    </div>
+  </div>
+
+  <!-- gallery -->
+  <div style="padding: 0 64px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: 200px 200px; gap: 10px;">
+    <div class="photo" style="grid-column: span 2; grid-row: span 2; border-radius: 4px;"><span>photo — 4x4 cresting a dune, low sun</span></div>
+    <div class="photo" style="border-radius: 4px;"><span>camel ride</span></div>
+    <div class="photo" style="border-radius: 4px;"><span>camp at dusk</span></div>
+    <div class="photo" style="border-radius: 4px;"><span>BBQ buffet</span></div>
+    <div class="photo" style="border-radius: 4px; position: relative;"><span>tanoura show</span>
+      <div style="position: absolute; inset: 0; background: rgba(23,19,15,.55); color: #FAF6EF; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; border-radius: 4px;">+ <span class="ph" style="color: #F3EADC; border-color: #8A7C68; margin-left: 4px;">[N]</span> photos</div>
+    </div>
+  </div>
+
+  <!-- body + booking card -->
+  <div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px; padding: 48px 64px 0;">
+
+    <!-- left column -->
+    <div style="grid-column: span 8;">
+
+      <p style="font-size: 19px; line-height: 1.65; color: #35302A; margin: 0; text-wrap: pretty;">A driver collects you from your hotel in the afternoon and drives out to the red dunes at Al Lahbab. You get around forty minutes of dune bashing, then the camp: camel rides, sandboarding, henna and Arabic coffee, a BBQ buffet under the lights, and tanoura and fire shows before the drive back.</p>
+
+      <div style="border-top: 1px solid #E7DDCD; margin-top: 36px; padding-top: 30px;">
+        <div class="serif" style="font-size: 34px;">How the evening runs</div>
+        <div style="display: flex; flex-direction: column; gap: 0; margin-top: 22px;">
+
+          <div style="display: grid; grid-template-columns: 96px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid #EFE7D9;">
+            <div class="serif" style="font-size: 22px; color: #A8722C;">15:00</div>
+            <div>
+              <div style="font-weight: 700; font-size: 16px;">Hotel pick-up</div>
+              <div style="font-size: 15px; color: #4A4238; margin-top: 4px; line-height: 1.55;">Your driver messages on WhatsApp when he arrives. Pick-up times shift by around 30 minutes depending on where you are staying.</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 96px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid #EFE7D9;">
+            <div class="serif" style="font-size: 22px; color: #A8722C;">16:15</div>
+            <div>
+              <div style="font-weight: 700; font-size: 16px;">Dune bashing and photo stop</div>
+              <div style="font-size: 15px; color: #4A4238; margin-top: 4px; line-height: 1.55;">Roughly 40 minutes across the dunes in a 4x4, then a stop on a ridge for sunset photographs. Tell us if anyone gets motion sick and the driver takes it gently.</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 96px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid #EFE7D9;">
+            <div class="serif" style="font-size: 22px; color: #A8722C;">17:30</div>
+            <div>
+              <div style="font-weight: 700; font-size: 16px;">Camp: camel ride, sandboarding, henna</div>
+              <div style="font-size: 15px; color: #4A4238; margin-top: 4px; line-height: 1.55;">Short camel ride, boards for the dune beside camp, henna for anyone who wants it, plus Arabic coffee and dates.</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 96px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid #EFE7D9;">
+            <div class="serif" style="font-size: 22px; color: #A8722C;">19:00</div>
+            <div>
+              <div style="font-weight: 700; font-size: 16px;">BBQ dinner and live shows</div>
+              <div style="font-size: 15px; color: #4A4238; margin-top: 4px; line-height: 1.55;">Buffet with grilled meats, salads and dessert, vegetarian and Jain options on request. Tanoura and fire show while you eat.</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 96px 1fr; gap: 20px; padding: 18px 0;">
+            <div class="serif" style="font-size: 22px; color: #A8722C;">21:00</div>
+            <div>
+              <div style="font-weight: 700; font-size: 16px;">Drop back at your hotel</div>
+              <div style="font-size: 15px; color: #4A4238; margin-top: 4px; line-height: 1.55;">Back in Dubai between 21:30 and 22:15 depending on your hotel.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- included -->
+      <div style="border-top: 1px solid #E7DDCD; margin-top: 24px; padding-top: 30px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px;">
+        <div>
+          <div class="serif" style="font-size: 28px;">What is included</div>
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 18px;">
+            <div style="display: flex; gap: 10px; font-size: 15px; color: #35302A; line-height: 1.5;"><svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3F7A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Return hotel transfers in an air-conditioned 4x4</div>
+            <div style="display: flex; gap: 10px; font-size: 15px; color: #35302A; line-height: 1.5;"><svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3F7A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Dune bashing, camel ride, sandboarding, henna</div>
+            <div style="display: flex; gap: 10px; font-size: 15px; color: #35302A; line-height: 1.5;"><svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3F7A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>BBQ buffet dinner with soft drinks, tea and coffee</div>
+            <div style="display: flex; gap: 10px; font-size: 15px; color: #35302A; line-height: 1.5;"><svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3F7A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Tanoura and fire shows, shisha at the majlis</div>
+          </div>
+        </div>
+        <div>
+          <div class="serif" style="font-size: 28px;">Not included</div>
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 18px;">
+            <div style="display: flex; gap: 10px; font-size: 15px; color: #35302A; line-height: 1.5;"><svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A5B4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>Alcoholic drinks at camp</div>
+            <div style="display: flex; gap: 10px; font-size: 15px; color: #35302A; line-height: 1.5;"><svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A5B4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>Quad biking (add on when booking)</div>
+            <div style="display: flex; gap: 10px; font-size: 15px; color: #35302A; line-height: 1.5;"><svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A5B4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>Private vehicle (available at a supplement)</div>
+            <div style="display: flex; gap: 10px; font-size: 15px; color: #35302A; line-height: 1.5;"><svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A5B4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>Tips for your driver and camp staff</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div style="border-top: 1px solid #E7DDCD; margin-top: 36px; padding-top: 30px;">
+        <div class="serif" style="font-size: 34px;">Questions people ask before booking</div>
+        <div style="margin-top: 18px; border-top: 1px solid #EFE7D9;">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #EFE7D9;">
+            <div style="font-size: 17px; font-weight: 600;">Is the dune bashing safe for children and older people?</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A7C68" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div style="padding: 4px 0 22px; font-size: 16px; line-height: 1.6; color: #4A4238; max-width: 720px; border-bottom: 1px solid #EFE7D9;">Yes. Tell us when you book and the driver keeps the drive gentle. Children under three, pregnant guests and anyone with back or heart problems should skip the dune bashing — you can go straight to camp instead, at the same price.</div>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #EFE7D9;">
+            <div style="font-size: 17px; font-weight: 600;">What should we wear?</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A7C68" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #EFE7D9;">
+            <div style="font-size: 17px; font-weight: 600;">Can we cancel if our plans change?</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A7C68" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #EFE7D9;">
+            <div style="font-size: 17px; font-weight: 600;">Do you pick up from Sharjah or Abu Dhabi?</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A7C68" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- right: booking card -->
+    <div style="grid-column: span 4;">
+      <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; padding: 26px;">
+        <div style="display: flex; align-items: baseline; justify-content: space-between;">
+          <div>
+            <span style="font-size: 13px; color: #8A7C68;">from </span>
+            <span class="serif ph" style="font-size: 40px;">AED [price]</span>
+          </div>
+          <div style="font-size: 13px; color: #6C6257;">per person</div>
+        </div>
+        <div style="font-size: 13px; color: #6C6257; margin-top: 6px;">Children <span class="ph">[age range]</span> at <span class="ph">[child price]</span>. Under 3 free.</div>
+
+        <div style="height: 1px; background: #EFE7D9; margin: 20px 0;"></div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div>
+            <div style="font-size: 13px; font-weight: 600; margin-bottom: 6px;">Date</div>
+            <div style="height: 46px; border: 1px solid #DDD2BF; border-radius: 3px; background: #FCFAF6; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; font-size: 15px; color: #A3937C;">Select your date
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A3937C" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+            <div>
+              <div style="font-size: 13px; font-weight: 600; margin-bottom: 6px;">Adults</div>
+              <div style="height: 46px; border: 1px solid #DDD2BF; border-radius: 3px; background: #FCFAF6; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; font-size: 16px; font-weight: 600;">
+                <span style="color: #A3937C;">–</span> 2 <span style="color: #17130F;">+</span>
+              </div>
+            </div>
+            <div>
+              <div style="font-size: 13px; font-weight: 600; margin-bottom: 6px;">Children</div>
+              <div style="height: 46px; border: 1px solid #DDD2BF; border-radius: 3px; background: #FCFAF6; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; font-size: 16px; font-weight: 600;">
+                <span style="color: #A3937C;">–</span> 0 <span style="color: #17130F;">+</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 13px; font-weight: 600; margin-bottom: 6px;">Hotel or area for pick-up</div>
+            <div style="height: 46px; border: 1px solid #DDD2BF; border-radius: 3px; background: #FCFAF6; display: flex; align-items: center; padding: 0 14px; font-size: 15px; color: #A3937C;">e.g. JBR, Deira, Downtown</div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: center; height: 54px; background: #A8722C; color: #FFFFFF; border-radius: 3px; font-size: 16px; font-weight: 700;">Request this tour</div>
+          <div style="display: flex; align-items: center; justify-content: center; gap: 9px; height: 54px; border: 1px solid #17130F; border-radius: 3px; font-size: 16px; font-weight: 700;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+            Ask on WhatsApp
+          </div>
+          <div style="font-size: 12px; color: #8A7C68; text-align: center; line-height: 1.5;">No card needed to hold a place. We confirm availability first, then send the payment link.</div>
+        </div>
+
+        <div style="height: 1px; background: #EFE7D9; margin: 22px 0 18px;"></div>
+
+        <div style="display: flex; flex-direction: column; gap: 11px; font-size: 14px; color: #35302A;">
+          <div style="display: flex; gap: 9px;"><svg class="tick" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3F7A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free cancellation up to <span class="ph">[hours]</span> before</div>
+          <div style="display: flex; gap: 9px;"><svg class="tick" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3F7A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Licensed operator, insured vehicles</div>
+          <div style="display: flex; gap: 9px;"><svg class="tick" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3F7A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Same-day bookings accepted until 13:00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- related -->
+  <div style="padding: 56px 64px 72px;">
+    <div style="border-top: 1px solid #E7DDCD; padding-top: 28px;">
+      <div class="serif" style="font-size: 34px;">People who booked this also asked about</div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 24px;">
+        <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+          <div class="photo" style="height: 150px;"><span>overnight camp</span></div>
+          <div style="padding: 18px;">
+            <div class="serif" style="font-size: 22px;">Overnight Desert Safari</div>
+            <div style="font-size: 14px; color: #4A4238; margin-top: 6px;">Sleep in camp, breakfast at sunrise</div>
+            <div class="serif ph" style="font-size: 22px; margin-top: 10px;">AED [price]</div>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+          <div class="photo" style="height: 150px;"><span>quad bikes</span></div>
+          <div style="padding: 18px;">
+            <div class="serif" style="font-size: 22px;">Safari + Quad Biking</div>
+            <div style="font-size: 14px; color: #4A4238; margin-top: 6px;">30 or 60 minutes on your own quad</div>
+            <div class="serif ph" style="font-size: 22px; margin-top: 10px;">AED [price]</div>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+          <div class="photo" style="height: 150px;"><span>dhow at night</span></div>
+          <div style="padding: 18px;">
+            <div class="serif" style="font-size: 22px;">Dhow Cruise, Marina</div>
+            <div style="font-size: 14px; color: #4A4238; margin-top: 6px;">Pairs well on the following evening</div>
+            <div class="serif ph" style="font-size: 22px; margin-top: 10px;">AED [price]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

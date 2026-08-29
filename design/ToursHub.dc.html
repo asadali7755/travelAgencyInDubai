@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #17130F; background: #FAF6EF; -webkit-font-smoothing: antialiased; }
+    a { color: #A8722C; text-decoration: none; }
+    a:hover { color: #7E561F; }
+    .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+    .ph { color: #8A7C68; border-bottom: 1px dashed #C3B49A; }
+    .eyebrow { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #8A7C68; font-weight: 600; }
+    .photo { background-color: #EFE7D9; background-image: repeating-linear-gradient(135deg, #E4D9C6 0 1px, transparent 1px 9px); display: flex; align-items: flex-end; }
+    .photo span { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #97886F; padding: 10px 12px; }
+    .chip { border: 1px solid #DDD2BF; border-radius: 999px; padding: 10px 16px; font-size: 14px; background: #FFFFFF; }
+    .chip-on { border: 1px solid #17130F; background: #17130F; color: #FAF6EF; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 600; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #FAF6EF;">
+
+  <!-- header -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 64px; border-bottom: 1px solid #E7DDCD;">
+    <div class="serif" style="font-size: 25px;">Travel Agency <span style="color: #A8722C;">in Dubai</span></div>
+    <div style="display: flex; align-items: center; gap: 30px; font-size: 15px; font-weight: 500;">
+      <span style="border-bottom: 2px solid #A8722C; padding-bottom: 3px;">Tours</span><span>Packages</span><span>Hotels</span><span>Visa</span><span>Transfers</span><span>Guides</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; background: #17130F; color: #FAF6EF; padding: 12px 20px; border-radius: 2px; font-size: 15px; font-weight: 600;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+      WhatsApp
+    </div>
+  </div>
+
+  <!-- breadcrumb + intro -->
+  <div style="padding: 34px 64px 0; font-size: 13px; color: #8A7C68;">Home &nbsp;›&nbsp; <span style="color: #17130F;">Dubai tours</span></div>
+
+  <div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 32px; padding: 18px 64px 40px;">
+    <div style="grid-column: span 7;">
+      <h1 class="serif" style="font-size: 62px; line-height: 1.05; margin: 0; letter-spacing: -.02em;">Dubai tours</h1>
+      <p style="font-size: 18px; line-height: 1.6; color: #4A4238; margin: 18px 0 0; max-width: 620px; text-wrap: pretty;">Every tour on this page is one we operate or book directly — desert safaris, dhow cruises, city sightseeing, boat trips and attraction tickets. Prices are per person and include hotel pick-up unless the tour says otherwise.</p>
+    </div>
+    <div style="grid-column: span 5; display: flex; align-items: flex-end; justify-content: flex-end;">
+      <div style="border: 1px solid #E7DDCD; background: #FFFFFF; border-radius: 4px; padding: 18px 22px; display: flex; gap: 26px;">
+        <div><div class="serif" style="font-size: 28px;"><span class="ph">[N]</span></div><div style="font-size: 12px; color: #6C6257;">tours running</div></div>
+        <div><div class="serif" style="font-size: 28px;"><span class="ph">[4.x]</span></div><div style="font-size: 12px; color: #6C6257;">average rating</div></div>
+        <div><div class="serif" style="font-size: 28px;">Same day</div><div style="font-size: 12px; color: #6C6257;">confirmation</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- filter bar -->
+  <div style="padding: 0 64px 28px;">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; border-top: 1px solid #E7DDCD; border-bottom: 1px solid #E7DDCD; padding: 18px 0;">
+      <div class="chip-on">All tours</div>
+      <div class="chip">Desert safari</div>
+      <div class="chip">Cruises</div>
+      <div class="chip">City &amp; sightseeing</div>
+      <div class="chip">Water &amp; boats</div>
+      <div class="chip">Attraction tickets</div>
+      <div class="chip">Private / VIP</div>
+      <div style="margin-left: auto; display: flex; align-items: center; gap: 10px; font-size: 14px; color: #6C6257;">
+        Sort
+        <div class="chip" style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: #17130F;">
+          Most booked
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- tour rows -->
+  <div style="padding: 0 64px 24px; display: flex; flex-direction: column; gap: 20px;">
+
+    <div style="display: grid; grid-template-columns: 340px minmax(0, 1fr) 240px; background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+      <div class="photo" style="height: 230px;"><span>photo — 4x4 on the red dunes</span></div>
+      <div style="padding: 24px 28px;">
+        <div class="eyebrow">Desert safari · Most booked</div>
+        <div class="serif" style="font-size: 30px; margin-top: 6px; line-height: 1.15;">Evening Desert Safari with BBQ dinner</div>
+        <div style="font-size: 15px; color: #4A4238; margin-top: 10px; line-height: 1.55; max-width: 560px;">Dune bashing in a 4x4, camel ride, sandboarding and henna, then a BBQ dinner in camp with tanoura and fire shows.</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">6 hours</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Hotel pick-up</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Vegetarian options</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Family friendly</div>
+        </div>
+      </div>
+      <div style="border-left: 1px solid #EFE7D9; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;">
+        <div style="text-align: right;">
+          <div style="font-size: 12px; color: #8A7C68;">from</div>
+          <div class="serif ph" style="font-size: 34px; line-height: 1.1;">AED [price]</div>
+          <div style="font-size: 12px; color: #6C6257;">per person</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+          <div style="height: 46px; background: #A8722C; color: #FFFFFF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700;">Check availability</div>
+          <div style="height: 46px; border: 1px solid #DDD2BF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600;">Tour details</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 340px minmax(0, 1fr) 240px; background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+      <div class="photo" style="height: 230px;"><span>photo — dhow passing Ain Dubai</span></div>
+      <div style="padding: 24px 28px;">
+        <div class="eyebrow">Cruise</div>
+        <div class="serif" style="font-size: 30px; margin-top: 6px; line-height: 1.15;">Dhow Cruise Dubai Marina, dinner on board</div>
+        <div style="font-size: 15px; color: #4A4238; margin-top: 10px; line-height: 1.55; max-width: 560px;">Two hours through the Marina with an international buffet, live entertainment and an open upper deck for the skyline.</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">2 hours</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Buffet dinner</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Transfers optional</div>
+        </div>
+      </div>
+      <div style="border-left: 1px solid #EFE7D9; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;">
+        <div style="text-align: right;">
+          <div style="font-size: 12px; color: #8A7C68;">from</div>
+          <div class="serif ph" style="font-size: 34px; line-height: 1.1;">AED [price]</div>
+          <div style="font-size: 12px; color: #6C6257;">per person</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+          <div style="height: 46px; background: #A8722C; color: #FFFFFF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700;">Check availability</div>
+          <div style="height: 46px; border: 1px solid #DDD2BF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600;">Tour details</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 340px minmax(0, 1fr) 240px; background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+      <div class="photo" style="height: 230px;"><span>photo — abra crossing Dubai Creek</span></div>
+      <div style="padding: 24px 28px;">
+        <div class="eyebrow">City &amp; sightseeing</div>
+        <div class="serif" style="font-size: 30px; margin-top: 6px; line-height: 1.15;">Dubai City Tour, old town and new</div>
+        <div style="font-size: 15px; color: #4A4238; margin-top: 10px; line-height: 1.55; max-width: 560px;">Burj Khalifa, the Palm and Dubai Frame in the morning; the gold and spice souks and an abra crossing after lunch.</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Half or full day</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Licensed guide</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Air-conditioned</div>
+        </div>
+      </div>
+      <div style="border-left: 1px solid #EFE7D9; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;">
+        <div style="text-align: right;">
+          <div style="font-size: 12px; color: #8A7C68;">from</div>
+          <div class="serif ph" style="font-size: 34px; line-height: 1.1;">AED [price]</div>
+          <div style="font-size: 12px; color: #6C6257;">per person</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+          <div style="height: 46px; background: #A8722C; color: #FFFFFF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700;">Check availability</div>
+          <div style="height: 46px; border: 1px solid #DDD2BF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600;">Tour details</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 340px minmax(0, 1fr) 240px; background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; overflow: hidden;">
+      <div class="photo" style="height: 230px;"><span>photo — RIB speedboat, Burj Al Arab behind</span></div>
+      <div style="padding: 24px 28px;">
+        <div class="eyebrow">Water &amp; boats</div>
+        <div class="serif" style="font-size: 30px; margin-top: 6px; line-height: 1.15;">Speedboat sightseeing tour</div>
+        <div style="font-size: 15px; color: #4A4238; margin-top: 10px; line-height: 1.55; max-width: 560px;">Sixty or ninety minutes past Burj Al Arab, Atlantis and the Palm, with a guide pointing out what you are looking at.</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">60 or 90 min</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Marina departure</div>
+          <div style="background: #F3EADC; border-radius: 3px; padding: 6px 11px; font-size: 13px;">Life jackets provided</div>
+        </div>
+      </div>
+      <div style="border-left: 1px solid #EFE7D9; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;">
+        <div style="text-align: right;">
+          <div style="font-size: 12px; color: #8A7C68;">from</div>
+          <div class="serif ph" style="font-size: 34px; line-height: 1.1;">AED [price]</div>
+          <div style="font-size: 12px; color: #6C6257;">per person</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+          <div style="height: 46px; background: #A8722C; color: #FFFFFF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700;">Check availability</div>
+          <div style="height: 46px; border: 1px solid #DDD2BF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600;">Tour details</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- help band -->
+  <div style="padding: 28px 64px 72px;">
+    <div style="border: 1px solid #E7DDCD; border-radius: 4px; background: #FFFFFF; padding: 32px 36px; display: flex; align-items: center; justify-content: space-between; gap: 32px;">
+      <div>
+        <div class="serif" style="font-size: 32px; line-height: 1.15;">Not sure which tours fit your days?</div>
+        <div style="font-size: 16px; color: #4A4238; margin-top: 8px;">Send us your dates and hotel — we will lay out a day-by-day plan and price it as one package.</div>
+      </div>
+      <div style="display: flex; gap: 12px; flex-shrink: 0;">
+        <div style="height: 52px; padding: 0 24px; background: #17130F; color: #FAF6EF; border-radius: 3px; display: flex; align-items: center; font-size: 15px; font-weight: 700;">Plan my days</div>
+        <div style="height: 52px; padding: 0 24px; border: 1px solid #DDD2BF; border-radius: 3px; display: flex; align-items: center; font-size: 15px; font-weight: 600;">Call <span class="ph" style="margin-left: 6px;">[+971 XX XXX XXXX]</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

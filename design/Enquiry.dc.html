@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #17130F; background: #FAF6EF; -webkit-font-smoothing: antialiased; }
+    a { color: #A8722C; text-decoration: none; }
+    a:hover { color: #7E561F; }
+    .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+    .ph { color: #8A7C68; border-bottom: 1px dashed #C3B49A; }
+    .eyebrow { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #8A7C68; font-weight: 600; }
+    .label { font-size: 13px; font-weight: 600; margin-bottom: 7px; }
+    .field { height: 48px; border: 1px solid #DDD2BF; border-radius: 3px; background: #FCFAF6; display: flex; align-items: center; padding: 0 14px; font-size: 15px; color: #A3937C; }
+    .chip { border: 1px solid #DDD2BF; border-radius: 999px; padding: 10px 16px; font-size: 14px; background: #FFFFFF; }
+    .chip-on { border: 1px solid #17130F; background: #17130F; color: #FAF6EF; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 600; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #FAF6EF;">
+
+  <!-- header -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 64px; border-bottom: 1px solid #E7DDCD;">
+    <div class="serif" style="font-size: 25px;">Travel Agency <span style="color: #A8722C;">in Dubai</span></div>
+    <div style="display: flex; align-items: center; gap: 30px; font-size: 15px; font-weight: 500;">
+      <span>Tours</span><span>Packages</span><span>Hotels</span><span>Visa</span><span>Transfers</span><span>Guides</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; background: #17130F; color: #FAF6EF; padding: 12px 20px; border-radius: 2px; font-size: 15px; font-weight: 600;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+      WhatsApp
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px; padding: 60px 64px 72px;">
+
+    <!-- left: reassurance -->
+    <div style="grid-column: span 5;">
+      <div class="eyebrow">Free quote</div>
+      <h1 class="serif" style="font-size: 60px; line-height: 1.04; margin: 14px 0 0; letter-spacing: -.02em;">Tell us the trip.<br>We will price it.</h1>
+      <p style="font-size: 18px; line-height: 1.62; color: #4A4238; margin: 22px 0 0; max-width: 460px; text-wrap: pretty;">One form, one reply — a plan with tours, hotel options and a total per person. Nothing is charged until you say yes.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; margin-top: 40px; padding-top: 32px; border-top: 1px solid #E7DDCD;">
+        <div style="display: flex; gap: 14px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8722C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div>
+            <div style="font-weight: 700; font-size: 16px;">Same-day reply, usually within the hour</div>
+            <div style="font-size: 15px; color: #4A4238; margin-top: 3px; line-height: 1.5;">Someone in Dubai reads it, not a queue in another timezone.</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 14px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8722C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div>
+            <div style="font-weight: 700; font-size: 16px;">One price, itemised</div>
+            <div style="font-size: 15px; color: #4A4238; margin-top: 3px; line-height: 1.5;">You see what each part costs, so you can drop anything you do not want.</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 14px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A8722C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 6h16v12H4z"/><path d="M4 9h16"/></svg>
+          <div>
+            <div style="font-weight: 700; font-size: 16px;">Licensed by Dubai's DET</div>
+            <div style="font-size: 15px; color: #4A4238; margin-top: 3px; line-height: 1.5;">Tourism licence <span class="ph">[no.]</span> — the number is on every invoice we send.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: #F5EFE4; border-radius: 4px; padding: 24px; margin-top: 36px;">
+        <div style="font-size: 15px; color: #35302A; line-height: 1.6;">Prefer to just talk? Call or message <span class="ph" style="font-weight: 600;">[+971 XX XXX XXXX]</span> — we answer 24 hours, including on weekends.</div>
+      </div>
+    </div>
+
+    <!-- right: the form -->
+    <div style="grid-column: span 7;">
+      <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 4px; padding: 36px 40px;">
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 26px; height: 26px; border-radius: 999px; background: #17130F; color: #FAF6EF; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700;">1</div>
+          <div class="serif" style="font-size: 27px;">What are you interested in?</div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 9px; margin: 18px 0 32px;">
+          <div class="chip-on">Desert safari</div>
+          <div class="chip">Dhow cruise</div>
+          <div class="chip">City tour</div>
+          <div class="chip">Yacht / boat</div>
+          <div class="chip-on">Hotel</div>
+          <div class="chip">UAE visa</div>
+          <div class="chip">Airport transfer</div>
+          <div class="chip">Full holiday package</div>
+          <div class="chip">Outbound trip from UAE</div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px; border-top: 1px solid #EFE7D9; padding-top: 26px;">
+          <div style="width: 26px; height: 26px; border-radius: 999px; background: #17130F; color: #FAF6EF; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700;">2</div>
+          <div class="serif" style="font-size: 27px;">When, and who is coming?</div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 18px 0 32px;">
+          <div>
+            <div class="label">Arrival date</div>
+            <div class="field" style="justify-content: space-between;">Select
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A3937C" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            </div>
+          </div>
+          <div>
+            <div class="label">Nights in Dubai</div>
+            <div class="field">e.g. 5</div>
+          </div>
+          <div>
+            <div class="label">Adults / children</div>
+            <div class="field">2 adults, 0 children</div>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px; border-top: 1px solid #EFE7D9; padding-top: 26px;">
+          <div style="width: 26px; height: 26px; border-radius: 999px; background: #17130F; color: #FAF6EF; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700;">3</div>
+          <div class="serif" style="font-size: 27px;">Where do we send the quote?</div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 18px 0 16px;">
+          <div>
+            <div class="label">Full name</div>
+            <div class="field">Your name</div>
+          </div>
+          <div>
+            <div class="label">Country you are travelling from</div>
+            <div class="field" style="justify-content: space-between;">Select
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A3937C" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+          <div>
+            <div class="label">Email</div>
+            <div class="field">you@example.com</div>
+          </div>
+          <div>
+            <div class="label">Phone / WhatsApp</div>
+            <div class="field">+971</div>
+          </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <div class="label">Anything we should know? <span style="font-weight: 400; color: #8A7C68;">(optional)</span></div>
+          <div style="height: 96px; border: 1px solid #DDD2BF; border-radius: 3px; background: #FCFAF6; padding: 13px 14px; font-size: 15px; color: #A3937C; line-height: 1.5;">Dietary needs, a birthday, walking difficulties, a budget you want us to stay under…</div>
+        </div>
+
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 24px;">
+          <div style="width: 18px; height: 18px; border: 1px solid #DDD2BF; border-radius: 2px; background: #FCFAF6; flex-shrink: 0; margin-top: 2px;"></div>
+          <div style="font-size: 13px; color: #6C6257; line-height: 1.5;">Send me the Dubai guide once a month. No offers, no forwarding your details on.</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div style="height: 56px; background: #A8722C; color: #FFFFFF; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700;">Send my enquiry</div>
+          <div style="height: 56px; border: 1px solid #17130F; border-radius: 3px; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 17px; font-weight: 700;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.1A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+            Send it on WhatsApp instead
+          </div>
+        </div>
+        <div style="font-size: 12px; color: #8A7C68; text-align: center; margin-top: 14px;">We keep your details to answer this enquiry and nothing else.</div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

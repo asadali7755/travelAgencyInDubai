@@ -1,0 +1,42 @@
+{
+  "pages": [
+    { "id": "page-1", "name": "Website" },
+    { "id": "page-2", "name": "Mobile app" },
+    { "id": "page-3", "name": "Directions" }
+  ],
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 3000, "title": "Home", "page": "page-1" },
+    { "file": "ToursHub.dc.html", "x": 1560, "y": 0, "w": 1440, "h": 1900, "title": "Dubai tours hub", "page": "page-1" },
+    { "file": "PackageDetail.dc.html", "x": 3120, "y": 0, "w": 1440, "h": 2900, "title": "Tour detail", "page": "page-1" },
+    { "file": "Guide.dc.html", "x": 4680, "y": 0, "w": 1440, "h": 2700, "title": "Guide article", "page": "page-1" },
+    { "file": "Enquiry.dc.html", "x": 6240, "y": 0, "w": 1440, "h": 1400, "title": "Enquiry", "page": "page-1" },
+
+    { "file": "AppHome.dc.html", "x": 0, "y": 0, "w": 390, "h": 844, "title": "App — Home", "page": "page-2" },
+    { "file": "AppExplore.dc.html", "x": 510, "y": 0, "w": 390, "h": 844, "title": "App — Explore", "page": "page-2" },
+    { "file": "AppPackage.dc.html", "x": 1020, "y": 0, "w": 390, "h": 844, "title": "App — Tour detail", "page": "page-2" },
+    { "file": "AppRewards.dc.html", "x": 1530, "y": 0, "w": 390, "h": 844, "title": "App — Rewards", "page": "page-2" },
+    { "file": "AppProfile.dc.html", "x": 2040, "y": 0, "w": 390, "h": 844, "title": "App — Profile", "page": "page-2" },
+
+    { "file": "DirectionB.dc.html", "x": 0, "y": 0, "w": 900, "h": 700, "title": "Direction B", "page": "page-3" },
+    { "file": "DirectionC.dc.html", "x": 1020, "y": 0, "w": 900, "h": 700, "title": "Direction C", "page": "page-3" }
+  ],
+  "annotations": [
+    {
+      "id": "placeholders",
+      "x": 0,
+      "y": -180,
+      "w": 620,
+      "page": "page-1",
+      "text": "Everything in [square brackets with a dashed underline] is a real fact we do not have yet: prices, the phone number, the DET licence number, review counts, the office address.\nTell me the values and I will drop them in.\n\nThe crosshatched blocks are photo slots, labelled with the shot each one needs."
+    },
+    {
+      "id": "direction-note",
+      "x": 0,
+      "y": -200,
+      "w": 640,
+      "page": "page-3",
+      "text": "The Website and Mobile app pages are built in Direction A — warm desert editorial (sand ground, ink text, bronze accent, Instrument Serif + Plus Jakarta Sans).\n\nThese two are the alternatives, sketched low-fi so the choice is about direction rather than polish. Say which one you want and I will rebuild the pages in it."
+    }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
+}

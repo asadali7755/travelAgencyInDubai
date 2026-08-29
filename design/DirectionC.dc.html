@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&display=swap">
+  <style>
+    body { margin: 0; font-family: "Public Sans", system-ui, sans-serif; color: #14181F; background: #FFFFFF; }
+    a { color: #0B6E8F; } a:hover { color: #08556F; }
+    .block { background: #F1F4F7; border: 1px dashed #C6D0DA; }
+    .lbl { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #8494A4; }
+    .card { border: 1px solid #DDE4EB; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+  </style>
+</helmet>
+
+<div style="width: 900px; height: 700px; background: #FFFFFF; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px;">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between;">
+    <div style="font-size: 22px; font-weight: 800; letter-spacing: -.01em;">Direction C — Booking marketplace</div>
+    <div class="lbl">Low-fi sketch</div>
+  </div>
+  <div style="font-size: 14px; color: #5A6B7B; line-height: 1.5; max-width: 720px;">Dense and utilitarian, like the big ticket platforms. Search box first, price and rating on every card, filters everywhere. Optimised for someone comparing tours, not someone being persuaded.</div>
+
+  <div style="flex: 1; border: 1px solid #DDE4EB; border-radius: 8px; display: flex; flex-direction: column; overflow: hidden;">
+    <div style="height: 40px; border-bottom: 1px solid #DDE4EB; display: flex; align-items: center; padding: 0 16px; gap: 18px;">
+      <div style="font-weight: 800; font-size: 13px; color: #0B6E8F;">travelagencyindubai</div>
+      <div style="display: flex; gap: 14px; font-size: 12px; color: #5A6B7B;"><span>Tours</span><span>Hotels</span><span>Visa</span><span>Transfers</span><span>Packages</span></div>
+      <div style="margin-left: auto; background: #0B6E8F; color: #FFF; padding: 6px 12px; border-radius: 5px; font-size: 11px; font-weight: 700;">Sign in</div>
+    </div>
+
+    <div style="background: #EAF2F6; padding: 18px 16px; border-bottom: 1px solid #DDE4EB;">
+      <div style="font-size: 24px; font-weight: 800; letter-spacing: -.01em;">Book Dubai tours, hotels and visas</div>
+      <div style="display: flex; gap: 8px; margin-top: 12px;">
+        <div style="flex: 2; height: 42px; background: #FFF; border: 1px solid #C6D0DA; border-radius: 6px; display: flex; align-items: center; padding: 0 12px; font-size: 13px; color: #8494A4;">Where to / what</div>
+        <div style="flex: 1; height: 42px; background: #FFF; border: 1px solid #C6D0DA; border-radius: 6px; display: flex; align-items: center; padding: 0 12px; font-size: 13px; color: #8494A4;">Dates</div>
+        <div style="flex: 1; height: 42px; background: #FFF; border: 1px solid #C6D0DA; border-radius: 6px; display: flex; align-items: center; padding: 0 12px; font-size: 13px; color: #8494A4;">2 guests</div>
+        <div style="height: 42px; padding: 0 22px; background: #E8890B; color: #FFF; border-radius: 6px; display: flex; align-items: center; font-size: 14px; font-weight: 800;">Search</div>
+      </div>
+    </div>
+
+    <div style="flex: 1; display: grid; grid-template-columns: 180px 1fr; gap: 0;">
+      <div style="border-right: 1px solid #DDE4EB; padding: 14px;">
+        <div class="lbl">Filters</div>
+        <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 9px; font-size: 12px; color: #5A6B7B;">
+          <div>☐ Free cancellation</div>
+          <div>☐ Hotel pick-up</div>
+          <div>☐ Under AED [x]</div>
+          <div>☐ Half day</div>
+          <div>☐ Private tour</div>
+        </div>
+      </div>
+      <div style="padding: 14px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+        <div class="card">
+          <div class="block" style="height: 76px; border-left: none; border-right: none; border-top: none;"></div>
+          <div style="padding: 10px;">
+            <div style="font-size: 13px; font-weight: 700; line-height: 1.25;">Desert safari with dinner</div>
+            <div style="font-size: 11px; color: #5A6B7B; margin-top: 4px;">★ [4.x] · [N] booked</div>
+            <div style="font-size: 15px; font-weight: 800; margin-top: 6px;">AED [price]</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="block" style="height: 76px; border-left: none; border-right: none; border-top: none;"></div>
+          <div style="padding: 10px;">
+            <div style="font-size: 13px; font-weight: 700; line-height: 1.25;">Dhow cruise, Marina</div>
+            <div style="font-size: 11px; color: #5A6B7B; margin-top: 4px;">★ [4.x] · [N] booked</div>
+            <div style="font-size: 15px; font-weight: 800; margin-top: 6px;">AED [price]</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="block" style="height: 76px; border-left: none; border-right: none; border-top: none;"></div>
+          <div style="padding: 10px;">
+            <div style="font-size: 13px; font-weight: 700; line-height: 1.25;">City tour, half day</div>
+            <div style="font-size: 11px; color: #5A6B7B; margin-top: 4px;">★ [4.x] · [N] booked</div>
+            <div style="font-size: 15px; font-weight: 800; margin-top: 6px;">AED [price]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 26px; font-size: 12px; line-height: 1.5;">
+    <div style="flex: 1;"><span style="color: #2E7D57; font-weight: 700;">Good for</span> <span style="color: #5A6B7B;">— the day it goes live with a real booking API. Familiar to anyone who has used Klook or GetYourGuide, and converts comparison shoppers.</span></div>
+    <div style="flex: 1;"><span style="color: #B5502F; font-weight: 700;">Tradeoff</span> <span style="color: #5A6B7B;">— looks like everyone else, and it promises live inventory we do not have in Phase 1. Empty filters and missing prices feel broken.</span></div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

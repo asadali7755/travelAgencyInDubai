@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #17130F; background: #FAF6EF; -webkit-font-smoothing: antialiased; }
+    a { color: #A8722C; } a:hover { color: #7E561F; }
+    .serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; }
+    .ph { color: #8A7C68; border-bottom: 1px dashed #C3B49A; }
+    .tab { display: flex; flex-direction: column; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; color: #9A8D79; flex: 1; }
+    .tab-on { color: #17130F; }
+    .task { background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 14px; padding: 14px; display: flex; align-items: center; gap: 13px; }
+  </style>
+</helmet>
+
+<div style="width: 390px; height: 844px; background: #FAF6EF; display: flex; flex-direction: column; overflow: hidden;">
+
+  <div style="padding: 20px 20px 14px;">
+    <div class="serif" style="font-size: 27px;">Rewards</div>
+  </div>
+
+  <!-- balance card -->
+  <div style="padding: 0 20px 16px;">
+    <div style="background: #17130F; border-radius: 18px; padding: 22px; color: #F3EADC;">
+      <div style="font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #B7AB99; font-weight: 600;">Your points</div>
+      <div style="display: flex; align-items: baseline; gap: 10px; margin-top: 8px;">
+        <div class="serif ph" style="font-size: 52px; line-height: 1; color: #FAF6EF; border-color: #6C6257;">[N]</div>
+        <div style="font-size: 14px; color: #B7AB99;">= AED <span class="ph" style="color: #B7AB99; border-color: #6C6257;">[value]</span> off your next booking</div>
+      </div>
+
+      <div style="height: 8px; background: #302921; border-radius: 999px; margin-top: 20px; overflow: hidden;">
+        <div style="width: 62%; height: 100%; background: #D9A44E; border-radius: 999px;"></div>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 12px; color: #B7AB99; margin-top: 8px;">
+        <div><span class="ph" style="color: #B7AB99; border-color: #6C6257;">[N]</span> more to the next voucher</div>
+        <div>Silver</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- streak -->
+  <div style="padding: 0 20px 18px;">
+    <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-radius: 14px; padding: 16px;">
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="font-size: 15px; font-weight: 700;">Day <span class="ph">[n]</span> streak</div>
+        <div style="font-size: 12px; color: #6C6257;">Resets at midnight</div>
+      </div>
+      <div style="display: flex; gap: 7px; margin-top: 14px;">
+        <div style="flex: 1; height: 40px; border-radius: 10px; background: #A8722C; color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700;">M</div>
+        <div style="flex: 1; height: 40px; border-radius: 10px; background: #A8722C; color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700;">T</div>
+        <div style="flex: 1; height: 40px; border-radius: 10px; background: #A8722C; color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700;">W</div>
+        <div style="flex: 1; height: 40px; border-radius: 10px; border: 1px dashed #DDD2BF; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #A3937C;">T</div>
+        <div style="flex: 1; height: 40px; border-radius: 10px; border: 1px dashed #DDD2BF; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #A3937C;">F</div>
+        <div style="flex: 1; height: 40px; border-radius: 10px; border: 1px dashed #DDD2BF; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #A3937C;">S</div>
+        <div style="flex: 1; height: 40px; border-radius: 10px; border: 1px dashed #DDD2BF; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #A3937C;">S</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- tasks -->
+  <div style="flex: 1; overflow: hidden; padding: 0 20px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px;">
+      <div class="serif" style="font-size: 22px;">Today's tasks</div>
+      <div style="font-size: 13px; color: #6C6257;">1 of 3 done</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+
+      <div class="task" style="opacity: .6;">
+        <div style="width: 34px; height: 34px; border-radius: 999px; background: #3F7A55; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <div style="flex: 1;">
+          <div style="font-size: 15px; font-weight: 700; text-decoration: line-through;">Read a Dubai guide</div>
+          <div style="font-size: 12px; color: #6C6257; margin-top: 2px;">+<span class="ph">[pts]</span> points</div>
+        </div>
+      </div>
+
+      <div class="task">
+        <div style="width: 34px; height: 34px; border-radius: 999px; background: #F3EADC; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A8722C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9c0 5-8 10-8 10S4 14 4 9a4 4 0 0 1 8-1 4 4 0 0 1 8 1z"/></svg>
+        </div>
+        <div style="flex: 1;">
+          <div style="font-size: 15px; font-weight: 700;">Save a tour to your wishlist</div>
+          <div style="font-size: 12px; color: #6C6257; margin-top: 2px;">+<span class="ph">[pts]</span> points</div>
+        </div>
+        <div style="height: 38px; padding: 0 16px; background: #17130F; color: #FAF6EF; border-radius: 10px; display: flex; align-items: center; font-size: 13px; font-weight: 700;">Go</div>
+      </div>
+
+      <div class="task">
+        <div style="width: 34px; height: 34px; border-radius: 999px; background: #F3EADC; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A8722C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 8l8 5 8-5"/></svg>
+        </div>
+        <div style="flex: 1;">
+          <div style="font-size: 15px; font-weight: 700;">Answer a question in the community FAQ</div>
+          <div style="font-size: 12px; color: #6C6257; margin-top: 2px;">+<span class="ph">[pts]</span> points · reviewed before it publishes</div>
+        </div>
+        <div style="height: 38px; padding: 0 16px; background: #17130F; color: #FAF6EF; border-radius: 10px; display: flex; align-items: center; font-size: 13px; font-weight: 700;">Go</div>
+      </div>
+
+    </div>
+
+    <div style="display: flex; align-items: baseline; justify-content: space-between; margin: 22px 0 12px;">
+      <div class="serif" style="font-size: 22px;">Spend your points</div>
+      <div style="font-size: 13px; font-weight: 600; color: #A8722C;">All rewards</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #E7DDCD; border-left: 3px solid #A8722C; border-radius: 14px; padding: 15px; display: flex; align-items: center; gap: 13px;">
+      <div style="flex: 1;">
+        <div style="font-size: 15px; font-weight: 700;">AED <span class="ph">[amount]</span> off any desert safari</div>
+        <div style="font-size: 12px; color: #6C6257; margin-top: 3px;">Costs <span class="ph">[N]</span> points · valid <span class="ph">[days]</span> days</div>
+      </div>
+      <div style="height: 40px; padding: 0 16px; border: 1px solid #17130F; border-radius: 10px; display: flex; align-items: center; font-size: 13px; font-weight: 700;">Redeem</div>
+    </div>
+  </div>
+
+  <!-- tab bar -->
+  <div style="border-top: 1px solid #E7DDCD; background: #FFFCF7; padding: 12px 12px 22px; display: flex; margin-top: 16px;">
+    <div class="tab">
+      <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg>
+      Home
+    </div>
+    <div class="tab">
+      <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      Explore
+    </div>
+    <div class="tab tab-on">
+      <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-3-5.3 3 1.1-6L3.4 9.4l6-.8z"/></svg>
+      Rewards
+    </div>
+    <div class="tab">
+      <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20a6 6 0 0 1 12 0"/><circle cx="12" cy="8" r="4"/></svg>
+      Profile
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
