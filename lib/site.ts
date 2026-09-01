@@ -26,6 +26,12 @@ export const site = {
   ],
 } as const;
 
+/**
+ * Search engines are only invited once the live domain is serving the site.
+ * Set NEXT_PUBLIC_ALLOW_INDEXING=true in the production environment on launch.
+ */
+export const indexingAllowed = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
+
 export const nav = [
   { label: "Tours & experiences", href: "/dubai-tours" },
   { label: "Desert safari", href: "/dubai-tours/desert-safari" },
@@ -36,9 +42,9 @@ export const nav = [
 export const footerLinks = {
   experiences: [
     { label: "Desert safaris", href: "/dubai-tours/desert-safari" },
-    { label: "Dhow cruises", href: "/dubai-tours/cruises" },
+    { label: "Dhow cruises", href: "/dubai-tours/dhow-cruise-marina" },
     { label: "Yacht charters", href: "/dubai-tours/yacht-charter" },
-    { label: "City tours", href: "/dubai-tours/city-tour" },
+    { label: "City tours", href: "/dubai-tours/old-dubai-souks-abras" },
   ],
   company: [
     { label: "Travel guide", href: "/blog/things-to-do-in-dubai" },

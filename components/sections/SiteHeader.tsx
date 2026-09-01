@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppIcon } from "@/components/ui/Icons";
@@ -14,6 +15,12 @@ export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const whatsapp = whatsappHref();
 
+  // Only the home page has a full-bleed photo behind the header, so only there
+  // can the header start transparent with white text. Every other page needs it
+  // solid from the first pixel or the links vanish into the cream background.
+  const overlay = usePathname() === "/";
+  const solid = scrolled || !overlay;
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
@@ -24,8 +31,8 @@ export function SiteHeader() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-page/85 py-2 shadow-[0_1px_0_var(--color-divider)] backdrop-blur-lg"
+        solid
+          ? "bg-page/90 py-2 shadow-[0_1px_0_var(--color-divider)] backdrop-blur-lg"
           : "py-4"
       }`}
     >
@@ -33,10 +40,10 @@ export function SiteHeader() {
         <Link
           href="/"
           className={`flex min-h-11 shrink-0 items-center gap-1.5 text-xl font-bold tracking-tight no-underline lg:text-[22px] ${
-            scrolled ? "text-ink" : "text-white drop-shadow-sm"
+            solid ? "text-ink" : "text-white drop-shadow-sm"
           }`}
         >
-          Travel Agency <span className="text-sea-light">in Dubai</span>
+          Travel Agency <span className={solid ? "text-sea" : "text-sea-light"}>in Dubai</span>
         </Link>
 
         <nav className="ml-auto hidden items-center gap-7 lg:flex">
@@ -45,7 +52,7 @@ export function SiteHeader() {
               key={item.href}
               href={item.href}
               className={`text-[15px] no-underline transition-colors ${
-                scrolled ? "text-ink hover:text-sea" : "text-white/90 hover:text-white"
+                solid ? "text-ink hover:text-sea" : "text-white/90 hover:text-white"
               }`}
             >
               {item.label}
@@ -56,7 +63,7 @@ export function SiteHeader() {
         <div className="ml-auto flex items-center gap-3 lg:ml-0">
           <Button
             href={whatsapp}
-            variant={scrolled ? "outline" : "ghost"}
+            variant={solid ? "outline" : "ghost"}
             className="hidden sm:inline-flex"
           >
             <WhatsAppIcon />

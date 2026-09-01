@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
-import { site } from "@/lib/site";
+import { indexingAllowed, site } from "@/lib/site";
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_AE",
   },
+  // Belt and braces alongside robots.txt while the site is on its preview URL.
+  robots: indexingAllowed
+    ? { index: true, follow: true }
+    : { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

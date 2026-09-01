@@ -31,21 +31,38 @@ export async function POST(req: NextRequest) {
     return fail(400, "Please check the highlighted fields.", parsed.error.flatten().fieldErrors);
   }
 
-  const { travel_date, ...rest } = parsed.data;
-  const supabase = await createServerClient();
-  const { data, error } = await supabase
-    .from("leads")
-    .insert({
-      ...rest,
-      travel_date: travel_date ? travel_date.toISOString().slice(0, 10) : null,
-    })
-    .select("id, created_at, status")
-    .single();
-
-  if (error) {
-    console.error("leads.create", error.message);
-    return fail(500, "We couldn't submit your enquiry. Please try again.");
+  // Until Supabase is connected there is nowhere to put the enquiry. Say so
+  // clearly rather than letting the client throw and return an empty body,
+  // which is what a visitor would otherwise experience as a dead button.
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+    console.error("leads.create: Supabase is not configured");
+    return fail(
+      503,
+      "Our enquiry form isn't connected yet. Please message us on WhatsApp and we'll reply straight away.",
+    );
   }
 
-  return ok(serializeLead(data), 201);
+  const { travel_date, ...rest } = parsed.data;
+
+  try {
+    const supabase = await createServerClient();
+    const { data, error } = await supabase
+      .from("leads")
+      .insert({
+        ...rest,
+        travel_date: travel_date ? travel_date.toISOString().slice(0, 10) : null,
+      })
+      .select("id, created_at, status")
+      .single();
+
+    if (error) {
+      console.error("leads.create", error.message);
+      return fail(500, "We couldn't submit your enquiry. Please try again.");
+    }
+
+    return ok(serializeLead(data), 201);
+  } catch (cause) {
+    console.error("leads.create", cause);
+    return fail(500, "We couldn't submit your enquiry. Please try again.");
+  }
 }
