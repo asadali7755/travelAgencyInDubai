@@ -41,3 +41,7 @@ yarn-error.log*
 next-env.d.ts
 design/travel-agency-in-dubai.html
 design/preview.html
+
+# Claude Design exports kept for reference, not source we maintain
+design-ref/
+travelagencyindubai-preview/

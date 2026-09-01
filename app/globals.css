@@ -1,26 +1,158 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================
+   Travel Agency in Dubai — light & colourful theme
+   Ported from the approved design (Home C).
+   Sea blue is the single primary: every button and link uses it.
+   Sun, gold, palm and coral are section and card accents only.
+   ============================================================ */
+
+@theme {
+  --color-sea: #0e7c86;
+  --color-sea-dark: #0a5f67;
+  --color-sea-light: #7fd0d6;
+  --color-sea-tint: #e6f4f5;
+
+  --color-sun: #e2662a;
+  --color-sun-dark: #b24a18;
+  --color-sun-tint: #fdeee3;
+
+  --color-gold: #c0891b;
+  --color-gold-dark: #8a6210;
+  --color-gold-tint: #fbf3df;
+
+  --color-palm: #2f7d4f;
+  --color-palm-tint: #e8f3eb;
+
+  --color-coral: #e0574f;
+  --color-coral-dark: #b33a33;
+  --color-coral-tint: #fdecea;
+
+  --color-page: #fffdf8;
+  --color-ink: #221e18;
+  --color-surface: #ffffff;
+  --color-sand: #fbf3e5;
+  --color-divider: #eadfcb;
+  --color-card-border: #efe3ce;
+
+  --radius-card: 16px;
+  --radius-xl2: 22px;
+
+  --shadow-card: 0 8px 26px rgba(150, 110, 60, 0.1);
+
+  --font-sans: var(--font-figtree), system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* These belong in the base layer. Unlayered rules beat every Tailwind utility
+   regardless of specificity, so an unlayered `a { color }` would silently
+   override text-white on any link-styled button. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background: var(--color-page);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    text-wrap: pretty;
+  }
+
+  a {
+    color: var(--color-sea);
+  }
+
+  a:hover {
+    color: var(--color-sea-dark);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sea);
+    outline-offset: 3px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ---------- motion ---------- */
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.14);
+  }
+}
+
+@keyframes fill-bar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Slides hold a slow zoom for the whole time they are on screen. */
+.ken-burns {
+  animation: ken-burns 18s ease-out both;
+}
+
+/* Sections fade up as they enter the viewport; see components/ui/Reveal.tsx. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* The active hero indicator fills over the 6s the slide is shown. */
+.indicator-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-sea);
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: inherit;
+}
+
+.indicator-fill[data-active="true"]::after {
+  animation: fill-bar 6s linear forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .ken-burns,
+  .indicator-fill[data-active="true"]::after {
+    animation: none;
+  }
+
+  .indicator-fill[data-active="true"]::after {
+    transform: scaleX(1);
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Horizontal card rows scroll rather than wrap, and hide their scrollbar. */
+.scroll-row {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-row::-webkit-scrollbar {
+  display: none;
 }

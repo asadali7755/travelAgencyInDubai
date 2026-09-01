@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Exports from Claude Design: reference material and the static client
+    // preview, not source we maintain.
+    "design-ref/**",
+    "travelagencyindubai-preview/**",
   ]),
 ]);
 
