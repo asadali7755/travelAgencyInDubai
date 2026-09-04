@@ -27,6 +27,10 @@ const field =
 export function LeadForm() {
   const params = useSearchParams();
   const preselected = params.get("tour") ?? "";
+  // Written by the home-page calculator so the visitor does not retype their
+  // brief. Sliced because the message column is capped at 1,000 characters and
+  // a query string is user-editable.
+  const plan = (params.get("plan") ?? "").slice(0, 400);
 
   const [state, setState] = useState<State>("idle");
   const [error, setError] = useState<string | null>(null);
@@ -52,7 +56,7 @@ export function LeadForm() {
       country: String(form.get("country") ?? "AE").slice(0, 2),
       travel_date: String(form.get("travel_date") ?? "") || undefined,
       message: [interest ? `Interested in: ${interest}` : "", note].filter(Boolean).join("\n\n"),
-      source: interest || "contact-page",
+      source: interest || (plan ? "trip-calculator" : "contact-page"),
     };
 
     setState("sending");
@@ -158,6 +162,7 @@ export function LeadForm() {
         <textarea
           name="message"
           rows={4}
+          defaultValue={plan}
           className={`${field} min-h-32 py-3 leading-relaxed`}
           placeholder="How many people, which dates, where you're staying…"
         />
