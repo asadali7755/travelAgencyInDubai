@@ -1,0 +1,60 @@
+name: Keep the database awake
+
+# Supabase pauses a free-tier project after seven days without database
+# activity, and this site only queries Postgres when somebody submits an
+# enquiry. One quiet week would put the database to sleep and the next real
+# enquiry would be the one that failed.
+#
+# /api/health runs a real query, so calling it daily keeps the project awake.
+# Daily rather than weekly on purpose: it leaves room for a skipped or delayed
+# run without ever approaching the seven-day limit. GitHub Actions minutes are
+# free on public repositories, so this costs nothing.
+#
+# No secrets: the endpoint is public and needs no credentials, so nothing here
+# has to be rotated or hidden.
+
+on:
+  schedule:
+    # 04:17 UTC — an odd minute, because GitHub queues everything scheduled on
+    # the hour and delays it.
+    - cron: "17 4 * * *"
+  # So it can be run by hand from the Actions tab.
+  workflow_dispatch:
+
+# Stops a delayed run and the next scheduled one from overlapping.
+concurrency:
+  group: keep-alive
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    name: Ping the database
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Call /api/health
+        run: |
+          URL="https://travelagencyindubai.vercel.app/api/health"
+
+          # Three attempts before calling it a failure: a single blip on a cold
+          # serverless function should not send anyone an alert email.
+          for attempt in 1 2 3; do
+            echo "Attempt $attempt…"
+            body=$(curl -sS --max-time 30 -w '\n%{http_code}' "$URL" || true)
+            code=$(printf '%s' "$body" | tail -n1)
+            json=$(printf '%s' "$body" | sed '$d')
+
+            echo "  HTTP $code"
+            echo "  $json"
+
+            if [ "$code" = "200" ] && printf '%s' "$json" | grep -q '"db":"reachable"'; then
+              echo "Database is awake."
+              exit 0
+            fi
+
+            [ "$attempt" -lt 3 ] && sleep 20
+          done
+
+          echo "::error::The database did not answer. It may be paused, or the site may be down. Check https://supabase.com/dashboard/project/gegmbaeezcbgzqjwitfw"
+          exit 1
