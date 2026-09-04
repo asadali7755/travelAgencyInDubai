@@ -19,12 +19,10 @@ export const leadCreateSchema = z
 
 export type LeadCreate = z.infer<typeof leadCreateSchema>;
 
-export const serializeLead = (row: {
-  id: string;
-  created_at: string;
-  status: string;
-}) => ({
-  id: row.id,
-  createdAt: row.created_at,
-  status: row.status,
-});
+/**
+ * What a visitor gets back after submitting. Deliberately carries nothing from
+ * the stored row: `leads` is write-only for the public under RLS, so asking
+ * Postgres to return the inserted row would need a SELECT policy the table must
+ * not have. See app/api/leads/route.ts.
+ */
+export const serializeLeadReceipt = () => ({ status: "received" as const });

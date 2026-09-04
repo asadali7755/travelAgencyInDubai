@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { createServerClient } from "@/lib/supabase/server";
-import { leadCreateSchema, serializeLead } from "@/lib/validation/lead";
+import { leadCreateSchema, serializeLeadReceipt } from "@/lib/validation/lead";
 import { rateLimit } from "@/lib/rate-limit";
 import { fail, ok } from "@/lib/api/respond";
 
@@ -46,21 +46,21 @@ export async function POST(req: NextRequest) {
 
   try {
     const supabase = await createServerClient();
-    const { data, error } = await supabase
-      .from("leads")
-      .insert({
-        ...rest,
-        travel_date: travel_date ? travel_date.toISOString().slice(0, 10) : null,
-      })
-      .select("id, created_at, status")
-      .single();
+    // No .select() on purpose. PostgREST turns one into INSERT ... RETURNING,
+    // which Postgres runs through the SELECT policy as well — and `leads` has
+    // none for the public, by design. Asking for the row back would make every
+    // enquiry fail with 42501 while the row itself inserted fine.
+    const { error } = await supabase.from("leads").insert({
+      ...rest,
+      travel_date: travel_date ? travel_date.toISOString().slice(0, 10) : null,
+    });
 
     if (error) {
       console.error("leads.create", error.message);
       return fail(500, "We couldn't submit your enquiry. Please try again.");
     }
 
-    return ok(serializeLead(data), 201);
+    return ok(serializeLeadReceipt(), 201);
   } catch (cause) {
     console.error("leads.create", cause);
     return fail(500, "We couldn't submit your enquiry. Please try again.");
