@@ -47,3 +47,6 @@ design-ref/
 travelagencyindubai-preview/
 
 .vercel
+
+# local-only credentials, never committed
+.secrets/
