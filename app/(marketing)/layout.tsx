@@ -1,4 +1,5 @@
 import { JsonLd } from "@/components/ui/JsonLd";
+import { NewsletterPopup } from "@/components/marketing/NewsletterPopup";
 import { MobileActionBar } from "@/components/sections/MobileActionBar";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 import { SiteHeader } from "@/components/sections/SiteHeader";
@@ -17,6 +18,7 @@ export default function MarketingLayout({ children }: LayoutProps<"/">) {
       <main className="flex-1 pb-24 lg:pb-0">{children}</main>
       <SiteFooter />
       <MobileActionBar />
+      <NewsletterPopup />
     </>
   );
 }

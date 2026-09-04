@@ -83,6 +83,16 @@
   }
 }
 
+/* The newsletter modal fades its backdrop in; motion-safe: guards it. */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fill-bar {
   from {
     transform: scaleX(0);
