@@ -253,7 +253,7 @@ export const abuDhabiAttractions: Attraction[] = [
         a: "If you will visit more than one park, almost always. Two parks cost around AED 475 against AED 345 for one, and the pass stays valid for about six days so the second park can be another trip.",
       },
     ],
-    metaTitle: "Ferrari World Abu Dhabi | Tickets, Formula Rossa & Yas Passes",
+    metaTitle: "Ferrari World Abu Dhabi | Tickets & Formula Rossa",
     metaDescription:
       "Ferrari World ticket prices, how Formula Rossa compares, height limits, and why a multi-park Yas Island pass costs far less per park than single entry.",
     checked: "2026-09-18",

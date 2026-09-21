@@ -24,9 +24,16 @@ type Located = "idle" | "asking" | "ready" | "denied" | "unavailable";
 export function NearestResults({
   attractions,
   emptyMessage,
+  heading,
 }: {
   attractions: Attraction[];
   emptyMessage: string;
+  /**
+   * Names the results region in the document outline. Visually hidden because
+   * the page <h1> already says it on screen — but without it the card <h3>s
+   * follow the <h1> directly and the heading structure skips a level.
+   */
+  heading: string;
 }) {
   const [state, setState] = useState<Located>("idle");
   const [here, setHere] = useState<Point | null>(null);
@@ -63,7 +70,11 @@ export function NearestResults({
     : filtered.map((attraction) => ({ attraction, km: null as number | null }));
 
   return (
-    <>
+    <section aria-labelledby="results-heading">
+      <h2 id="results-heading" className="sr-only">
+        {heading}
+      </h2>
+
       <div className="flex flex-wrap items-center gap-3 border-y border-divider py-5">
         <button
           type="button"
@@ -140,6 +151,6 @@ export function NearestResults({
           ))}
         </div>
       )}
-    </>
+    </section>
   );
 }

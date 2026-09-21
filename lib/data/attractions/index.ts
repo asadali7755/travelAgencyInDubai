@@ -181,6 +181,26 @@ export const attractionPath = (attraction: Attraction) =>
 export const emiratePath = (id: Emirate) => `/uae-attractions/${id}`;
 
 /**
+ * The image to use when sharing a page about this attraction.
+ *
+ * Falls back to a photograph of the right emirate rather than one desert shot
+ * for all 72. An Open Graph card showing dunes above a piece about a Sharjah
+ * aquarium is the kind of small mismatch that costs a click.
+ */
+const EMIRATE_OG: Record<Emirate, string> = {
+  dubai: "/images/burj-downtown.jpg",
+  "abu-dhabi": "/images/grand-mosque.jpg",
+  sharjah: "/images/creek-alseef.jpg",
+  ajman: "/images/lamer-beach.jpg",
+  "ras-al-khaimah": "/images/musandam.jpg",
+  fujairah: "/images/musandam.jpg",
+  "umm-al-quwain": "/images/lamer-beach.jpg",
+};
+
+export const attractionOgImage = (attraction: Attraction) =>
+  attraction.image ?? EMIRATE_OG[attraction.emirate];
+
+/**
  * Human-readable gate price for cards and fact tables.
  *
  * Built from the basis rather than from the number alone: "From AED 200" on a

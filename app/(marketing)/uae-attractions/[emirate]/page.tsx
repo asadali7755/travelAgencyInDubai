@@ -8,7 +8,9 @@ import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { Reveal } from "@/components/ui/Reveal";
 import {
+  attractionOgImage,
   attractionPath,
+  attractions,
   attractionsInEmirate,
   categoriesWithContent,
   categoryCounts,
@@ -33,12 +35,17 @@ export async function generateMetadata({
   const emirate = emirateById(id);
   if (!emirate) return { title: "Emirate not found" };
 
-  const count = attractionsInEmirate(emirate.id).length;
+  const list = attractionsInEmirate(emirate.id);
+  const count = list.length;
 
   return pageMetadata({
-    title: `Things to Do in ${emirate.name} | ${count} Places & Prices`,
-    description: `${count} places worth your time in ${emirate.name}: beaches, family days out, culture, adventure and nightlife, with 2026 prices and which are free.`,
+    title:
+      count === 1
+        ? `Things to Do in ${emirate.name} | Prices & Opening Hours`
+        : `Things to Do in ${emirate.name} | ${count} Places & Prices`,
+    description: `${count} places worth your time in ${emirate.name}: beaches, family days out, culture and adventure, with 2026 prices and which are free.`,
     path: emiratePath(emirate.id),
+    image: attractionOgImage(list[0] ?? attractions[0]),
   });
 }
 

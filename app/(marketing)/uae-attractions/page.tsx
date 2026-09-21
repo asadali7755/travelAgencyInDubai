@@ -20,7 +20,7 @@ import { itemListSchema } from "@/lib/seo-schema";
 export const metadata: Metadata = pageMetadata({
   title: "UAE Attractions | All 7 Emirates, Prices & Opening Hours",
   description:
-    "Every UAE attraction worth your time across all seven emirates, with 2026 gate prices, opening hours and which ones are free. Written by a Dubai agency.",
+    "Every UAE attraction worth your time across seven emirates, with 2026 gate prices, opening hours and which ones are free.",
   path: "/uae-attractions",
   image: "/images/burj-downtown.jpg",
 });

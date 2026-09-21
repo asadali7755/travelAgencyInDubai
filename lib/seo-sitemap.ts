@@ -39,6 +39,9 @@ export function staticEntries(now: Date): Entry[] {
     { url: `${site.url}/services`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
     { url: `${site.url}/list-your-business`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${site.url}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    // Low crawl priority, high trust value: this is the page a reader or an
+    // answer engine checks before deciding whether the rest is worth believing.
+    { url: `${site.url}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${site.url}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${site.url}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];

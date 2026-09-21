@@ -108,7 +108,7 @@ export const dubaiShoppingFamily: Attraction[] = [
         a: "Yes, materially — 30 to 80 per cent off previous-season stock rather than a mall-wide promotion. The trade is that the range is what did not sell, and it is a long drive.",
       },
     ],
-    metaTitle: "Dubai Outlet Village | Discounts, Opening Hours & Getting There",
+    metaTitle: "Dubai Outlet Village | Discounts, Hours & Getting There",
     metaDescription:
       "Dubai Outlet Village: around 100 outlets at 30–80% off, free entry and parking, and whether it beats Dubai Outlet Mall next door.",
     checked: "2026-09-18",

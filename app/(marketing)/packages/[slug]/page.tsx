@@ -14,7 +14,8 @@ import { Reveal } from "@/components/ui/Reveal";
 import { attractionBySlug } from "@/lib/data/attractions";
 import { packageBySlug, packagePath, packages } from "@/lib/data/packages";
 import { breadcrumbSchema, faqSchema, pageMetadata } from "@/lib/seo";
-import { packageTripSchema } from "@/lib/seo-schema";
+import { packageTripSchema, webPageSchema } from "@/lib/seo-schema";
+import { site } from "@/lib/site";
 
 export function generateStaticParams() {
   return packages.map((pkg) => ({ slug: pkg.slug }));
@@ -59,6 +60,14 @@ export default async function PackagePage({ params }: PageProps<"/packages/[slug
       <JsonLd
         data={[
           breadcrumbSchema(trail),
+          webPageSchema({
+            path: packagePath(pkg),
+            name: pkg.metaTitle,
+            description: pkg.metaDescription,
+            checked: pkg.checked,
+            image: pkg.image,
+            aboutId: `${site.url}${packagePath(pkg)}#trip`,
+          }),
           packageTripSchema(pkg),
           ...(pkg.faqs.length ? [faqSchema(pkg.faqs)] : []),
         ]}

@@ -28,6 +28,9 @@ SUPABASE_SERVICE_ROLE_KEY=        # server only — never prefix this NEXT_PUBLI
 NEXT_PUBLIC_SITE_URL=             # used for canonicals and the same-origin check
 NEXT_PUBLIC_ALLOW_INDEXING=       # "true" only on the real domain, at launch
 NEXT_PUBLIC_WHATSAPP_NUMBER=
+NEXT_PUBLIC_PHONE_E164=           # +9715XXXXXXXX — emitted in Organization schema
+NEXT_PUBLIC_SOCIAL_PROFILES=      # comma-separated owned profile URLs, for sameAs
+NEXT_PUBLIC_FOUNDING_YEAR=        # YYYY, for Organization foundingDate
 UPSTASH_REDIS_REST_URL=           # optional; rate limiting fails open without it
 UPSTASH_REDIS_REST_TOKEN=
 ```
@@ -84,6 +87,25 @@ client side.
 
 Only emirate/category pairs that actually have content are built; see
 `populatedPlanPairs()`. 112 combinations exist on paper, 76 have something in them.
+
+## SEO and answer-engine notes
+
+Three things are load-bearing and easy to break:
+
+**`checked` dates are the freshness signal.** Every attraction and package carries the
+date a person last verified its facts, and that date becomes `dateModified` in the page's
+`WebPage` JSON-LD and `lastmod` in the sitemap. It must not be wired to the build date —
+a lastmod that moves on every deploy is one crawlers learn to ignore.
+
+**Structured data claims only what we can evidence.** No `aggregateRating` anywhere, no
+`Offer` on anything but a published admission ticket, and `telephone`/`sameAs` are emitted
+only when the environment variables above are set. A placeholder in JSON-LD is a false
+claim, not a blank.
+
+**`sameAs` is the biggest single entity win still outstanding.** Set
+`NEXT_PUBLIC_SOCIAL_PROFILES` to the agency's own verified profiles at launch — it is how
+a search or answer engine confirms this site and that Instagram, TripAdvisor listing and
+Google Business Profile are the same company. Only genuinely owned URLs belong there.
 
 ## Two things to know before changing anything
 

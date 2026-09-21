@@ -123,7 +123,7 @@ export const abuDhabiYas: Attraction[] = [
   },
   {
     slug: "abu-dhabi-desert-camping",
-    name: "Camping in Abu Dhabi",
+    name: "Desert Camping in Abu Dhabi",
     emirate: "abu-dhabi",
     area: "Al Wathba, Liwa and the Al Dhafra dunes",
     categories: ["camping", "adventure", "nature"],
@@ -178,7 +178,7 @@ export const abuDhabiYas: Attraction[] = [
         a: "Off the graded tracks, yes, with deflated tyres, a compressor and recovery gear. Several roadside camping areas can be reached in a normal car, but soft sand will strand a saloon within metres.",
       },
     ],
-    metaTitle: "Camping in Abu Dhabi | Where It's Legal, Free Spots & Kit",
+    metaTitle: "Camping in Abu Dhabi | Where It's Legal & Free Spots",
     metaDescription:
       "Desert camping in Abu Dhabi: where it is legal and where it is not, the best free spots at Al Wathba, Sweihan and Liwa, and the 4x4 kit you need.",
     checked: "2026-09-18",

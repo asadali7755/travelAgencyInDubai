@@ -246,7 +246,7 @@ export const dubaiCoast: Attraction[] = [
         a: "The headline drops require 1.2 m, with some rides at 1.1 m. Under that there are two large dedicated children's areas, so a shorter child still has a full day.",
       },
     ],
-    metaTitle: "Atlantis Aquaventure Dubai | Tickets, Slides & What's Included",
+    metaTitle: "Atlantis Aquaventure Dubai | Tickets & What's Included",
     metaDescription:
       "Aquaventure ticket prices, what the day pass covers including the Lost Chambers Aquarium, height limits for the big slides and when to arrive.",
     checked: "2026-09-18",

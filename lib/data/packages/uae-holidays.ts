@@ -139,7 +139,7 @@ export const uaeHolidays: Package[] = [
     ],
     metaTitle: "Dubai 5-Day Package | Burj Khalifa, Safari & Abu Dhabi",
     metaDescription:
-      "Five-day Dubai and Abu Dhabi package: four nights' hotel, transfers, city tour, Burj Khalifa, desert safari, dhow cruise and a full capital day. From AED 1,200.",
+      "Five-day Dubai and Abu Dhabi package: four nights' hotel, transfers, Burj Khalifa, desert safari and a full capital day. From AED 1,200.",
     checked: "2026-09-18",
   },
   {

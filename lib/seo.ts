@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { site } from "@/lib/site";
+import { site, socialProfiles } from "@/lib/site";
 
 /**
  * One place that builds page metadata, so every page ends up with a canonical
@@ -70,6 +70,17 @@ export function travelAgencySchema(): Json {
     url: site.url,
     email: site.email,
     image: `${site.url}/images/dunes-sunset.jpg`,
+    // Emitted only when real values exist. A placeholder in structured data is
+    // worse than an absent field: it is a claim, and it is false.
+    ...(site.phoneE164 ? { telephone: site.phoneE164 } : {}),
+    ...(site.foundingYear ? { foundingDate: site.foundingYear } : {}),
+    ...(socialProfiles.length ? { sameAs: socialProfiles } : {}),
+    knowsAbout: [
+      "Travel in the United Arab Emirates",
+      "Dubai tours and attractions",
+      "UAE visit visas",
+      "Outbound holidays from the UAE",
+    ],
     areaServed: [
       { "@type": "City", name: "Dubai" },
       { "@type": "Country", name: "United Arab Emirates" },

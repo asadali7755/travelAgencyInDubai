@@ -62,7 +62,7 @@ export const abuDhabiOutdoors: Attraction[] = [
         a: "No. Food can be brought in and there are picnic tables, but barbecues are not permitted. The designated desert camping areas outside the city are where that is allowed.",
       },
     ],
-    metaTitle: "Mushrif Central Park Abu Dhabi | Entry Fee, Play Areas & Hours",
+    metaTitle: "Mushrif Central Park Abu Dhabi | Entry Fee & Play Areas",
     metaDescription:
       "Mushrif Central Park: entry prices, the splash park, animal barn, women-and-children section and why it is the capital's best family picnic ground.",
     checked: "2026-09-18",

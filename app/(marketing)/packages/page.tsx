@@ -10,9 +10,9 @@ import { breadcrumbSchema, faqSchema, pageMetadata } from "@/lib/seo";
 import { itemListSchema } from "@/lib/seo-schema";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Tour Packages & Prices | Dubai, UAE & Holidays Abroad",
+  title: "Tour Packages & Prices | Dubai, UAE & Abroad",
   description:
-    "Dubai day tours from AED 150, UAE holidays from AED 600 and flight-inclusive breaks to Baku, Georgia, Türkiye and Thailand. Real prices, itineraries and what's included.",
+    "Dubai day tours from AED 150, UAE holidays from AED 600 and flight-inclusive breaks to Baku, Georgia, Türkiye and Thailand. Real prices and itineraries.",
   path: "/packages",
   image: "/images/dunes-sunset.jpg",
 });

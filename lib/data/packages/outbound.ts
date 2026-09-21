@@ -195,7 +195,7 @@ export const outboundPackages: Package[] = [
       { q: "Is the balloon flight guaranteed?", a: "No, and no honest operator will say otherwise. Flights are grounded for wind and it is entirely a safety call. Build a spare morning into the Cappadocia leg and you will usually fly; if it is cancelled the fee is refunded." },
       { q: "Do UAE residents need a Turkish visa?", a: "Many nationalities get an e-visa in minutes; several enter visa-free. UAE residence helps in some cases. We check your passport specifically before we quote." },
     ],
-    metaTitle: "Turkey Package from Dubai | Istanbul & Cappadocia, 6 Days",
+    metaTitle: "Turkey from Dubai | Istanbul & Cappadocia, 6 Days",
     metaDescription:
       "Six-day Türkiye holiday from Dubai: three nights Istanbul, two in a Cappadocia cave hotel, flights, transfers and tours. From AED 2,150 per person.",
     checked: "2026-09-18",

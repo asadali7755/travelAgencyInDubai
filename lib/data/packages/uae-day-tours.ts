@@ -67,7 +67,7 @@ export const uaeDayTours: Package[] = [
     ],
     metaTitle: "Dubai City Tour | Half-Day Old & New Dubai with Pick-Up",
     metaDescription:
-      "Half-day Dubai city tour: Al Fahidi, the Creek abra, the Gold and Spice Souks, Burj Al Arab, Palm Jumeirah and Downtown. Shared from AED 150, private from AED 550.",
+      "Half-day Dubai city tour: Al Fahidi, the Creek abra, the souks, Burj Al Arab and the Palm. Shared from AED 150, private from AED 550.",
     checked: "2026-09-18",
   },
   {
@@ -129,7 +129,7 @@ export const uaeDayTours: Package[] = [
       { q: "What should I wear for the Grand Mosque?", a: "Loose clothing covering elbows and ankles; women also cover their hair. Abayas and headscarves are lent free at the entrance, so arriving unprepared is not a problem — arriving in tight leggings is, because those are refused even when they cover." },
       { q: "Can we add Ferrari World instead of the palace?", a: "Yes, on the private tiers. It swaps the afternoon and means a later return, usually around ten." },
     ],
-    metaTitle: "Abu Dhabi Day Trip from Dubai | Grand Mosque & Qasr Al Watan",
+    metaTitle: "Abu Dhabi Day Trip from Dubai | Mosque & Qasr Al Watan",
     metaDescription:
       "Full-day Abu Dhabi tour from Dubai: Sheikh Zayed Grand Mosque, Qasr Al Watan, the Corniche and optional Louvre. Shared from AED 250, private from AED 950.",
     checked: "2026-09-18",
@@ -185,7 +185,7 @@ export const uaeDayTours: Package[] = [
       { q: "Can children kayak at Hatta Dam?", a: "Yes, in a double kayak with an adult, and buoyancy aids are compulsory for everyone. Pedalos suit younger children better." },
       { q: "Do we need passports for Hatta?", a: "The route we use stays inside the UAE, but carry them anyway — some approaches clip Omani territory and it costs nothing to have them in the vehicle." },
     ],
-    metaTitle: "Hatta Day Trip from Dubai | Dam Kayaking & Heritage Village",
+    metaTitle: "Hatta Day Trip from Dubai | Dam Kayaking & Village",
     metaDescription:
       "Hatta day tour from Dubai: kayaking on the turquoise dam, the free heritage village and mountain viewpoints. Shared from AED 300, private from AED 1,100.",
     checked: "2026-09-18",

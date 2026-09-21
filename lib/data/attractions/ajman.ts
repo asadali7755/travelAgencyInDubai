@@ -171,7 +171,7 @@ export const ajmanAttractions: Attraction[] = [
         a: "Yes, year round in varying numbers, and they are easiest to spot at low tide from the free boardwalk without going on the water at all.",
       },
     ],
-    metaTitle: "Al Zorah Nature Reserve Ajman | Mangrove Kayaking & Flamingos",
+    metaTitle: "Al Zorah Ajman | Mangrove Kayaking & Flamingos",
     metaDescription:
       "Al Zorah: mangrove kayaking, around 60 bird species and resident flamingos in Ajman. Free boardwalk, guided tours and what the reserve rules are.",
     checked: "2026-09-18",

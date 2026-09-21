@@ -12,6 +12,7 @@ import { JsonLd } from "@/components/ui/JsonLd";
 import { Reveal } from "@/components/ui/Reveal";
 import {
   attractionBySlug,
+  attractionOgImage,
   attractionPath,
   attractions,
   emirateById,
@@ -20,7 +21,8 @@ import {
 } from "@/lib/data/attractions";
 import { packagesForAttraction } from "@/lib/data/packages";
 import { breadcrumbSchema, faqSchema, pageMetadata } from "@/lib/seo";
-import { touristAttractionSchema } from "@/lib/seo-schema";
+import { touristAttractionSchema, webPageSchema } from "@/lib/seo-schema";
+import { site } from "@/lib/site";
 
 export function generateStaticParams() {
   return attractions.map((a) => ({ emirate: a.emirate, slug: a.slug }));
@@ -37,7 +39,7 @@ export async function generateMetadata({
     title: attraction.metaTitle,
     description: attraction.metaDescription,
     path: attractionPath(attraction),
-    image: attraction.image ?? "/images/dunes-sunset.jpg",
+    image: attractionOgImage(attraction),
   });
 }
 
@@ -69,6 +71,14 @@ export default async function AttractionPage({
       <JsonLd
         data={[
           breadcrumbSchema(trail),
+          webPageSchema({
+            path: attractionPath(attraction),
+            name: attraction.metaTitle,
+            description: attraction.metaDescription,
+            checked: attraction.checked,
+            image: attraction.image,
+            aboutId: `${site.url}${attractionPath(attraction)}#attraction`,
+          }),
           touristAttractionSchema(attraction),
           ...(attraction.faqs.length ? [faqSchema(attraction.faqs)] : []),
         ]}

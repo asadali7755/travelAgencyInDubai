@@ -7,9 +7,9 @@ import { Reveal } from "@/components/ui/Reveal";
 import { breadcrumbSchema, faqSchema, pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "List Your Business Free | UAE Travel & Services Directory",
+  title: "List Your Business Free | UAE Services Directory",
   description:
-    "Add your travel agency, visa service, clinic, law firm, spa or moving company to the UAE directory. Free profile, verified badge, enquiries straight to you.",
+    "Add your travel agency, visa service, clinic, law firm or spa to the UAE directory. Free profile, verified badge, enquiries straight to you.",
   path: "/list-your-business",
   image: "/images/marina-night.jpg",
 });

@@ -67,7 +67,7 @@ export const northernEmirateAttractions: Attraction[] = [
         a: "No. The road and the viewing park at the top are free. Only the zipline, the toboggan and the paid activities charge.",
       },
     ],
-    metaTitle: "Jebel Jais | World's Longest Zipline, Season & Free Viewpoints",
+    metaTitle: "Jebel Jais | World's Longest Zipline & Free Viewpoints",
     metaDescription:
       "Jebel Jais visitor guide: the free mountain road and viewing park, Jais Flight zipline prices and season dates, drive time from Dubai and when to go.",
     checked: "2026-09-18",
@@ -125,7 +125,7 @@ export const northernEmirateAttractions: Attraction[] = [
         a: "No. The mosque, the watchtowers and the small visitor centre are all free.",
       },
     ],
-    metaTitle: "Al Bidyah Mosque Fujairah | The UAE's Oldest Mosque, Free Entry",
+    metaTitle: "Al Bidyah Mosque | The UAE's Oldest Mosque, Free Entry",
     metaDescription:
       "Al Bidyah Mosque near Fujairah, built around 1446 and the oldest in the UAE. Free entry, visiting rules, the watchtowers behind it and how to get there.",
     checked: "2026-09-18",

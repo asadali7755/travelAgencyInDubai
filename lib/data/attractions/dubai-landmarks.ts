@@ -75,7 +75,7 @@ export const dubaiLandmarks: Attraction[] = [
     ],
     metaTitle: "Burj Khalifa Tickets & Visitor Guide | Levels 124, 125, 148",
     metaDescription:
-      "Burj Khalifa ticket prices, opening hours, the difference between levels 124, 125 and 148, and the best time slot to book. Honest advice from a Dubai agency.",
+      "Burj Khalifa ticket prices, opening hours, the difference between levels 124, 125 and 148, and which time slot is actually worth booking.",
     checked: "2026-09-18",
   },
   {
@@ -134,7 +134,7 @@ export const dubaiLandmarks: Attraction[] = [
         a: "The lower floors are built for them and work well for ages three to ten. The upper floors are dark, quiet and conceptual, and small children tend to lose interest quickly.",
       },
     ],
-    metaTitle: "Museum of the Future Dubai | Tickets, Floors & What to Expect",
+    metaTitle: "Museum of the Future Dubai | Tickets & What to Expect",
     metaDescription:
       "What is actually inside the Museum of the Future, floor by floor, plus 2026 ticket prices, opening hours and why you must book a timed slot in advance.",
     checked: "2026-09-18",

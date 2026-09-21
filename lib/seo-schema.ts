@@ -180,3 +180,96 @@ const emirateNames: Record<string, string> = {
 };
 
 export const emirateLabel = (id: string) => emirateNames[id] ?? id;
+
+/**
+ * The page itself as an entity: what it is about, when it was last checked, and
+ * which paragraphs a voice assistant should read.
+ *
+ * This is the block that does the most for answer engines. `dateModified` gives
+ * them a freshness signal they can cite; `speakable` marks the summary sentences
+ * rather than leaving them to guess; `about` ties the page to the thing it
+ * describes instead of to a bag of keywords; and `isPartOf` plus `publisher`
+ * connect it back to the organisation that stands behind it.
+ *
+ * `dateModified` is the date the facts were verified, from the content's own
+ * `checked` field — not the deploy date. A lastmod that moves every build is a
+ * signal crawlers learn to ignore.
+ */
+export function webPageSchema({
+  path,
+  name,
+  description,
+  checked,
+  published,
+  image,
+  aboutId,
+}: {
+  path: string;
+  name: string;
+  description: string;
+  /** ISO date the facts on this page were last verified. */
+  checked: string;
+  published?: string;
+  image?: string;
+  /** @id of the main entity on the page, when it has one. */
+  aboutId?: string;
+}): Json {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${abs(path)}#webpage`,
+    url: abs(path),
+    name,
+    description,
+    inLanguage: "en-AE",
+    isPartOf: { "@id": `${site.url}/#website` },
+    publisher: { "@id": `${site.url}/#organisation` },
+    datePublished: published ?? checked,
+    dateModified: checked,
+    ...(image ? { primaryImageOfPage: abs(image) } : {}),
+    ...(aboutId ? { about: { "@id": aboutId } } : {}),
+    // The h1 and the standfirst. Both are written as complete sentences that
+    // stand on their own, which is what makes them quotable.
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "[data-speakable]"],
+    },
+  };
+}
+
+/**
+ * The about page, typed as an AboutPage and tied to the organisation.
+ *
+ * Separate from webPageSchema because `mainEntity` pointing at the organisation
+ * is the whole reason this page exists for a crawler: it is the declaration of
+ * who stands behind everything else on the site.
+ */
+export function aboutPageSchema({
+  path,
+  name,
+  description,
+  checked,
+}: {
+  path: string;
+  name: string;
+  description: string;
+  checked: string;
+}): Json {
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${abs(path)}#webpage`,
+    url: abs(path),
+    name,
+    description,
+    inLanguage: "en-AE",
+    isPartOf: { "@id": `${site.url}/#website` },
+    publisher: { "@id": `${site.url}/#organisation` },
+    mainEntity: { "@id": `${site.url}/#organisation` },
+    dateModified: checked,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "[data-speakable]"],
+    },
+  };
+}

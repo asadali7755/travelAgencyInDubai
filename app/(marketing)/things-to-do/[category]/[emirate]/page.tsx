@@ -23,7 +23,7 @@ import {
 } from "@/lib/data/attractions";
 import { getListings } from "@/lib/services/directory";
 import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
-import { itemListSchema } from "@/lib/seo-schema";
+import { itemListSchema, webPageSchema } from "@/lib/seo-schema";
 
 /** Only the emirate/category pairs that actually have something in them. */
 export function generateStaticParams() {
@@ -46,8 +46,11 @@ export async function generateMetadata({
   ).length;
 
   return pageMetadata({
-    title: `${category.label} in ${emirate.name} | ${count} Places & Prices`,
-    description: `The best ${category.noun} in ${emirate.name}, with 2026 prices, opening hours and which are free. Sort by what is nearest to you.`,
+    title:
+      count === 1
+        ? `${category.label} in ${emirate.name} | Where to Go & Prices`
+        : `${category.label} in ${emirate.name} | ${count} Places & Prices`,
+    description: `The best ${category.noun} in ${emirate.name}, with 2026 prices and which are free. Sort by whatever is nearest to you.`,
     path: planPath(emirate.id, category.id),
   });
 }
@@ -87,9 +90,12 @@ export default async function PlanResultsPage({
     (other) => other.id !== category.id,
   );
 
+  const pagePath = planPath(emirate.id, category.id);
+  const lastChecked = inEmirate.map((a) => a.checked).sort().at(-1) ?? "2026-09-18";
+
   const trail: Crumb[] = [
     { name: "Home", path: "/" },
-    { name: "Things to do", path: "/uae-attractions" },
+    { name: "Things to do", path: "/things-to-do" },
     { name: category.label, path: categoryPath(category.id) },
     { name: emirate.name, path: planPath(emirate.id, category.id) },
   ];
@@ -99,6 +105,12 @@ export default async function PlanResultsPage({
       <JsonLd
         data={[
           breadcrumbSchema(trail),
+          webPageSchema({
+            path: pagePath,
+            name: `${category.label} in ${emirate.name}`,
+            description: category.blurb,
+            checked: lastChecked,
+          }),
           itemListSchema(
             inEmirate.map((a) => ({ name: a.name, path: attractionPath(a) })),
             `${category.label} in ${emirate.name}`,
@@ -124,7 +136,8 @@ export default async function PlanResultsPage({
         <div className="mx-auto max-w-[1280px] px-5 py-12 lg:px-10 lg:py-16">
           <NearestResults
             attractions={inEmirate}
-            emptyMessage={`Nothing here matches that filter. Try the rest of the UAE below.`}
+            heading={`${category.label} in ${emirate.name}`}
+            emptyMessage="Nothing here matches that filter. Try the rest of the UAE below."
           />
         </div>
       </section>

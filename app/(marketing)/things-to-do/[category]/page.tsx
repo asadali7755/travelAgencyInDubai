@@ -19,7 +19,7 @@ import {
 } from "@/lib/data/attractions";
 import { getListings } from "@/lib/services/directory";
 import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
-import { itemListSchema } from "@/lib/seo-schema";
+import { itemListSchema, webPageSchema } from "@/lib/seo-schema";
 
 export function generateStaticParams() {
   return planCategories.map((category) => ({ category: category.id }));
@@ -35,8 +35,11 @@ export async function generateMetadata({
   const count = attractionsInCategory(category.id).length;
 
   return pageMetadata({
-    title: `${category.label} in the UAE | ${count} Places & Prices`,
-    description: `The best ${category.noun} across all seven emirates, with 2026 prices, opening hours and which ones are free. ${category.tagline}.`,
+    title:
+      count === 1
+        ? `${category.label} in the UAE | Where to Go & Prices`
+        : `${category.label} in the UAE | ${count} Places & Prices`,
+    description: `${category.tagline}. The best ${category.noun} across all seven emirates, with 2026 prices and which are free.`,
     path: categoryPath(category.id),
   });
 }
@@ -67,9 +70,14 @@ export default async function CategoryPage({ params }: PageProps<"/things-to-do/
     }))
     .filter((row) => row.count > 0);
 
+  const pagePath = categoryPath(category.id);
+  // The newest verification date among the places listed. Honest, and it moves
+  // only when a fact was actually re-checked rather than on every deploy.
+  const lastChecked = list.map((a) => a.checked).sort().at(-1) ?? "2026-09-18";
+
   const trail: Crumb[] = [
     { name: "Home", path: "/" },
-    { name: "Things to do", path: "/uae-attractions" },
+    { name: "Things to do", path: "/things-to-do" },
     { name: category.label, path: categoryPath(category.id) },
   ];
 
@@ -78,6 +86,12 @@ export default async function CategoryPage({ params }: PageProps<"/things-to-do/
       <JsonLd
         data={[
           breadcrumbSchema(trail),
+          webPageSchema({
+            path: pagePath,
+            name: `${category.label} in the UAE`,
+            description: category.blurb,
+            checked: lastChecked,
+          }),
           itemListSchema(
             list.map((a) => ({ name: a.name, path: attractionPath(a) })),
             `${category.label} in the UAE`,
@@ -123,6 +137,7 @@ export default async function CategoryPage({ params }: PageProps<"/things-to-do/
           <div className="mt-10">
             <NearestResults
               attractions={list}
+              heading={`${category.label} across the UAE`}
               emptyMessage="Nothing matches that filter yet."
             />
           </div>

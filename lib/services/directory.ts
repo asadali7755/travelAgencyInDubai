@@ -1,4 +1,4 @@
-import { createServerClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 
 /**
  * Read paths for the public services directory.
@@ -7,8 +7,9 @@ import { createServerClient } from "@/lib/supabase/server";
  * configured, so the directory renders its "nothing listed yet" state during
  * local development instead of throwing on a public page.
  *
- * All reads go through the anon client and are therefore governed by RLS: the
- * `status = 'approved'` filters below are a second lock, not the only one.
+ * All reads go through the cookie-free anon client, so RLS governs every one of
+ * them and the pages stay statically cacheable. The `status = 'approved'`
+ * filters below are a second lock, not the only one.
  */
 
 export type DirectoryCategory = {
@@ -83,7 +84,7 @@ const toListing = (row: Row): DirectoryListing => ({
 export async function getCategories(): Promise<DirectoryCategory[]> {
   if (!configured()) return [];
 
-  const supabase = await createServerClient();
+  const supabase = createPublicClient();
   const { data, error } = await supabase
     .from("categories")
     .select("id, slug, name, kind")
@@ -105,7 +106,7 @@ export async function getListings(options: {
 }): Promise<DirectoryListing[]> {
   if (!configured()) return [];
 
-  const supabase = await createServerClient();
+  const supabase = createPublicClient();
   let query = supabase
     .from("services")
     .select(SELECT)
@@ -132,7 +133,7 @@ export async function getListing(
 ): Promise<DirectoryListing | null> {
   if (!configured()) return null;
 
-  const supabase = await createServerClient();
+  const supabase = createPublicClient();
   const { data, error } = await supabase
     .from("services")
     .select(SELECT)
@@ -150,7 +151,7 @@ export async function getListing(
 export async function getCategoryCounts(): Promise<Record<string, number>> {
   if (!configured()) return {};
 
-  const supabase = await createServerClient();
+  const supabase = createPublicClient();
   const { data, error } = await supabase
     .from("services")
     .select("categories!inner(slug)")

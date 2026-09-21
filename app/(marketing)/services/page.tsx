@@ -13,7 +13,7 @@ import { itemListSchema } from "@/lib/seo-schema";
 export const metadata: Metadata = pageMetadata({
   title: "UAE Services Directory | Verified Local Businesses",
   description:
-    "Find tour operators, visa agents, law firms, clinics, spas, movers and car hire across all seven emirates. Free to list your business, reviewed before it goes live.",
+    "Tour operators, visa agents, law firms, clinics, spas, movers and car hire across all seven emirates. Free to list, and reviewed before going live.",
   path: "/services",
   image: "/images/marina-night.jpg",
 });

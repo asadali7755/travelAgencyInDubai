@@ -131,7 +131,7 @@ export const dubaiExperiences: Attraction[] = [
         a: "Entry is about twenty dirhams. Realistically budget AED 150–250 per person on top for food, a few rides and whatever you end up buying in the pavilions.",
       },
     ],
-    metaTitle: "Global Village Dubai | Season Dates, Tickets & What to Expect",
+    metaTitle: "Global Village Dubai | Season Dates & Ticket Prices",
     metaDescription:
       "Global Village entry price, season dates, how long to allow and why it closes in summer. Ninety country pavilions, a funfair and cheap street food.",
     checked: "2026-09-18",

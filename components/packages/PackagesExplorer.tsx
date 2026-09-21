@@ -16,7 +16,11 @@ export function PackagesExplorer({ packages }: { packages: Package[] }) {
   const blurb = packageKinds.find((k) => k.id === active)?.blurb;
 
   return (
-    <>
+    <section aria-labelledby="packages-heading">
+      <h2 id="packages-heading" className="sr-only">
+        All tour packages
+      </h2>
+
       <div className="flex flex-wrap gap-2.5 border-y border-divider py-5">
         {[{ id: "all" as const, label: "All packages" }, ...packageKinds].map((kind) => {
           const on = kind.id === active;
@@ -50,6 +54,6 @@ export function PackagesExplorer({ packages }: { packages: Package[] }) {
           </Reveal>
         ))}
       </div>
-    </>
+    </section>
   );
 }

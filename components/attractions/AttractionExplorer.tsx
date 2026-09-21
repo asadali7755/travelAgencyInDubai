@@ -23,9 +23,12 @@ type Filter = PlanCategory | "all" | "free";
 export function AttractionExplorer({
   attractions,
   showEmirate = true,
+  heading = "All places",
 }: {
   attractions: Attraction[];
   showEmirate?: boolean;
+  /** Names the grid in the outline so the card <h3>s do not skip a level. */
+  heading?: string;
 }) {
   const [active, setActive] = useState<Filter>("all");
 
@@ -43,7 +46,11 @@ export function AttractionExplorer({
   ];
 
   return (
-    <>
+    <section aria-labelledby="explorer-heading">
+      <h2 id="explorer-heading" className="sr-only">
+        {heading}
+      </h2>
+
       <div className="flex flex-wrap gap-2.5 border-y border-divider py-5">
         {filters.map((filter) => {
           const on = filter.id === active;
@@ -77,6 +84,6 @@ export function AttractionExplorer({
           </Reveal>
         ))}
       </div>
-    </>
+    </section>
   );
 }

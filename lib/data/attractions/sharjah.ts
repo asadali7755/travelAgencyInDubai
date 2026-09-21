@@ -187,7 +187,7 @@ export const sharjahAttractions: Attraction[] = [
         a: "If you want the archaeology, the quiet and the stars, yes — it is far less staged. If you want dune bashing, camels and a BBQ with live shows, the Dubai safari is the product built for that.",
       },
     ],
-    metaTitle: "Mleiha Archaeological Centre Sharjah | Tickets & Desert Tours",
+    metaTitle: "Mleiha Archaeological Centre | Tickets & Desert Tours",
     metaDescription:
       "Mleiha Archaeological Centre entry price, what the 125,000-year-old finds actually show, and the stargazing, Fossil Rock and overnight camp options.",
     checked: "2026-09-18",

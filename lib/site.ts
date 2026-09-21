@@ -12,6 +12,17 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelagencyindubai.com",
   email: "hello@travelagencyindubai.com",
 
+  /**
+   * Machine-readable contact details, for structured data only.
+   *
+   * These stay empty until the client supplies real ones, and the schema
+   * builders omit any field that is empty. The bracketed display strings below
+   * are deliberately never emitted as structured data — telling Google our
+   * telephone number is "[+971 XX XXX XXXX]" is worse than telling it nothing.
+   */
+  phoneE164: process.env.NEXT_PUBLIC_PHONE_E164 ?? "",
+  foundingYear: process.env.NEXT_PUBLIC_FOUNDING_YEAR ?? "",
+
   /** TODO(client): real numbers, licence and address. */
   phoneDisplay: "[+971 XX XXX XXXX]",
   whatsappDisplay: "[+971 XX XXX XXXX]",
@@ -31,6 +42,22 @@ export const site = {
  * Set NEXT_PUBLIC_ALLOW_INDEXING=true in the production environment on launch.
  */
 export const indexingAllowed = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
+
+/**
+ * Verified profiles on other platforms, for the Organization `sameAs`.
+ *
+ * `sameAs` is how a search engine or an answer engine confirms that the company
+ * writing this site is the same company with the reviews, the Instagram and the
+ * TripAdvisor listing — it is the single strongest entity signal available to a
+ * small site. Set them as a comma-separated env var at launch.
+ *
+ * Only genuinely owned profiles belong here. Pointing sameAs at a page we do
+ * not control is a misrepresentation, not an optimisation.
+ */
+export const socialProfiles: string[] = (process.env.NEXT_PUBLIC_SOCIAL_PROFILES ?? "")
+  .split(",")
+  .map((url) => url.trim())
+  .filter((url) => /^https?:\/\//i.test(url));
 
 export const nav = [
   { label: "Attractions", href: "/uae-attractions" },
@@ -65,6 +92,7 @@ export const footerLinks = {
     { label: "Baku from AED 999", href: "/packages/azerbaijan-baku-4-day" },
   ],
   company: [
+    { label: "About us", href: "/about" },
     { label: "Services directory", href: "/services" },
     { label: "List your business", href: "/list-your-business" },
     { label: "Travel guide", href: "/blog/things-to-do-in-dubai" },

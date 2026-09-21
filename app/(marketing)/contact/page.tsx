@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { ContactDetail, contactFaqs } from "@/components/sections/ContactDetail";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { Button } from "@/components/ui/Button";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { Reveal } from "@/components/ui/Reveal";
 import { WhatsAppIcon } from "@/components/ui/Icons";
-import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema, pageMetadata } from "@/lib/seo";
 import { site, whatsappHref } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
@@ -27,7 +28,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <JsonLd data={breadcrumbSchema(trail)} />
+      <JsonLd data={[breadcrumbSchema(trail), faqSchema(contactFaqs)]} />
 
       <section className="bg-sea-tint/60">
         <div className="mx-auto max-w-[1280px] px-5 pb-14 pt-28 lg:px-10 lg:pb-16 lg:pt-36">
@@ -35,7 +36,7 @@ export default function ContactPage() {
           <h1 className="mt-5 max-w-[18ch] text-[clamp(2.4rem,5.5vw,4rem)] font-extrabold leading-[1.02] tracking-tight">
             Tell us your dates. We&rsquo;ll build the trip.
           </h1>
-          <p className="mt-6 max-w-[62ch] text-[18px] leading-relaxed text-ink/75">
+          <p data-speakable className="mt-6 max-w-[62ch] text-[18px] leading-relaxed text-ink/75">
             One message is enough: how many people, which days, and what you want to see. You get
             a real itinerary and a real price back — no logins, no card, no obligation.
           </p>
@@ -108,6 +109,7 @@ export default function ContactPage() {
           </div>
         </Reveal>
       </div>
+      <ContactDetail />
     </>
   );
 }

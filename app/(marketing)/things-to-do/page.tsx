@@ -18,7 +18,7 @@ import { itemListSchema } from "@/lib/seo-schema";
 export const metadata: Metadata = pageMetadata({
   title: "Things to Do in the UAE | By What You're Planning",
   description:
-    "Beaches, family days out, kids' activities, nightlife, spas, camping, souks and adventure across all seven emirates — with 2026 prices and what's free.",
+    "Beaches, family days out, kids' activities, nightlife, spas, camping and adventure across all seven emirates, with 2026 prices and what's free.",
   path: "/things-to-do",
   image: "/images/dunes-sunset.jpg",
 });

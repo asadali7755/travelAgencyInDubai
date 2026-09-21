@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FinalCta } from "@/components/sections/FinalCta";
-import { ServiceCard } from "@/components/services/ServiceCard";
+import { DirectoryBrowser } from "@/components/services/DirectoryBrowser";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/ui/JsonLd";
-import { Reveal } from "@/components/ui/Reveal";
-import { EMIRATES } from "@/lib/validation/agency";
 import { getCategories, getCategory, getListings } from "@/lib/services/directory";
 import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { itemListSchema } from "@/lib/seo-schema";
@@ -33,25 +30,21 @@ export async function generateMetadata({
 }
 
 /**
- * One directory category, optionally narrowed to an emirate.
+ * One directory category, across all seven emirates.
  *
- * The emirate filter is a query string rather than a route segment: a page per
- * category *and* emirate would be 63 thin pages competing with each other,
- * which is worse for ranking than one strong page with filters on it.
+ * Statically rendered and revalidated: the emirate filter runs in the browser
+ * rather than as a `?emirate=` search param, so this is one strong URL per
+ * category instead of eight near-duplicates competing with each other — and the
+ * page can be cached, which it could not while it read search params.
  */
 export default async function ServiceCategoryPage({
   params,
-  searchParams,
 }: PageProps<"/services/[category]">) {
   const { category: slug } = await params;
-  const query = await searchParams;
   const category = await getCategory(slug);
   if (!category) notFound();
 
-  const raw = typeof query.emirate === "string" ? query.emirate : undefined;
-  const emirate = EMIRATES.find((value) => value === raw);
-
-  const listings = await getListings({ category: category.slug, emirate });
+  const listings = await getListings({ category: category.slug });
 
   const trail: Crumb[] = [
     { name: "Home", path: "/" },
@@ -80,68 +73,18 @@ export default async function ServiceCategoryPage({
           <h1 className="mt-5 max-w-[18ch] text-[clamp(2.2rem,5vw,3.4rem)] font-extrabold leading-[1.03] tracking-tight">
             {category.name} in the UAE
           </h1>
-          <p className="mt-5 max-w-[62ch] text-[17px] leading-relaxed text-ink/75">
+          <p data-speakable className="mt-5 max-w-[62ch] text-[17px] leading-relaxed text-ink/75">
             {listings.length}{" "}
-            {listings.length === 1 ? "business" : "businesses"} listed
-            {emirate ? ` in ${emirate}` : " across all seven emirates"}. Verified companies —
-            the ones whose trade licence we have checked — are shown first.
+            {listings.length === 1 ? "business" : "businesses"} listed across all seven
+            emirates. Verified companies — the ones whose trade licence we have checked — are
+            shown first, and listing a business costs nothing.
           </p>
         </div>
       </section>
 
       <section className="bg-page">
         <div className="mx-auto max-w-[1280px] px-5 py-12 lg:px-10 lg:py-16">
-          <nav aria-label="Filter by emirate" className="flex flex-wrap gap-2.5 border-y border-divider py-5">
-            <Link
-              href={`/services/${category.slug}`}
-              aria-current={!emirate ? "page" : undefined}
-              className={`flex min-h-11 items-center rounded-full border px-5 text-[14px] no-underline transition-colors ${
-                !emirate
-                  ? "border-sea bg-sea font-semibold text-white"
-                  : "border-card-border bg-surface text-ink/75 hover:border-sea/40"
-              }`}
-            >
-              All emirates
-            </Link>
-            {EMIRATES.map((value) => (
-              <Link
-                key={value}
-                href={`/services/${category.slug}?emirate=${encodeURIComponent(value)}`}
-                aria-current={emirate === value ? "page" : undefined}
-                className={`flex min-h-11 items-center rounded-full border px-5 text-[14px] no-underline transition-colors ${
-                  emirate === value
-                    ? "border-sea bg-sea font-semibold text-white"
-                    : "border-card-border bg-surface text-ink/75 hover:border-sea/40"
-                }`}
-              >
-                {value}
-              </Link>
-            ))}
-          </nav>
-
-          {listings.length === 0 ? (
-            <div className="mt-10 rounded-[var(--radius-card)] border border-dashed border-card-border bg-surface px-6 py-12 text-center">
-              <h2 className="text-[19px] font-bold tracking-tight">Nothing listed here yet</h2>
-              <p className="mx-auto mt-2 max-w-[52ch] text-[15px] leading-relaxed text-ink/65">
-                No approved {category.name.toLowerCase()} in this filter. If this is your line
-                of work, a profile is free and takes about five minutes.
-              </p>
-              <Link
-                href="/list-your-business"
-                className="mt-6 inline-flex min-h-11 items-center rounded-full bg-sea px-6 text-[15px] font-semibold text-white no-underline hover:bg-sea-dark"
-              >
-                List your business
-              </Link>
-            </div>
-          ) : (
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {listings.map((listing, i) => (
-                <Reveal key={listing.id} delayMs={(i % 3) * 80}>
-                  <ServiceCard listing={listing} />
-                </Reveal>
-              ))}
-            </div>
-          )}
+          <DirectoryBrowser listings={listings} categoryName={category.name} />
         </div>
       </section>
 

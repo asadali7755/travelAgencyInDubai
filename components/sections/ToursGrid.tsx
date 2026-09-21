@@ -15,7 +15,11 @@ export function ToursGrid() {
   const shown = active === "all" ? tours : tours.filter((tour) => tour.category === active);
 
   return (
-    <>
+    <section aria-labelledby="tours-heading">
+      <h2 id="tours-heading" className="sr-only">
+        All Dubai tours
+      </h2>
+
       <div className="flex flex-wrap gap-2.5 border-y border-divider py-5">
         {tourCategories.map((category) => {
           const on = category.id === active;
@@ -49,6 +53,6 @@ export function ToursGrid() {
           </Reveal>
         ))}
       </div>
-    </>
+    </section>
   );
 }
