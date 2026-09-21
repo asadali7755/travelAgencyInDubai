@@ -46,12 +46,22 @@ export async function POST(req: NextRequest) {
 
   try {
     const supabase = await createServerClient();
+
+    // Stamp the enquiry with the account that made it, when there is one, so it
+    // shows up in their dashboard history. getUser() rather than getSession()
+    // because the session cookie is attacker-controlled and this value decides
+    // who can read the row afterwards. A guest enquiry simply leaves it null.
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+
     // No .select() on purpose. PostgREST turns one into INSERT ... RETURNING,
     // which Postgres runs through the SELECT policy as well — and `leads` has
     // none for the public, by design. Asking for the row back would make every
     // enquiry fail with 42501 while the row itself inserted fine.
     const { error } = await supabase.from("leads").insert({
       ...rest,
+      user_id: user?.id ?? null,
       travel_date: travel_date ? travel_date.toISOString().slice(0, 10) : null,
     });
 

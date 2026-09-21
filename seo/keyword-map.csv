@@ -1,81 +1,232 @@
-﻿#,Keyword,URL,Meta Title,Meta Description,Anchor Tag,BB Tags,Note
-1,travel agency in dubai,/,"Travel Agency in Dubai | Tours, Visa & Packages","Licensed travel agency in Dubai offering desert safaris, dhow cruises, city tours, hotels, visas and holiday packages. Free quote on WhatsApp.",travel agency in Dubai,"core, commercial, homepage",
-2,best travel agency in dubai,/,"Travel Agency in Dubai | Tours, Visa & Packages","Licensed travel agency in Dubai offering desert safaris, dhow cruises, city tours, hotels, visas and holiday packages. Free quote on WhatsApp.",best travel agency in Dubai,"core, commercial",
-3,tourism companies in dubai,/about,About Us | Trusted Dubai Travel & Tourism Company,"A DET-licensed Dubai tourism company handling inbound tours, outbound holidays, visas and transfers. Meet the team behind every trip we plan.",Dubai tourism company,"core, commercial",
-4,top 10 travel agencies in dubai 2020,/blog/best-travel-agencies-in-dubai,Best Travel Agencies in Dubai (2026 Comparison),"How Dubai's travel and tourism companies compare on tours, visas and holiday packages: licences, specialities and what each one does best.",top travel agencies in Dubai,"listicle, informational",Drop the 2020 and target the current year
-5,travel and tours in dubai,/dubai-tours,"Dubai Tours | Desert Safari, Cruises & City Tours","Browse our Dubai tours: desert safari, dhow cruise, city sightseeing, yacht trips and attraction tickets. Transparent AED pricing, fast confirmation.",travel and tours in Dubai,"core, commercial",
-6,list of travel and tourism companies in dubai,/blog/best-travel-agencies-in-dubai,Best Travel Agencies in Dubai (2026 Comparison),"How Dubai's travel and tourism companies compare on tours, visas and holiday packages: licences, specialities and what each one does best.",list of Dubai travel companies,"listicle, informational",
-7,list of tourism companies in dubai,/blog/best-travel-agencies-in-dubai,Best Travel Agencies in Dubai (2026 Comparison),"How Dubai's travel and tourism companies compare on tours, visas and holiday packages: licences, specialities and what each one does best.",Dubai tourism companies list,"listicle, informational",
-8,travel agent for dubai trip,/,"Travel Agency in Dubai | Tours, Visa & Packages","Licensed travel agency in Dubai offering desert safaris, dhow cruises, city tours, hotels, visas and holiday packages. Free quote on WhatsApp.",travel agent for a Dubai trip,"core, commercial",
-9,best travel agency for dubai,/,"Travel Agency in Dubai | Tours, Visa & Packages","Licensed travel agency in Dubai offering desert safaris, dhow cruises, city tours, hotels, visas and holiday packages. Free quote on WhatsApp.",best agency for Dubai,"core, commercial",
-10,dubai specialist travel agents,/about,About Us | Trusted Dubai Travel & Tourism Company,"A DET-licensed Dubai tourism company handling inbound tours, outbound holidays, visas and transfers. Meet the team behind every trip we plan.",Dubai specialist travel agents,"core, commercial",
-11,travel agency in dubai 24 hours,/contact,Contact Us | 24-Hour Travel Agency in Dubai,"Talk to a Dubai travel expert any time. Call or WhatsApp for tour bookings, visa help and last-minute holiday packages, with replies in minutes.",24-hour travel agency in Dubai,"core, commercial, local",
-12,dubai escorted,/dubai-tours/escorted-tours,Escorted Dubai Tours | Fully Guided Group Trips,"Fully escorted Dubai tours with an English-speaking guide throughout. Transport, tickets and meals arranged end to end, nothing left to plan.",escorted Dubai tours,commercial,AMBIGUOUS: assumed escorted tours. Confirm with boss before targeting
-13,dubai tour package,/dubai-holiday-packages,"Dubai Holiday Packages | Hotel, Tours & Transfers","All-in Dubai holiday packages with hotel, airport transfers, tours and visa. Family, honeymoon and budget options priced clearly per person.",Dubai tour packages,"packages, commercial",
-14,dubai tour,/dubai-tours,"Dubai Tours | Desert Safari, Cruises & City Tours","Browse our Dubai tours: desert safari, dhow cruise, city sightseeing, yacht trips and attraction tickets. Transparent AED pricing, fast confirmation.",Dubai tours,"packages, commercial",
-15,dubai holiday package,/dubai-holiday-packages,"Dubai Holiday Packages | Hotel, Tours & Transfers","All-in Dubai holiday packages with hotel, airport transfers, tours and visa. Family, honeymoon and budget options priced clearly per person.",Dubai holiday packages,"packages, commercial",
-16,trip advisor dubai,/blog/best-travel-agencies-in-dubai,Best Travel Agencies in Dubai (2026 Comparison),"How Dubai's travel and tourism companies compare on tours, visas and holiday packages: licences, specialities and what each one does best.",Dubai travel reviews,informational,"Navigational keyword for tripadvisor.com, very low chance of ranking"
-17,desert safari dubai,/dubai-tours/desert-safari,Desert Safari Dubai | Evening & Overnight Tours,"Book a Dubai desert safari with dune bashing, camel rides, BBQ dinner and live shows. Hotel pick-up included across Dubai. Family and VIP options.",desert safari Dubai,"safari, commercial, money",
-18,dubai safari,/dubai-tours/desert-safari,Desert Safari Dubai | Evening & Overnight Tours,"Book a Dubai desert safari with dune bashing, camel rides, BBQ dinner and live shows. Hotel pick-up included across Dubai. Family and VIP options.",Dubai safari,"safari, commercial",
-19,dubai tour,/dubai-tours,"Dubai Tours | Desert Safari, Cruises & City Tours","Browse our Dubai tours: desert safari, dhow cruise, city sightseeing, yacht trips and attraction tickets. Transparent AED pricing, fast confirmation.",Dubai tours,"packages, commercial",DUPLICATE of row 14
-20,dubai cruise,/dubai-tours/cruises,"Dubai Cruise Tours | Dhow, Dinner & Yacht Cruises","Every cruise we run from Dubai: dhow dinner cruises, Marina cruises, luxury yacht charters and speedboat tours. Compare and book in minutes.",Dubai cruises,"cruise, commercial",
-21,dhow cruise dubai,/dubai-tours/dhow-cruise-dinner,Dhow Cruise Dubai | Dinner Cruise with Live Show,"Traditional dhow cruise in Dubai with buffet dinner, tanoura show and skyline views. Creek and Marina departures, hotel transfers available.",dhow cruise Dubai,"cruise, commercial, money",
-22,dhow cruise dubai marina,/dubai-tours/dhow-cruise-marina,Dhow Cruise Dubai Marina | Marina Dinner Cruise,"Two-hour dhow cruise through Dubai Marina with international buffet dinner, live entertainment and views of JBR and Ain Dubai.",dhow cruise Dubai Marina,"cruise, commercial, money",
-23,cruise from dubai,/dubai-tours/cruises,"Dubai Cruise Tours | Dhow, Dinner & Yacht Cruises","Every cruise we run from Dubai: dhow dinner cruises, Marina cruises, luxury yacht charters and speedboat tours. Compare and book in minutes.",cruises from Dubai,"cruise, commercial",
-24,cruise dinner dubai,/dubai-tours/dhow-cruise-dinner,Dhow Cruise Dubai | Dinner Cruise with Live Show,"Traditional dhow cruise in Dubai with buffet dinner, tanoura show and skyline views. Creek and Marina departures, hotel transfers available.",Dubai dinner cruise,"cruise, commercial",
-25,dhow cruise marina,/dubai-tours/dhow-cruise-marina,Dhow Cruise Dubai Marina | Marina Dinner Cruise,"Two-hour dhow cruise through Dubai Marina with international buffet dinner, live entertainment and views of JBR and Ain Dubai.",Marina dhow cruise,"cruise, commercial",
-26,dubai marina cruise,/dubai-tours/dhow-cruise-marina,Dhow Cruise Dubai Marina | Marina Dinner Cruise,"Two-hour dhow cruise through Dubai Marina with international buffet dinner, live entertainment and views of JBR and Ain Dubai.",Dubai Marina cruise,"cruise, commercial",
-27,dubai marina dinner cruise,/dubai-tours/dhow-cruise-marina,Dhow Cruise Dubai Marina | Marina Dinner Cruise,"Two-hour dhow cruise through Dubai Marina with international buffet dinner, live entertainment and views of JBR and Ain Dubai.",Marina dinner cruise,"cruise, commercial",
-28,boat tour dubai,/dubai-tours/yellow-boats,Yellow Boats Dubai | Speedboat Sightseeing Tour,"High-speed RIB boat tour past Burj Al Arab, Atlantis and the Palm. Sixty and ninety minute options with an on-board guide.",Dubai boat tours,"cruise, commercial",
-29,dubai yacht tour,/dubai-tours/yacht-charter,Dubai Yacht Tour | Private Charter & Sightseeing,"Private yacht tours in Dubai Marina and around the Palm. Hourly charters with crew, refreshments and swimming stops. Groups of 6 to 40.",Dubai yacht tours,"cruise, commercial",
-30,dubai yellow boats,/dubai-tours/yellow-boats,Yellow Boats Dubai | Speedboat Sightseeing Tour,"High-speed RIB boat tour past Burj Al Arab, Atlantis and the Palm. Sixty and ninety minute options with an on-board guide.",Yellow Boats Dubai,"cruise, commercial, brand",
-31,dubai safari tour,/dubai-tours/desert-safari,Desert Safari Dubai | Evening & Overnight Tours,"Book a Dubai desert safari with dune bashing, camel rides, BBQ dinner and live shows. Hotel pick-up included across Dubai. Family and VIP options.",Dubai safari tour,"safari, commercial",
-32,holiday packages,/dubai-holiday-packages,"Dubai Holiday Packages | Hotel, Tours & Transfers","All-in Dubai holiday packages with hotel, airport transfers, tours and visa. Family, honeymoon and budget options priced clearly per person.",holiday packages,"packages, commercial","Very broad and global, win the Dubai-qualified variants first"
-33,dubai tour attractions,/dubai-tours/city-tour,Dubai City Tour | Half-Day & Full-Day Sightseeing,"See Burj Khalifa, the Palm, Dubai Frame and Old Dubai in one guided city tour. Air-conditioned transport and hotel pick-up included.",Dubai attraction tours,"tours, commercial",
-34,dubai desert tour,/dubai-tours/desert-safari,Desert Safari Dubai | Evening & Overnight Tours,"Book a Dubai desert safari with dune bashing, camel rides, BBQ dinner and live shows. Hotel pick-up included across Dubai. Family and VIP options.",Dubai desert tour,"safari, commercial",
-35,top tourism companies in dubai,/blog/best-travel-agencies-in-dubai,Best Travel Agencies in Dubai (2026 Comparison),"How Dubai's travel and tourism companies compare on tours, visas and holiday packages: licences, specialities and what each one does best.",top tourism companies in Dubai,"listicle, informational",
-36,massage center.,,,,,OFF-TOPIC,"Unrelated to a travel agency, recommend removing from the list"
-37,massage center near to me,,,,,OFF-TOPIC,"Unrelated to a travel agency, recommend removing from the list"
-38,massagecenter near me,,,,,OFF-TOPIC,"Unrelated to a travel agency, recommend removing from the list"
-39,massage therapy center,,,,,OFF-TOPIC,"Unrelated to a travel agency, recommend removing from the list"
-40,malls in dubai,/blog/malls-in-dubai,Malls in Dubai | Biggest Malls & Outlet Shopping,"Every major mall in Dubai plus the outlet villages, with what each is best for, opening hours and how to get there by metro.",malls in Dubai,"shopping, informational",
-41,dubai safari park,/blog/dubai-safari-park,"Dubai Safari Park | Tickets, Zones & Best Time","Dubai Safari Park guide: ticket types, the five zones, feeding times, and how long a visit really takes with children.",Dubai Safari Park,"attraction, informational",
-42,things to do in dubai,/blog/things-to-do-in-dubai,Things to Do in Dubai | 40 Ideas for 2026,"Forty things to do in Dubai, from desert safaris and Burj Khalifa to free beaches and souks, sorted by budget, season and who you travel with.",things to do in Dubai,"attraction, informational, pillar",
-43,dubai marina,/blog/dubai-marina-guide,"Dubai Marina Guide | Things to Do, Eat & Stay","What to do in Dubai Marina: the walk, JBR beach, cruises and restaurants, plus where to stay and how to get around.",Dubai Marina,"area, informational",
-44,grand hyatt dubai,/dubai-hotels/grand-hyatt-dubai,"Grand Hyatt Dubai | Rooms, Pools & Location Guide","Grand Hyatt Dubai guide: rooms, pools, restaurants and the Creek location, with agency rates and tours that pair well with your stay.",Grand Hyatt Dubai,"hotel, commercial",
-45,booking dubai,/dubai-hotels,"Dubai Hotel Booking | Beach, City & Family Hotels","Book Dubai hotels at agency rates: beach resorts, Marina apartments and city hotels. Free cancellation on most stays, pay on confirmation.",Dubai hotel booking,"hotel, commercial",
-46,nikki beach dubai,/blog/beach-clubs-in-dubai,Beach Clubs in Dubai | Day Passes & Prices,"Dubai beach clubs compared: day pass prices, minimum spend, the best pools, and which ones suit couples, groups or families.",Nikki Beach Dubai,"nightlife, brand",
-47,anantara the palm dubai resort,/dubai-hotels/anantara-the-palm,Anantara The Palm Dubai Resort | Overwater Villas,"Anantara The Palm Dubai Resort guide: overwater villas, lagoon access, spa and dining, plus agency rates and package options.",Anantara The Palm,"hotel, commercial",
-48,fairmont the palm,/dubai-hotels/fairmont-the-palm,"Fairmont The Palm Dubai | Rates, Rooms & Beach","Fairmont The Palm guide and booking: room types, private beach, pools, dining, and what the resort costs through a Dubai travel agent.",Fairmont The Palm,"hotel, commercial",
-49,places to visit in dubai,/blog/places-to-visit-in-dubai,Places to Visit in Dubai | Top Attractions Guide,"The famous places to visit in Dubai and the ones locals rate, with ticket prices, best visiting times and how to reach each attraction.",places to visit in Dubai,"attraction, informational, pillar",
-50,zero gravity dubai,/blog/dubai-adventure-activities,Skydiving & Adventure Activities in Dubai,"Skydive Dubai, indoor skydiving, zero gravity flights and other adrenaline activities: prices, booking windows and what to expect.",Zero Gravity Dubai,"activity, brand",
-51,dubai water park,/blog/dubai-water-parks,"Dubai Water Parks | Tickets, Rides & Best Days","Aquaventure, Wild Wadi and Laguna compared: ticket prices, ride line-ups, height limits and the quietest days to visit.",Dubai water parks,"attraction, informational",
-52,dubai hotel booking,/dubai-hotels,"Dubai Hotel Booking | Beach, City & Family Hotels","Book Dubai hotels at agency rates: beach resorts, Marina apartments and city hotels. Free cancellation on most stays, pay on confirmation.",Dubai hotel booking,"hotel, commercial, money",
-53,dubai skydiving,/blog/dubai-adventure-activities,Skydiving & Adventure Activities in Dubai,"Skydive Dubai, indoor skydiving, zero gravity flights and other adrenaline activities: prices, booking windows and what to expect.",skydiving in Dubai,"activity, informational",
-54,museum of the future dubai,/blog/museum-of-the-future-dubai,Museum of the Future Dubai | Tickets & Tips,"Museum of the Future ticket prices, how to avoid the queue, how long to allow inside, and what each floor actually shows.",Museum of the Future,"attraction, informational",
-55,dubai outlet village,/blog/malls-in-dubai,Malls in Dubai | Biggest Malls & Outlet Shopping,"Every major mall in Dubai plus the outlet villages, with what each is best for, opening hours and how to get there by metro.",Dubai Outlet Village,"shopping, informational",
-56,bluewaters island,/blog/bluewaters-island-dubai,Bluewaters Island Dubai | Ain Dubai & Beach Guide,"Bluewaters Island guide: the Ain Dubai observation wheel, the beach, restaurants, and how to reach the island from JBR.",Bluewaters Island,"area, informational",
-57,sky view dubai,/blog/sky-views-dubai,"Sky Views Dubai | Edge Walk, Glass Slide & Tickets","Sky Views Observatory guide: the glass slide, Edge Walk, ticket prices, and how it compares with Burj Khalifa At The Top.",Sky Views Dubai,"attraction, informational",
-58,deluxe experience,/blog/luxury-dubai-experiences,Luxury Dubai Experiences | Deluxe Tours & Stays,"The deluxe Dubai experiences worth the money: private yachts, helicopter tours, desert suites and fine dining, with real prices.",deluxe Dubai experiences,"luxury, informational","Vague on its own, targeted as luxury Dubai experiences"
-59,main attractions in dubai,/blog/places-to-visit-in-dubai,Places to Visit in Dubai | Top Attractions Guide,"The famous places to visit in Dubai and the ones locals rate, with ticket prices, best visiting times and how to reach each attraction.",main attractions in Dubai,"attraction, informational",
-60,dolphinarium dubai,/blog/dubai-dolphinarium,"Dubai Dolphinarium | Shows, Tickets & Timings","Dubai Dolphinarium show timings, ticket prices, seating tips, and what else to do in Creek Park on the same visit.",Dubai Dolphinarium,"attraction, informational",
-61,dubai night club,/blog/dubai-nightlife-guide,"Dubai Nightlife Guide | Clubs, Lounges & Rules","A practical guide to Dubai nightlife: the main clubs and lounges, dress codes, entry rules, ladies nights and what the law actually allows.",Dubai night clubs,"nightlife, informational","Keep the page brand-safe, see the AdSense note"
-62,clubs near me,/blog/dubai-nightlife-guide,"Dubai Nightlife Guide | Clubs, Lounges & Rules","A practical guide to Dubai nightlife: the main clubs and lounges, dress codes, entry rules, ladies nights and what the law actually allows.",clubs near me in Dubai,"nightlife, informational","Generic near-me query, only ranks on local intent"
-63,night clubs near me,/blog/dubai-nightlife-guide,"Dubai Nightlife Guide | Clubs, Lounges & Rules","A practical guide to Dubai nightlife: the main clubs and lounges, dress codes, entry rules, ladies nights and what the law actually allows.",night clubs near me,"nightlife, informational",
-64,dubai nightlife,/blog/dubai-nightlife-guide,"Dubai Nightlife Guide | Clubs, Lounges & Rules","A practical guide to Dubai nightlife: the main clubs and lounges, dress codes, entry rules, ladies nights and what the law actually allows.",Dubai nightlife,"nightlife, informational, pillar",
-65,night clubs,/blog/dubai-nightlife-guide,"Dubai Nightlife Guide | Clubs, Lounges & Rules","A practical guide to Dubai nightlife: the main clubs and lounges, dress codes, entry rules, ladies nights and what the law actually allows.",night clubs,"nightlife, informational",Too broad globally to be a realistic target
-66,nikki beach dubai,/blog/beach-clubs-in-dubai,Beach Clubs in Dubai | Day Passes & Prices,"Dubai beach clubs compared: day pass prices, minimum spend, the best pools, and which ones suit couples, groups or families.",Nikki Beach Dubai,"nightlife, brand",DUPLICATE of row 46
-67,white dubai,/blog/dubai-nightlife-guide,"Dubai Nightlife Guide | Clubs, Lounges & Rules","A practical guide to Dubai nightlife: the main clubs and lounges, dress codes, entry rules, ladies nights and what the law actually allows.",White Dubai,"nightlife, brand",
-68,beach club dubai,/blog/beach-clubs-in-dubai,Beach Clubs in Dubai | Day Passes & Prices,"Dubai beach clubs compared: day pass prices, minimum spend, the best pools, and which ones suit couples, groups or families.",Dubai beach clubs,"nightlife, informational",
-69,night clubs in dubai,/blog/dubai-nightlife-guide,"Dubai Nightlife Guide | Clubs, Lounges & Rules","A practical guide to Dubai nightlife: the main clubs and lounges, dress codes, entry rules, ladies nights and what the law actually allows.",night clubs in Dubai,"nightlife, informational",
-70,clubs in dubai,/blog/dubai-nightlife-guide,"Dubai Nightlife Guide | Clubs, Lounges & Rules","A practical guide to Dubai nightlife: the main clubs and lounges, dress codes, entry rules, ladies nights and what the law actually allows.",clubs in Dubai,"nightlife, informational",
-71,travel agency in dubai deira,/areas/deira,"Travel Agency in Deira, Dubai | Tours & Visas","Local travel agency serving Deira and old Dubai. Book desert safaris, city tours, airport transfers and visit visas with a team close to you.",travel agency in Deira,"local, commercial",
-72,places to visit in dubai,/blog/places-to-visit-in-dubai,Places to Visit in Dubai | Top Attractions Guide,"The famous places to visit in Dubai and the ones locals rate, with ticket prices, best visiting times and how to reach each attraction.",places to visit in Dubai,"attraction, informational",DUPLICATE of row 49
-73,dubai tourist attractions,/blog/places-to-visit-in-dubai,Places to Visit in Dubai | Top Attractions Guide,"The famous places to visit in Dubai and the ones locals rate, with ticket prices, best visiting times and how to reach each attraction.",Dubai tourist attractions,"attraction, informational",
-74,famous places in dubai,/blog/places-to-visit-in-dubai,Places to Visit in Dubai | Top Attractions Guide,"The famous places to visit in Dubai and the ones locals rate, with ticket prices, best visiting times and how to reach each attraction.",famous places in Dubai,"attraction, informational",
-75,dubai underwater hotel,/dubai-hotels/underwater-suites,Dubai Underwater Hotel | Atlantis Poseidon Suites,"What a stay in Dubai's underwater suites at Atlantis actually costs, what is included, and the alternatives worth considering first.",Dubai underwater hotel,"hotel, informational",
-76,dubai united arab emirates,/blog/dubai-uae-travel-guide,"Dubai, UAE Travel Guide for a First Trip","A first-timer guide to Dubai and the UAE: visas, currency, transport, local customs, weather and a sample week-long itinerary.","Dubai, United Arab Emirates","guide, informational",
-77,malls in dubai,/blog/malls-in-dubai,Malls in Dubai | Biggest Malls & Outlet Shopping,"Every major mall in Dubai plus the outlet villages, with what each is best for, opening hours and how to get there by metro.",malls in Dubai,"shopping, informational",DUPLICATE of row 40
-78,tourist in dubai,/blog/dubai-uae-travel-guide,"Dubai, UAE Travel Guide for a First Trip","A first-timer guide to Dubai and the UAE: visas, currency, transport, local customs, weather and a sample week-long itinerary.",tourists in Dubai,"guide, informational",
-79,best time to visit dubai,/blog/best-time-to-visit-dubai,Best Time to Visit Dubai | Month-by-Month Guide,"Dubai weather, crowds and prices month by month, plus which season suits beaches, desert tours, shopping festivals and family trips.",best time to visit Dubai,"guide, informational, pillar",
-80,dubai united arab emirates,/blog/dubai-uae-travel-guide,"Dubai, UAE Travel Guide for a First Trip","A first-timer guide to Dubai and the UAE: visas, currency, transport, local customs, weather and a sample week-long itinerary.","Dubai, UAE","guide, informational",DUPLICATE of row 76
+﻿#,Keyword,URL,Page title,Status / note
+1,travel agency in dubai,https://travelagencyindubai.com/,,Targeted
+2,best travel agency in dubai,https://travelagencyindubai.com/,,Targeted
+3,tourism companies in dubai,https://travelagencyindubai.com/,,Targeted
+4,top 10 travel agencies in dubai 2020,https://travelagencyindubai.com/,,Targeted
+5,travel and tours in dubai,https://travelagencyindubai.com/dubai-tours,,Targeted
+6,list of travel and tourism companies in dubai,https://travelagencyindubai.com/services/tour-operators,,Targeted
+7,list of tourism companies in dubai,https://travelagencyindubai.com/services/tour-operators,,Targeted
+8,travel agent for dubai trip,https://travelagencyindubai.com/contact,,Targeted
+9,best travel agency for dubai,https://travelagencyindubai.com/,,Targeted
+10,dubai specialist travel agents,https://travelagencyindubai.com/,,Targeted
+11,travel agency in dubai 24 hours,https://travelagencyindubai.com/contact,,Targeted
+12,dubai escorted,,,"Ambiguous; assumed escorted tours, confirm before targeting"
+13,dubai tour package,https://travelagencyindubai.com/packages,,Targeted
+14,dubai tour,https://travelagencyindubai.com/dubai-tours,,Targeted
+15,dubai holiday package,https://travelagencyindubai.com/packages,,Targeted
+16,trip advisor dubai,,,Navigational — belongs to tripadvisor.com
+17,desert safari dubai,https://travelagencyindubai.com/dubai-tours/desert-safari,,Targeted
+18,dubai safari,https://travelagencyindubai.com/dubai-tours/desert-safari,,Targeted
+19,dubai cruise,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
+20,dhow cruise dubai,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
+21,dhow cruise dubai marina,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
+22,cruise from dubai,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
+23,cruise dinner dubai,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
+24,dhow cruise marina,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
+25,dubai marina cruise,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
+26,dubai marina dinner cruise,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
+27,boat tour dubai,https://travelagencyindubai.com/dubai-tours/yacht-charter,,Targeted
+28,dubai yacht tour,https://travelagencyindubai.com/dubai-tours/yacht-charter,,Targeted
+29,dubai yellow boats,https://travelagencyindubai.com/dubai-tours/yacht-charter,,Targeted
+30,dubai safari tour,https://travelagencyindubai.com/dubai-tours/desert-safari,,Targeted
+31,holiday packages,https://travelagencyindubai.com/packages,,Targeted
+32,dubai tour attractions,https://travelagencyindubai.com/uae-attractions,,Targeted
+33,dubai desert tour,https://travelagencyindubai.com/dubai-tours/desert-safari,,Targeted
+34,top tourism companies in dubai,https://travelagencyindubai.com/,,Targeted
+35,massage center,https://travelagencyindubai.com/uae-attractions/dubai/dubai-spas-and-hammams,"Spa & Massage in Dubai | Prices, Hammams & Licensed Centres",Targeted
+36,massage center near to me,https://travelagencyindubai.com/uae-attractions/dubai/dubai-spas-and-hammams,"Spa & Massage in Dubai | Prices, Hammams & Licensed Centres",Targeted
+37,massagecenter near me,https://travelagencyindubai.com/uae-attractions/dubai/dubai-spas-and-hammams,"Spa & Massage in Dubai | Prices, Hammams & Licensed Centres",Targeted
+38,massage therapy center,https://travelagencyindubai.com/uae-attractions/dubai/dubai-spas-and-hammams,"Spa & Massage in Dubai | Prices, Hammams & Licensed Centres",Targeted
+39,malls in dubai,https://travelagencyindubai.com/uae-attractions/dubai/the-dubai-mall,,Targeted
+40,dubai safari park,https://travelagencyindubai.com/uae-attractions/dubai/dubai-safari-park,"Dubai Safari Park | Tickets, Season Dates & What to See",Targeted
+41,things to do in dubai,https://travelagencyindubai.com/blog/things-to-do-in-dubai,,Targeted
+42,dubai marina,https://travelagencyindubai.com/uae-attractions/dubai/dubai-marina-jbr,,Targeted
+43,grand hyatt dubai,,,Hotel brand — belongs to the operator
+44,booking dubai,https://travelagencyindubai.com/packages,,Targeted
+45,nikki beach dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,"Dubai Beach Clubs | Minimum Spend, Ladies' Days & Rules",Targeted
+46,anantara the palm dubai resort,,,Hotel brand
+47,fairmont the palm,,,Hotel brand
+48,places to visit in dubai,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+49,zero gravity dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,,Targeted
+50,dubai water park,https://travelagencyindubai.com/things-to-do/waterparks/dubai,,Targeted
+51,dubai hotel booking,https://travelagencyindubai.com/services/hotels,,Targeted
+52,dubai skydiving,https://travelagencyindubai.com/things-to-do/adventure/dubai,,Targeted
+53,museum of the future dubai,https://travelagencyindubai.com/things-to-do/landmarks,Landmarks & views in the UAE,Targeted
+54,dubai outlet village,https://travelagencyindubai.com/uae-attractions/dubai/dubai-outlet-village,"Dubai Outlet Village | Discounts, Opening Hours & Getting There",Targeted
+55,bluewaters island,https://travelagencyindubai.com/uae-attractions/dubai/dubai-marina-jbr,,Targeted
+56,sky view dubai,https://travelagencyindubai.com/things-to-do/landmarks/dubai,,Targeted
+57,deluxe experience,https://travelagencyindubai.com/packages,,Targeted
+58,main attractions in dubai,https://travelagencyindubai.com/things-to-do/landmarks,Landmarks & views in the UAE,Targeted
+59,dolphinarium dubai,https://travelagencyindubai.com/things-to-do/wildlife/dubai,,Targeted
+60,dubai night club,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+61,clubs near me,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+62,night clubs near me,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+63,dubai nightlife,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+64,night clubs,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+65,white dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+66,beach club dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,"Dubai Beach Clubs | Minimum Spend, Ladies' Days & Rules",Targeted
+67,night clubs in dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+68,clubs in dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+69,travel agency in dubai deira,https://travelagencyindubai.com/contact,,Targeted
+70,dubai tourist attractions,https://travelagencyindubai.com/things-to-do/landmarks,Landmarks & views in the UAE,Targeted
+71,famous places in dubai,https://travelagencyindubai.com/things-to-do/landmarks,Landmarks & views in the UAE,Targeted
+72,dubai underwater hotel,,,"Single property, and it is not open"
+73,dubai united arab emirates,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+74,tourist in dubai,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+75,best time to visit dubai,https://travelagencyindubai.com/blog/things-to-do-in-dubai,,Targeted
+76,dubai travel agents in dubai,https://travelagencyindubai.com/,,Targeted
+77,travel agents for dubai packages,https://travelagencyindubai.com/packages,,Targeted
+78,travel agencies in kenya to dubai,,,Outbound agency in another country
+79,cozmo travels karama,,,Competitor brand name
+80,riya travel dubai,,,Competitor brand name
+81,tabeer travel agency dubai,,,Competitor brand name
+82,sharaf travel dubai,,,Competitor brand name
+83,travel agency hiring in dubai,,,Jobs query — we are not a recruiter
+84,good travel agency in dubai,https://travelagencyindubai.com/,,Targeted
+85,best tour agency in dubai,https://travelagencyindubai.com/,,Targeted
+86,best travel companies in dubai,https://travelagencyindubai.com/,,Targeted
+87,top 10 travel agencies in dubai,https://travelagencyindubai.com/,,Targeted
+88,top 10 travel companies in dubai,https://travelagencyindubai.com/,,Targeted
+89,top ten travel agency in dubai,https://travelagencyindubai.com/,,Targeted
+90,deira travel and tourist agency,https://travelagencyindubai.com/contact,,Targeted
+91,things to see in dubai,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+92,dubai tourist places,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+93,to do in dubai,https://travelagencyindubai.com/blog/things-to-do-in-dubai,,Targeted
+94,things to see and do in dubai,https://travelagencyindubai.com/blog/things-to-do-in-dubai,,Targeted
+95,places to go out in dubai,https://travelagencyindubai.com/things-to-do/nightlife/dubai,,Targeted
+96,places to visit in dubai for free,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+97,things to do in dubai for free,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+98,places to go in dubai for free,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+99,spa in dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-spas-and-hammams,"Spa & Massage in Dubai | Prices, Hammams & Licensed Centres",Targeted
+100,home massage dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-spas-and-hammams,"Spa & Massage in Dubai | Prices, Hammams & Licensed Centres",Targeted
+101,nikki beach spa dubai,,,Single business — belongs in the directory
+102,lavana spa dubai,,,Single business — belongs in the directory
+103,ruspa ukrainian and european massage al barsha,,,Single business — belongs in the directory
+104,lavana spa al barsha,,,Single business — belongs in the directory
+105,cora spa massage center sheikh zayed road dubai,,,Single business — belongs in the directory
+106,ajman fish market,https://travelagencyindubai.com/uae-attractions/ajman/ajman-fish-market,"Ajman Fish Market | Times, Prices & the Dhow Yard Next Door",Targeted
+107,ajman museum,https://travelagencyindubai.com/uae-attractions/ajman/ajman-fish-market,"Ajman Fish Market | Times, Prices & the Dhow Yard Next Door",Targeted
+108,ajman shopping mall,https://travelagencyindubai.com/things-to-do/shopping/ajman,,Targeted
+109,fun city safeer mall ajman,https://travelagencyindubai.com/things-to-do/kids/ajman,,Targeted
+110,places in fujairah,https://travelagencyindubai.com/uae-attractions/fujairah,,Targeted
+111,snoopy island fujairah,https://travelagencyindubai.com/uae-attractions/fujairah/snoopy-island,,Targeted
+112,friday market fujairah,https://travelagencyindubai.com/uae-attractions/fujairah/friday-market,"Friday Market Masafi | Carpets, Pottery & Haggling Guide",Targeted
+113,fujairah fort,https://travelagencyindubai.com/uae-attractions/fujairah/fujairah-fort,"Fujairah Fort | The UAE's Oldest Fort, Hours & Entry",Targeted
+114,fujairah fort fujairah,https://travelagencyindubai.com/uae-attractions/fujairah/fujairah-fort,"Fujairah Fort | The UAE's Oldest Fort, Hours & Entry",Targeted
+115,fujairah heritage village,https://travelagencyindubai.com/uae-attractions/fujairah/fujairah-fort,"Fujairah Fort | The UAE's Oldest Fort, Hours & Entry",Targeted
+116,adventure park fujairah,https://travelagencyindubai.com/things-to-do/adventure/fujairah,,Targeted
+117,al hayl castle fujairah,https://travelagencyindubai.com/uae-attractions/fujairah/al-hayl-castle,Al Hayl Castle Fujairah | Free Wadi Fort & How to Get There,Targeted
+118,beach camping in fujairah,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+119,best beach fujairah,https://travelagencyindubai.com/things-to-do/beaches/fujairah,,Targeted
+120,best mandi in fujairah,https://travelagencyindubai.com/things-to-do/dining/fujairah,,Targeted
+121,cafes in fujairah,https://travelagencyindubai.com/things-to-do/dining/fujairah,,Targeted
+122,camping in fujairah,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+123,camping places in fujairah,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+124,camping site in fujairah,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+125,camping spots in fujairah,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+126,fujairah beach camping,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+127,fujairah camping beach,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+128,fujairah camping site,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+129,fujairah camping spot,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
+130,things to do in ras al khaimah,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah,,Targeted
+131,places to visit in ras al khaimah,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah,,Targeted
+132,ras al khaimah tourist places,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah,,Targeted
+133,ras al khaimah best place to visit,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah,,Targeted
+134,ras al khaimah ghost town,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah/al-jazirah-al-hamra,"Al Jazirah Al Hamra | RAK Ghost Town, Free Entry & Safety",Targeted
+135,10 things to do in ras al khaimah,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah,,Targeted
+136,best attractions in ras al khaimah,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah,,Targeted
+137,best place to eat in ras al khaimah,https://travelagencyindubai.com/things-to-do/dining/ras-al-khaimah,,Targeted
+138,ghost town in ras al khaimah,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah/al-jazirah-al-hamra,"Al Jazirah Al Hamra | RAK Ghost Town, Free Entry & Safety",Targeted
+139,haunted places in ras al khaimah,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah/al-jazirah-al-hamra,"Al Jazirah Al Hamra | RAK Ghost Town, Free Entry & Safety",Targeted
+140,new attraction in ras al khaimah,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah,,Targeted
+141,nice place to visit in ras al khaimah,https://travelagencyindubai.com/uae-attractions/ras-al-khaimah,,Targeted
+142,places to eat in rak,https://travelagencyindubai.com/things-to-do/dining/ras-al-khaimah,,Targeted
+143,al alain uae,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+144,alain in uae,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+145,things to do in al ain,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+146,shopping mall in al ain,https://travelagencyindubai.com/things-to-do/shopping/abu-dhabi,,Targeted
+147,al ain farm visit,https://travelagencyindubai.com/uae-attractions/abu-dhabi/al-ain-oasis,,Targeted
+148,al ain green mubazzarah park,https://travelagencyindubai.com/uae-attractions/abu-dhabi/green-mubazzarah,"Green Mubazzarah Al Ain | Hot Springs, Chalets & Camping",Targeted
+149,al ain hili fun city ticket price,https://travelagencyindubai.com/uae-attractions/abu-dhabi/hili-fun-city,"Hili Fun City Al Ain | Ticket Price, Rides & Opening Hours",Targeted
+150,al ain mubazzarah park,https://travelagencyindubai.com/uae-attractions/abu-dhabi/green-mubazzarah,"Green Mubazzarah Al Ain | Hot Springs, Chalets & Camping",Targeted
+151,al ain tourist places free,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+152,alain fun city ticket price,https://travelagencyindubai.com/uae-attractions/abu-dhabi/hili-fun-city,"Hili Fun City Al Ain | Ticket Price, Rides & Opening Hours",Targeted
+153,bawadi mall al ain location,https://travelagencyindubai.com/things-to-do/shopping/abu-dhabi,,Targeted
+154,al ain camping site,https://travelagencyindubai.com/things-to-do/camping/abu-dhabi,,Targeted
+155,al ain camel market opening hours,https://travelagencyindubai.com/uae-attractions/abu-dhabi/al-ain-camel-market,"Al Ain Camel Market | Opening Hours, What to Expect & Tips",Targeted
+156,yas beach abu dhabi,https://travelagencyindubai.com/things-to-do/beaches/abu-dhabi,,Targeted
+157,emirates heritage village abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi/emirates-heritage-village,Heritage Village Abu Dhabi | Free Entry & Skyline Views,Targeted
+158,qasr al hosn fort,https://travelagencyindubai.com/uae-attractions/abu-dhabi/qasr-al-hosn,"Qasr Al Hosn Abu Dhabi | Tickets, History & Opening Hours",Targeted
+159,places to visit in abu dhabi for free,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+160,hidden gems in abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+161,abu dhabi top things to do,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+162,visiting places abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+163,abu dhabi at night,https://travelagencyindubai.com/things-to-do/nightlife/abu-dhabi,,Targeted
+164,best bar in abu dhabi,https://travelagencyindubai.com/things-to-do/nightlife/abu-dhabi,,Targeted
+165,top sights in abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi,,Targeted
+166,abu dhabi camping,https://travelagencyindubai.com/uae-attractions/abu-dhabi/abu-dhabi-desert-camping,,Targeted
+167,abu dhabi camping site,https://travelagencyindubai.com/uae-attractions/abu-dhabi/abu-dhabi-desert-camping,,Targeted
+168,abu dhabi cheap shopping,https://travelagencyindubai.com/things-to-do/shopping/abu-dhabi,,Targeted
+169,abu dhabi mushrif park,https://travelagencyindubai.com/uae-attractions/abu-dhabi/mushrif-central-park,"Mushrif Central Park Abu Dhabi | Entry Fee, Play Areas & Hours",Targeted
+170,abu dhabi view point,https://travelagencyindubai.com/things-to-do/landmarks/abu-dhabi,,Targeted
+171,al mina fish market,https://travelagencyindubai.com/uae-attractions/abu-dhabi/mina-zayed-fish-market,"Mina Zayed Fish Market Abu Dhabi | Buy, Cook & Eat Guide",Targeted
+172,beach in abu dhabi free,https://travelagencyindubai.com/things-to-do/beaches/abu-dhabi,,Targeted
+173,best souk abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi/emirates-heritage-village,Heritage Village Abu Dhabi | Free Entry & Skyline Views,Targeted
+174,best souk in abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi/mina-zayed-fish-market,"Mina Zayed Fish Market Abu Dhabi | Buy, Cook & Eat Guide",Targeted
+175,camping spot in abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi/abu-dhabi-desert-camping,,Targeted
+176,cheapest market in abu dhabi,https://travelagencyindubai.com/things-to-do/souks/abu-dhabi,,Targeted
+177,hameem beach abu dhabi,https://travelagencyindubai.com/things-to-do/beaches/abu-dhabi,,Targeted
+178,hili archaeological park abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi/hili-archaeological-park,Hili Archaeological Park Al Ain | Free Bronze Age Site,Targeted
+179,jazz bar abu dhabi,https://travelagencyindubai.com/things-to-do/nightlife/abu-dhabi,,Targeted
+180,mad yas island nightclub abu dhabi,https://travelagencyindubai.com/things-to-do/nightlife/abu-dhabi,,Targeted
+181,mushrif park abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi/mushrif-central-park,"Mushrif Central Park Abu Dhabi | Entry Fee, Play Areas & Hours",Targeted
+182,wathba salt lake,https://travelagencyindubai.com/uae-attractions/abu-dhabi/al-wathba-salt-lake,"Al Wathba Salt Lake & Flamingos | Free, and When It's Pink",Targeted
+183,national park sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/arabian-wildlife-centre,Arabian Wildlife Centre Sharjah | Tickets & Desert Park,Targeted
+184,sharjah aquarium sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-aquarium,"Sharjah Aquarium | Tickets, Opening Hours & What's Inside",Targeted
+185,sharjah national park sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/arabian-wildlife-centre,Arabian Wildlife Centre Sharjah | Tickets & Desert Park,Targeted
+186,al noor island sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/al-khan-beach,"Al Khan Beach Sharjah | Free Entry, Facilities & Dress Code",Targeted
+187,places to visit in sharjah for free,https://travelagencyindubai.com/uae-attractions/sharjah,,Targeted
+188,sharjah aquarium tickets,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-aquarium,"Sharjah Aquarium | Tickets, Opening Hours & What's Inside",Targeted
+189,al khan beach sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/al-khan-beach,"Al Khan Beach Sharjah | Free Entry, Facilities & Dress Code",Targeted
+190,arabian wildlife center sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/arabian-wildlife-centre,Arabian Wildlife Centre Sharjah | Tickets & Desert Park,Targeted
+191,best restaurant in sharjah,https://travelagencyindubai.com/things-to-do/dining/sharjah,,Targeted
+192,cafe in sharjah,https://travelagencyindubai.com/things-to-do/dining/sharjah,,Targeted
+193,classic cars museum sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-classic-cars-museum,Sharjah Classic Cars Museum | AED 10 Entry & Collection,Targeted
+194,khorfakkan beach sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/khor-fakkan-beach,"Khor Fakkan Sharjah | Free Beach, Waterfall & Snorkelling",Targeted
+195,sharjah fish market,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-fish-market,"Sharjah Fish Market | Opening Times, Prices & Cook Shops",Targeted
+196,sharjah shopping mall,https://travelagencyindubai.com/things-to-do/shopping/sharjah,,Targeted
+197,ticket sharjah aquarium,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-aquarium,"Sharjah Aquarium | Tickets, Opening Hours & What's Inside",Targeted
+198,places to visit in sharjah for free with family,https://travelagencyindubai.com/things-to-do/family/sharjah,,Targeted
+199,al mamzar beach park sharjah,https://travelagencyindubai.com/uae-attractions/dubai/al-mamzar-beach-park,"Al Mamzar Beach Park Dubai | Entry Fee, Barbecue & Chalets",Targeted
+200,al mamzar park sharjah,https://travelagencyindubai.com/uae-attractions/dubai/al-mamzar-beach-park,"Al Mamzar Beach Park Dubai | Entry Fee, Barbecue & Chalets",Targeted
+201,al noor island bridge,https://travelagencyindubai.com/uae-attractions/sharjah/al-noor-island,,Targeted
+202,best breakfast in sharjah,https://travelagencyindubai.com/things-to-do/dining/sharjah,,Targeted
+203,best beach in sharjah,https://travelagencyindubai.com/things-to-do/beaches/sharjah,,Targeted
+204,barasti nightclub dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+205,beach night club dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,"Dubai Beach Clubs | Minimum Spend, Ladies' Days & Rules",Targeted
+206,night club in dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-night-clubs,"Dubai Nightclubs | Venues, Door Policy & the Alcohol Rules",Targeted
+207,nammos dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,"Dubai Beach Clubs | Minimum Spend, Ladies' Days & Rules",Targeted
+208,bla bla dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,"Dubai Beach Clubs | Minimum Spend, Ladies' Days & Rules",Targeted
+209,summersalt dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,"Dubai Beach Clubs | Minimum Spend, Ladies' Days & Rules",Targeted
+210,barasti club dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,"Dubai Beach Clubs | Minimum Spend, Ladies' Days & Rules",Targeted
+211,zero gravity club dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,"Dubai Beach Clubs | Minimum Spend, Ladies' Days & Rules",Targeted
+212,jumeirah beach,https://travelagencyindubai.com/uae-attractions/dubai/kite-beach,"Kite Beach Dubai | Free Public Beach, Parking & Watersports",Targeted
+213,dubai jumeirah beach,https://travelagencyindubai.com/uae-attractions/dubai/jumeirah-public-beach,Jumeirah Public Beach Dubai | Free Entry & Quiet Sand,Targeted
+214,kite beach dubai,https://travelagencyindubai.com/uae-attractions/dubai/kite-beach,"Kite Beach Dubai | Free Public Beach, Parking & Watersports",Targeted
+215,al mamzar beach,https://travelagencyindubai.com/uae-attractions/dubai/al-mamzar-beach-park,"Al Mamzar Beach Park Dubai | Entry Fee, Barbecue & Chalets",Targeted
+216,jumeirah beach dubai united arab emirates,https://travelagencyindubai.com/uae-attractions/dubai/jumeirah-public-beach,Jumeirah Public Beach Dubai | Free Entry & Quiet Sand,Targeted
+217,palm jumeirah island,https://travelagencyindubai.com/uae-attractions/dubai/palm-jumeirah,,Targeted
+218,dubai rigga,https://travelagencyindubai.com/uae-attractions/dubai,,Targeted
+219,kite beach dubai united arab emirates,https://travelagencyindubai.com/uae-attractions/dubai/kite-beach,"Kite Beach Dubai | Free Public Beach, Parking & Watersports",Targeted
+220,centara mirage beach resort dubai,,,Hotel brand
+221,hilton dubai jumeirah,,,Hotel brand
+222,sofitel dubai jumeirah beach,,,Hotel brand
+223,hotel riu dubai,,,Hotel brand
+224,radisson beach resort palm jumeirah,,,Hotel brand
+225,roda amwaj suites jumeirah beach residence,,,Hotel brand
+226,doubletree by hilton dubai jumeirah beach,,,Hotel brand
+227,sofitel downtown dubai,,,Hotel brand
+228,one and only royal mirage dubai,,,Hotel brand
+229,westin dubai mina seyahi,,,Hotel brand
+230,four seasons resort dubai at jumeirah beach,,,Hotel brand
+231,doubletree hilton dubai,,,Hotel brand

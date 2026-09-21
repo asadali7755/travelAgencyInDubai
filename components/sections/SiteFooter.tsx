@@ -7,7 +7,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-divider bg-sand">
       <div className="mx-auto max-w-[1280px] px-5 py-16 lg:px-10">
-        <div className="grid gap-10 lg:grid-cols-[2fr_1fr_1fr_1.4fr]">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr_1.2fr]">
           <div>
             <p className="text-[21px] font-bold tracking-tight">
               Travel Agency <span className="text-sea">in Dubai</span>
@@ -24,11 +24,14 @@ export function SiteFooter() {
             </p>
           </div>
 
+          <FooterColumn title="Attractions" links={footerLinks.attractions} />
+          <FooterColumn title="Packages" links={footerLinks.packages} />
           <FooterColumn title="Experiences" links={footerLinks.experiences} />
-          <FooterColumn title="Company" links={footerLinks.company} />
 
           <div>
-            <h2 className="text-[12px] font-bold uppercase tracking-[0.14em] text-ink/50">
+            <FooterColumn title="Company" links={footerLinks.company} />
+
+            <h2 className="mt-8 text-[12px] font-bold uppercase tracking-[0.14em] text-ink/50">
               Contact
             </h2>
             <ul className="mt-1 flex flex-col text-[15px] text-ink/75">

@@ -33,12 +33,18 @@ export const site = {
 export const indexingAllowed = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 
 export const nav = [
-  { label: "Tours & experiences", href: "/dubai-tours" },
-  { label: "Desert safari", href: "/dubai-tours/desert-safari" },
-  { label: "Travel guide", href: "/blog/things-to-do-in-dubai" },
-  { label: "Contact", href: "/contact" },
+  { label: "Attractions", href: "/uae-attractions" },
+  { label: "Things to do", href: "/things-to-do" },
+  { label: "Packages & prices", href: "/packages" },
+  { label: "Tours", href: "/dubai-tours" },
+  { label: "Services", href: "/services" },
 ] as const;
 
+/**
+ * Footer columns. These are the site’s main internal links, so they are chosen
+ * for the pages worth passing authority to — the attraction and package hubs
+ * and the highest-intent detail pages — rather than for tidiness.
+ */
 export const footerLinks = {
   experiences: [
     { label: "Desert safaris", href: "/dubai-tours/desert-safari" },
@@ -46,7 +52,21 @@ export const footerLinks = {
     { label: "Yacht charters", href: "/dubai-tours/yacht-charter" },
     { label: "City tours", href: "/dubai-tours/old-dubai-souks-abras" },
   ],
+  attractions: [
+    { label: "All UAE attractions", href: "/uae-attractions" },
+    { label: "Burj Khalifa", href: "/uae-attractions/dubai/burj-khalifa" },
+    { label: "Sheikh Zayed Grand Mosque", href: "/uae-attractions/abu-dhabi/sheikh-zayed-grand-mosque" },
+    { label: "Attractions in Abu Dhabi", href: "/uae-attractions/abu-dhabi" },
+  ],
+  packages: [
+    { label: "All packages & prices", href: "/packages" },
+    { label: "Dubai 3-day package", href: "/packages/dubai-essentials-3-day" },
+    { label: "Abu Dhabi day trip", href: "/packages/abu-dhabi-day-trip" },
+    { label: "Baku from AED 999", href: "/packages/azerbaijan-baku-4-day" },
+  ],
   company: [
+    { label: "Services directory", href: "/services" },
+    { label: "List your business", href: "/list-your-business" },
     { label: "Travel guide", href: "/blog/things-to-do-in-dubai" },
     { label: "Get a quote", href: "/contact" },
     { label: "Terms & cancellation", href: "/terms" },

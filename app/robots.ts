@@ -12,7 +12,25 @@ export default function robots(): MetadataRoute.Robots {
   }
 
   return {
-    rules: [{ userAgent: "*", allow: "/", disallow: ["/api/"] }],
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        // The authenticated areas carry no public content and every page in
+        // them is noindex anyway. Keeping them out of the crawl budget as well
+        // is free. /auth/callback is excluded because a crawled one-time code
+        // is a burnt one-time code.
+        disallow: [
+          "/api/",
+          "/admin",
+          "/agency",
+          "/dashboard",
+          "/login",
+          "/signup",
+          "/auth/",
+        ],
+      },
+    ],
     sitemap: `${site.url}/sitemap.xml`,
     host: site.url,
   };

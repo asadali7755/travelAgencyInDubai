@@ -61,6 +61,17 @@ export function SiteHeader() {
         </nav>
 
         <div className="ml-auto flex items-center gap-3 lg:ml-0">
+          {/* Discreet on purpose. Accounts matter to the handful of businesses
+              listing themselves and to returning enquirers; they are not what
+              the other 99% of visitors came for. */}
+          <Link
+            href="/login"
+            className={`hidden min-h-11 items-center text-[15px] no-underline transition-colors lg:flex ${
+              solid ? "text-ink/70 hover:text-sea" : "text-white/80 hover:text-white"
+            }`}
+          >
+            Sign in
+          </Link>
           <Button
             href={whatsapp}
             variant={solid ? "outline" : "ghost"}
