@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Hostinger shared hosting caps how many processes a build may start, so
+  // keep the build to one worker.
+  experimental: { cpus: 1 },
   images: {
     // The widest thing on the site is a full-bleed hero on a desktop screen.
     // Next's defaults go up to 3840, which made the optimiser build enormous
