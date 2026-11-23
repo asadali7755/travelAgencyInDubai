@@ -9,7 +9,6 @@ import { GuideTeaser } from "@/components/sections/GuideTeaser";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { SignatureExperiences } from "@/components/sections/SignatureExperiences";
-import { Testimonial } from "@/components/sections/Testimonial";
 import { TrustBand } from "@/components/sections/TrustBand";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { attractions } from "@/lib/data/attractions";
@@ -50,7 +49,6 @@ export default function HomePage() {
       <Services />
       <DirectoryTeaser />
       <GuideTeaser />
-      <Testimonial />
       <FinalCta />
     </>
   );

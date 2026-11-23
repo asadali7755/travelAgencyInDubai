@@ -119,7 +119,7 @@ export const dubaiBeaches: Attraction[] = [
     metaDescription:
       "Jumeirah public beach: free, lifeguarded, shallow water for children and shaded barbecue spots behind. What to wear and when to go.",
     checked: "2026-09-18",
-    keywords: ["jumeirah beach", "dubai jumeirah beach", "jumeirah beach dubai united arab emirates"],
+    keywords: ["dubai jumeirah beach", "jumeirah beach dubai united arab emirates"],
   },
   {
     slug: "al-mamzar-beach-park",
@@ -179,6 +179,11 @@ export const dubaiBeaches: Attraction[] = [
     metaDescription:
       "Al Mamzar Beach Park: five beaches, barbecue pits, chalets and ladies' days. Entry around AED 5 per person or AED 30 per car.",
     checked: "2026-09-18",
-    keywords: ["al mamzar beach", "al mamzar beach park sharjah", "al mamzar park sharjah", "family picnic spots in uae"],
+    keywords: [
+      "al mamzar beach",
+      "al mamzar beach park sharjah",
+      "al mamzar park sharjah",
+      "family picnic spots in uae",
+    ],
   },
 ];

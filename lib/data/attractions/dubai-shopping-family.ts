@@ -66,7 +66,7 @@ export const dubaiShoppingFamily: Attraction[] = [
     metaDescription:
       "The Dubai Mall guide: what's free, the aquarium you can see without a ticket, the ice rink, and how it compares to Mall of the Emirates and the outlets.",
     checked: "2026-09-18",
-    keywords: ["malls in dubai", "dubai mall", "things to do in dubai"],
+    keywords: ["malls in dubai", "dubai mall"],
   },
   {
     slug: "dubai-outlet-village",
@@ -112,7 +112,7 @@ export const dubaiShoppingFamily: Attraction[] = [
     metaDescription:
       "Dubai Outlet Village: around 100 outlets at 30–80% off, free entry and parking, and whether it beats Dubai Outlet Mall next door.",
     checked: "2026-09-18",
-    keywords: ["dubai outlet village", "malls in dubai", "abu dhabi cheap shopping"],
+    keywords: ["dubai outlet village"],
   },
   {
     slug: "dubai-safari-park",
@@ -173,7 +173,7 @@ export const dubaiShoppingFamily: Attraction[] = [
     metaDescription:
       "Dubai Safari Park: ticket prices, the October–May season, the four villages, the drive-through Safari Journey and the best time of day to arrive.",
     checked: "2026-09-18",
-    keywords: ["dubai safari park", "dubai safari", "things to do in dubai"],
+    keywords: ["dubai safari park"],
   },
   {
     slug: "coca-cola-arena",
@@ -232,6 +232,11 @@ export const dubaiShoppingFamily: Attraction[] = [
     metaDescription:
       "Coca-Cola Arena: 17,000 seats at City Walk, what plays there, how to buy tickets safely, and the alternatives at Etihad Arena and Dubai Opera.",
     checked: "2026-09-18",
-    keywords: ["concerts in dubai", "coca cola arena dubai", "dubai opera", "etihad arena yas island"],
+    keywords: [
+      "concerts in dubai",
+      "coca cola arena dubai",
+      "dubai opera",
+      "etihad arena yas island",
+    ],
   },
 ];

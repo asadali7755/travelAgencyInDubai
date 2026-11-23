@@ -1,6 +1,6 @@
 import { site } from "@/lib/site";
 import type { Attraction } from "@/lib/data/attractions";
-import { attractionPath } from "@/lib/data/attractions";
+import { attractionPath, emirateById } from "@/lib/data/attractions";
 import type { Package } from "@/lib/data/packages";
 import { fromPrice, packagePath } from "@/lib/data/packages";
 
@@ -158,28 +158,8 @@ export function localBusinessSchema(business: {
   };
 }
 
-/**
- * Marks the paragraphs a voice assistant should read aloud. Small win, and the
- * same signal helps answer engines pick a clean extract rather than a nav label.
- */
-export function speakableSchema(cssSelectors: string[]): Json {
-  return {
-    "@type": "SpeakableSpecification",
-    cssSelector: cssSelectors,
-  };
-}
-
-const emirateNames: Record<string, string> = {
-  dubai: "Dubai",
-  "abu-dhabi": "Abu Dhabi",
-  sharjah: "Sharjah",
-  ajman: "Ajman",
-  "ras-al-khaimah": "Ras Al Khaimah",
-  fujairah: "Fujairah",
-  "umm-al-quwain": "Umm Al Quwain",
-};
-
-export const emirateLabel = (id: string) => emirateNames[id] ?? id;
+/** Display name for an emirate id, from the same data the pages render. */
+const emirateLabel = (id: string) => emirateById(id)?.name ?? id;
 
 /**
  * The page itself as an entity: what it is about, when it was last checked, and

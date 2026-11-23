@@ -61,7 +61,11 @@ export const rasAlKhaimahAttractions: Attraction[] = [
     metaDescription:
       "The UAE's abandoned pearling town in Ras Al Khaimah: coral-block houses, wind towers and a fort, free to walk, plus the truth about the ghost stories.",
     checked: "2026-09-18",
-    keywords: ["ras al khaimah ghost town", "ghost town in ras al khaimah", "haunted places in ras al khaimah", "places to visit in ras al khaimah", "ras al khaimah tourist places"],
+    keywords: [
+      "ras al khaimah ghost town",
+      "ghost town in ras al khaimah",
+      "haunted places in ras al khaimah",
+    ],
   },
   {
     slug: "dhayah-fort",
@@ -113,7 +117,7 @@ export const rasAlKhaimahAttractions: Attraction[] = [
     metaDescription:
       "Dhayah Fort: the UAE's only hilltop fort, a 15-minute stepped climb above a palm oasis, with the story of the 1819 siege and the best sunset in RAK.",
     checked: "2026-09-18",
-    keywords: ["places to visit in ras al khaimah", "best attractions in ras al khaimah", "ras al khaimah best place to visit", "nice place to visit in ras al khaimah", "10 things to do in ras al khaimah"],
+    keywords: [],
   },
   {
     slug: "iceland-water-park",
@@ -164,7 +168,7 @@ export const rasAlKhaimahAttractions: Attraction[] = [
     metaDescription:
       "Iceland Water Park in Ras Al Khaimah: around 30 slides, a wave pool and short queues at roughly half the price of the Dubai water parks.",
     checked: "2026-09-18",
-    keywords: ["iceland water park ras al khaimah", "things to do in ras al khaimah", "new attraction in ras al khaimah", "dubai water park"],
+    keywords: ["iceland water park ras al khaimah"],
   },
   {
     slug: "al-marjan-island",
@@ -225,6 +229,6 @@ export const rasAlKhaimahAttractions: Attraction[] = [
     metaDescription:
       "Al Marjan Island in Ras Al Khaimah: free public beach, resort day passes from around AED 150, licensed bars and the record-breaking New Year fireworks.",
     checked: "2026-09-18",
-    keywords: ["things to do in ras al khaimah", "places to eat in rak", "best place to eat in ras al khaimah", "ras al khaimah best place to visit"],
+    keywords: [],
   },
 ];

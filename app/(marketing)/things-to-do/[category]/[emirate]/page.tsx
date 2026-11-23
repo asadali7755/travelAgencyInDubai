@@ -22,7 +22,7 @@ import {
   type Emirate,
 } from "@/lib/data/attractions";
 import { getListings } from "@/lib/services/directory";
-import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, describeWithNames, pageMetadata } from "@/lib/seo";
 import { itemListSchema, webPageSchema } from "@/lib/seo-schema";
 
 /** Only the emirate/category pairs that actually have something in them. */
@@ -41,16 +41,26 @@ export async function generateMetadata({
   const emirate = emirateById(emirateId);
   if (!category || !emirate) return { title: "Not found" };
 
-  const count = attractionsInEmirate(emirate.id).filter((a) =>
+  const matches = attractionsInEmirate(emirate.id).filter((a) =>
     a.categories.includes(category.id),
-  ).length;
+  );
+  const count = matches.length;
 
   return pageMetadata({
     title:
       count === 1
         ? `${category.label} in ${emirate.name} | Where to Go & Prices`
         : `${category.label} in ${emirate.name} | ${count} Places & Prices`,
-    description: `The best ${category.noun} in ${emirate.name}, with 2026 prices and which are free. Sort by whatever is nearest to you.`,
+    description: describeWithNames(
+      `The best ${category.noun} in ${emirate.name}: `,
+      matches.map((a) => a.name),
+      [
+        `. ${category.tagline}, with 2026 prices, opening hours, what is free and what is nearby.`,
+        `. ${category.tagline}, with 2026 prices, opening hours and which are free.`,
+        `, with 2026 prices, opening hours and which are free.`,
+        `. 2026 prices and opening hours.`,
+      ],
+    ),
     path: planPath(emirate.id, category.id),
   });
 }

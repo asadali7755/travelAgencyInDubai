@@ -62,7 +62,7 @@ export const fujairahAttractions: Attraction[] = [
     metaDescription:
       "Fujairah Fort, built around 1670 and the oldest in the country, with the reconstructed heritage village below it. Opening hours and what to see.",
     checked: "2026-09-18",
-    keywords: ["fujairah fort", "fujairah fort fujairah", "places in fujairah", "fujairah heritage village"],
+    keywords: ["fujairah fort", "fujairah fort fujairah"],
   },
   {
     slug: "fujairah-heritage-village",
@@ -117,7 +117,7 @@ export const fujairahAttractions: Attraction[] = [
     metaDescription:
       "Fujairah Heritage Village and the Ain Al Madhab sulphur springs: reconstructed traditional life, hot spring pools, chalets and a nominal entry fee.",
     checked: "2026-09-18",
-    keywords: ["fujairah heritage village", "places in fujairah", "cafes in fujairah"],
+    keywords: ["fujairah heritage village"],
   },
   {
     slug: "friday-market",
@@ -175,7 +175,7 @@ export const fujairahAttractions: Attraction[] = [
     metaDescription:
       "The Friday Market on the Dubai–Fujairah mountain road: open daily, selling carpets, clay pottery, baskets and mountain honey. What to pay.",
     checked: "2026-09-18",
-    keywords: ["friday market fujairah", "places in fujairah", "best mandi in fujairah"],
+    keywords: ["friday market fujairah"],
   },
   {
     slug: "al-hayl-castle",
@@ -227,7 +227,7 @@ export const fujairahAttractions: Attraction[] = [
     metaDescription:
       "Al Hayl Castle: an 1830s hill fort up a Fujairah wadi, free and unstaffed, reached by a gravel track. Directions and the flood warning that matters.",
     checked: "2026-09-18",
-    keywords: ["al hayl castle fujairah", "places in fujairah", "fujairah fort"],
+    keywords: ["al hayl castle fujairah"],
   },
   {
     slug: "wadi-wurayah",
@@ -288,6 +288,6 @@ export const fujairahAttractions: Attraction[] = [
     metaDescription:
       "Wadi Wurayah: the UAE's only year-round mountain waterfall, a protected Ramsar site with permit-controlled access, and why swimming is not allowed.",
     checked: "2026-09-18",
-    keywords: ["wadi wurayah fujairah", "places in fujairah", "camping in fujairah", "adventure park fujairah"],
+    keywords: ["wadi wurayah fujairah"],
   },
 ];

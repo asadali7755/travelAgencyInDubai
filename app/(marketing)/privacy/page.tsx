@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = pageMetadata({
   title: "Privacy | Travel Agency in Dubai",
   description:
-    "What we collect when you enquire, why we keep it, how long we hold it, and how to ask us to delete it.",
+    "What personal data we collect when you enquire or book a UAE tour, why we keep it, how long we hold it, who sees it and how to ask us to delete it.",
   path: "/privacy",
 });
 

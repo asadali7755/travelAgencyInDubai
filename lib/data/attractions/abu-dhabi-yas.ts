@@ -65,7 +65,7 @@ export const abuDhabiYas: Attraction[] = [
     metaDescription:
       "Yas Waterworld: ticket prices, the rides worth queueing for, height limits, and why the multi-park Yas Island pass costs far less per park.",
     checked: "2026-09-18",
-    keywords: ["yas waterworld", "dubai water park", "abu dhabi top things to do"],
+    keywords: ["yas waterworld"],
   },
   {
     slug: "warner-bros-world-abu-dhabi",
@@ -119,7 +119,7 @@ export const abuDhabiYas: Attraction[] = [
     metaDescription:
       "Warner Bros. World Abu Dhabi: the world's largest indoor theme park, ticket prices, which lands suit which ages, and why it works in summer.",
     checked: "2026-09-18",
-    keywords: ["abu dhabi top things to do", "mad yas island nightclub abu dhabi", "things to do in dubai"],
+    keywords: [],
   },
   {
     slug: "abu-dhabi-desert-camping",
@@ -182,6 +182,6 @@ export const abuDhabiYas: Attraction[] = [
     metaDescription:
       "Desert camping in Abu Dhabi: where it is legal and where it is not, the best free spots at Al Wathba, Sweihan and Liwa, and the 4x4 kit you need.",
     checked: "2026-09-18",
-    keywords: ["abu dhabi camping", "abu dhabi camping site", "camping spot in abu dhabi", "hidden gems in abu dhabi"],
+    keywords: ["abu dhabi camping", "abu dhabi camping site", "camping spot in abu dhabi"],
   },
 ];

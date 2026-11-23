@@ -5,7 +5,9 @@ import { ToursGrid } from "@/components/sections/ToursGrid";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { Reveal } from "@/components/ui/Reveal";
+import { tours } from "@/lib/data/tours";
 import { breadcrumbSchema, faqSchema, pageMetadata } from "@/lib/seo";
+import { itemListSchema } from "@/lib/seo-schema";
 
 export const metadata: Metadata = pageMetadata({
   title: "Dubai Tours | Desert Safari, Cruises & City Tours",
@@ -46,7 +48,16 @@ const faqs = [
 export default function ToursHubPage() {
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(trail), faqSchema(faqs)]} />
+      <JsonLd
+        data={[
+          breadcrumbSchema(trail),
+          faqSchema(faqs),
+          itemListSchema(
+            tours.map((tour) => ({ name: tour.title, path: `/dubai-tours/${tour.slug}` })),
+            "Dubai tours and experiences",
+          ),
+        ]}
+      />
 
       <section className="bg-sea-tint/60">
         <div className="mx-auto max-w-[1280px] px-5 pb-16 pt-28 lg:px-10 lg:pb-20 lg:pt-36">

@@ -41,7 +41,10 @@ export function pageMetadata({
       type,
       siteName: site.name,
       locale: "en_AE",
-      images: [{ url: image, width: 1600, height: 1067, alt: title }],
+      // No width/height: the photographs are not one size (the hero is
+      // 1920x1280, one is portrait), and a wrong declared size is worse than
+      // letting the consumer read it from the file.
+      images: [{ url: image, alt: title }],
       ...(publishedTime ? { publishedTime } : {}),
       ...(modifiedTime ? { modifiedTime } : {}),
     },
@@ -52,6 +55,37 @@ export function pageMetadata({
       images: [image],
     },
   };
+}
+
+/**
+ * Builds a meta description that names real places, kept within the 155
+ * characters Google shows.
+ *
+ * Every combination of "first n names" and each candidate tail is tried and the
+ * longest that fits wins, so a page with one result still gets a full sentence
+ * and a page with twenty is not cut off mid-name. Naming the places makes each
+ * snippet specific to its page instead of a template shared by fifty others.
+ */
+export function describeWithNames(
+  lead: string,
+  names: readonly string[],
+  tails: readonly string[],
+  max = 155,
+): string {
+  const join = (shown: readonly string[]) => {
+    if (shown.length === 1) return shown[0];
+    const more = names.length > shown.length;
+    return `${shown.slice(0, -1).join(", ")}${more ? ", " : " and "}${shown.at(-1)}${more ? " and more" : ""}`;
+  };
+
+  let best = "";
+  for (let n = Math.min(names.length, 4); n > 0; n--) {
+    for (const tail of tails) {
+      const text = `${lead}${join(names.slice(0, n))}${tail}`;
+      if (text.length <= max && text.length > best.length) best = text;
+    }
+  }
+  return best || `${lead.replace(/(,\s*including|:)\s*$/, "")}${tails.at(-1) ?? ""}`.slice(0, max);
 }
 
 type Json = Record<string, unknown>;
@@ -67,6 +101,8 @@ export function travelAgencySchema(): Json {
     "@type": "TravelAgency",
     "@id": `${site.url}/#organisation`,
     name: site.name,
+    alternateName: site.domain,
+    description: site.description,
     url: site.url,
     email: site.email,
     image: `${site.url}/images/dunes-sunset.jpg`,
@@ -115,6 +151,7 @@ export function websiteSchema(): Json {
     "@id": `${site.url}/#website`,
     name: site.name,
     url: site.url,
+    description: site.description,
     publisher: { "@id": `${site.url}/#organisation` },
     inLanguage: "en-AE",
   };
@@ -155,12 +192,15 @@ export function touristTripSchema({
   path,
   image,
   durationHours,
+  places = ["Dubai"],
 }: {
   name: string;
   description: string;
   path: string;
   image: string;
   durationHours?: string;
+  /** Where the trip goes. Defaults to Dubai; the Abu Dhabi day trip says so. */
+  places?: string[];
 }): Json {
   return {
     "@context": "https://schema.org",
@@ -170,10 +210,15 @@ export function touristTripSchema({
     url: `${site.url}${path}`,
     image: `${site.url}${image}`,
     provider: { "@id": `${site.url}/#organisation` },
-    touristType: "Leisure travellers visiting Dubai",
+    "@id": `${site.url}${path}#trip`,
+    touristType: "Leisure travellers visiting the UAE",
     itinerary: {
       "@type": "ItemList",
-      itemListElement: [{ "@type": "City", name: "Dubai" }],
+      itemListElement: places.map((place, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "City", name: place },
+      })),
     },
     ...(durationHours ? { duration: durationHours } : {}),
   };

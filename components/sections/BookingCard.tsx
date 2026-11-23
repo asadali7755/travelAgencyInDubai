@@ -15,13 +15,8 @@ export function BookingCard({ tour }: { tour: Tour }) {
 
   return (
     <div className="rounded-[var(--radius-card)] border border-card-border bg-surface p-6 shadow-[var(--shadow-card)]">
-      <p className="text-[13px] text-ink/55">from</p>
-      <p className="mt-1 text-[32px] font-extrabold leading-none tracking-tight">
-        <span className="underline decoration-dashed decoration-ink/25 underline-offset-8">
-          [AED price]
-        </span>
-        <span className="ml-2 text-[15px] font-semibold text-ink/60">{tour.priceUnit}</span>
-      </p>
+      <p className="text-[13px] text-ink/55">Price</p>
+      <p className="mt-1 text-[26px] font-extrabold leading-none tracking-tight">On request</p>
 
       <dl className="mt-6 flex flex-col gap-3 border-t border-divider pt-5 text-[15px]">
         <div className="flex justify-between gap-4">

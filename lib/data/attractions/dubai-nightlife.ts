@@ -71,7 +71,17 @@ export const dubaiNightlife: Attraction[] = [
     metaDescription:
       "How Dubai beach clubs work: minimum spend instead of entry, Barasti, Zero Gravity, Nikki Beach and Bla Bla compared, ladies' days and the drinking rules.",
     checked: "2026-09-18",
-    keywords: ["beach club dubai", "nikki beach dubai", "zero gravity dubai", "barasti club dubai", "bla bla dubai", "nammos dubai", "summersalt dubai", "zero gravity club dubai", "beach night club dubai"],
+    keywords: [
+      "beach club dubai",
+      "nikki beach dubai",
+      "zero gravity dubai",
+      "barasti club dubai",
+      "bla bla dubai",
+      "nammos dubai",
+      "summersalt dubai",
+      "zero gravity club dubai",
+      "beach night club dubai",
+    ],
   },
   {
     slug: "dubai-night-clubs",
@@ -137,6 +147,17 @@ export const dubaiNightlife: Attraction[] = [
     metaDescription:
       "Dubai nightlife explained: which clubs last, how door policy and table minimums work, the season, and the alcohol laws visitors most often get wrong.",
     checked: "2026-09-18",
-    keywords: ["dubai night club", "night clubs in dubai", "clubs in dubai", "dubai nightlife", "night club in dubai", "white dubai", "barasti nightclub dubai", "night clubs", "clubs near me", "night clubs near me"],
+    keywords: [
+      "dubai night club",
+      "night clubs in dubai",
+      "clubs in dubai",
+      "dubai nightlife",
+      "night club in dubai",
+      "white dubai",
+      "barasti nightclub dubai",
+      "night clubs",
+      "clubs near me",
+      "night clubs near me",
+    ],
   },
 ];

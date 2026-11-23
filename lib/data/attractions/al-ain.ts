@@ -66,7 +66,7 @@ export const alAinAttractions: Attraction[] = [
     metaDescription:
       "Jebel Hafeet: the UAE's great mountain drive, free to go up, plus the UNESCO-listed Bronze Age tombs at its base and Green Mubazzarah hot springs.",
     checked: "2026-09-18",
-    keywords: ["things to do in al ain", "al alain uae", "alain in uae", "al ain tourist places free"],
+    keywords: [],
   },
   {
     slug: "green-mubazzarah",
@@ -121,7 +121,7 @@ export const alAinAttractions: Attraction[] = [
     metaDescription:
       "Green Mubazzarah park at the foot of Jebel Hafeet: free entry, natural hot springs, picnic hills, chalets and a permitted camping area.",
     checked: "2026-09-18",
-    keywords: ["al ain green mubazzarah park", "al ain mubazzarah park", "al ain camping site", "things to do in al ain"],
+    keywords: ["al ain green mubazzarah park", "al ain mubazzarah park"],
   },
   {
     slug: "al-ain-oasis",
@@ -177,7 +177,7 @@ export const alAinAttractions: Attraction[] = [
     metaDescription:
       "Al Ain Oasis: 147,000 date palms, working 3,000-year-old falaj irrigation, shaded walks and free entry. Part of the UAE's only UNESCO listing.",
     checked: "2026-09-18",
-    keywords: ["al ain oasis", "al ain farm visit", "al ain tourist places free", "things to do in al ain", "al alain uae"],
+    keywords: ["al ain oasis", "al ain farm visit"],
   },
   {
     slug: "al-ain-zoo",
@@ -238,6 +238,6 @@ export const alAinAttractions: Attraction[] = [
     metaDescription:
       "Al Ain Zoo: 400 hectares, 4,000 animals, the Arabian oryx programme and the Al Ain Safari open-range drive. Ticket prices and how long to allow.",
     checked: "2026-09-18",
-    keywords: ["al ain zoo", "things to do in al ain", "alain in uae"],
+    keywords: ["al ain zoo"],
   },
 ];

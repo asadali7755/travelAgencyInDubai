@@ -62,7 +62,7 @@ export const ajmanAttractions: Attraction[] = [
     metaDescription:
       "Ajman Corniche: three kilometres of free public beach with white sand, showers, playgrounds and a café strip, far quieter than Dubai.",
     checked: "2026-09-18",
-    keywords: ["ajman corniche", "best beach in sharjah", "al mamzar beach"],
+    keywords: ["ajman corniche"],
   },
   {
     slug: "ajman-fish-market",
@@ -116,7 +116,7 @@ export const ajmanAttractions: Attraction[] = [
     metaDescription:
       "Ajman fish market on the creek: boats unloading at the door, cook shops that will grill your catch, and the working dhow yard a few minutes away.",
     checked: "2026-09-18",
-    keywords: ["ajman fish market", "ajman museum", "sharjah fish market"],
+    keywords: ["ajman fish market"],
   },
   {
     slug: "al-zorah-nature-reserve",
@@ -175,6 +175,6 @@ export const ajmanAttractions: Attraction[] = [
     metaDescription:
       "Al Zorah: mangrove kayaking, around 60 bird species and resident flamingos in Ajman. Free boardwalk, guided tours and what the reserve rules are.",
     checked: "2026-09-18",
-    keywords: ["ajman museum", "hidden gems in abu dhabi", "places in fujairah"],
+    keywords: [],
   },
 ];

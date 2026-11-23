@@ -21,8 +21,8 @@ import {
   planPath,
   type Emirate,
 } from "@/lib/data/attractions";
-import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
-import { itemListSchema } from "@/lib/seo-schema";
+import { breadcrumbSchema, describeWithNames, pageMetadata } from "@/lib/seo";
+import { itemListSchema, webPageSchema } from "@/lib/seo-schema";
 
 export function generateStaticParams() {
   return emirates.map((emirate) => ({ emirate: emirate.id }));
@@ -43,7 +43,15 @@ export async function generateMetadata({
       count === 1
         ? `Things to Do in ${emirate.name} | Prices & Opening Hours`
         : `Things to Do in ${emirate.name} | ${count} Places & Prices`,
-    description: `${count} places worth your time in ${emirate.name}: beaches, family days out, culture and adventure, with 2026 prices and which are free.`,
+    description: describeWithNames(
+      `${count} places worth your time in ${emirate.name}, including `,
+      list.map((a) => a.name),
+      [
+        `, with 2026 prices, opening hours, which are free and how long to allow for each.`,
+        `, with 2026 prices, opening hours and which are free.`,
+        `, with 2026 prices and opening hours.`,
+      ],
+    ),
     path: emiratePath(emirate.id),
     image: attractionOgImage(list[0] ?? attractions[0]),
   });
@@ -75,6 +83,12 @@ export default async function EmiratePage({ params }: PageProps<"/uae-attraction
       <JsonLd
         data={[
           breadcrumbSchema(trail),
+          webPageSchema({
+            path: emiratePath(emirate.id),
+            name: `Things to do in ${emirate.name}`,
+            description: `${list.length} attractions in ${emirate.name}, ${freeCount} of them free to enter.`,
+            checked: list.map((a) => a.checked).sort().at(-1) ?? attractions[0].checked,
+          }),
           itemListSchema(
             list.map((a) => ({ name: a.name, path: attractionPath(a) })),
             `Things to do in ${emirate.name}`,

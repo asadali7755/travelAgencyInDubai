@@ -66,7 +66,7 @@ export const abuDhabiOutdoors: Attraction[] = [
     metaDescription:
       "Mushrif Central Park: entry prices, the splash park, animal barn, women-and-children section and why it is the capital's best family picnic ground.",
     checked: "2026-09-18",
-    keywords: ["mushrif park abu dhabi", "abu dhabi mushrif park", "family picnic spots in uae", "places to visit in abu dhabi for free"],
+    keywords: ["mushrif park abu dhabi", "abu dhabi mushrif park", "family picnic spots in uae"],
   },
   {
     slug: "al-wathba-salt-lake",
@@ -123,6 +123,6 @@ export const abuDhabiOutdoors: Attraction[] = [
     metaDescription:
       "Al Wathba salt lake and wetland reserve near Abu Dhabi: when the lake actually turns pink, the flamingo season, and what facilities exist (almost none).",
     checked: "2026-09-18",
-    keywords: ["wathba salt lake", "hidden gems in abu dhabi", "abu dhabi view point", "places to visit in abu dhabi for free"],
+    keywords: ["wathba salt lake"],
   },
 ];

@@ -59,7 +59,12 @@ export const sharjahCulture: Attraction[] = [
     metaDescription:
       "Sharjah Aquarium: around 250 native Gulf species, a walk-through tunnel and a combined ticket with the Maritime Museum, from about AED 25.",
     checked: "2026-09-18",
-    keywords: ["sharjah aquarium", "sharjah aquarium sharjah", "sharjah aquarium tickets", "ticket sharjah aquarium"],
+    keywords: [
+      "sharjah aquarium",
+      "sharjah aquarium sharjah",
+      "sharjah aquarium tickets",
+      "ticket sharjah aquarium",
+    ],
   },
   {
     slug: "arabian-wildlife-centre",
@@ -114,7 +119,7 @@ export const sharjahCulture: Attraction[] = [
     metaDescription:
       "Arabian Wildlife Centre: Arabian leopards, wolves and caracal in Sharjah Desert Park, with one ticket covering four attractions from about AED 15.",
     checked: "2026-09-18",
-    keywords: ["arabian wildlife center sharjah", "national park sharjah", "sharjah national park sharjah"],
+    keywords: ["arabian wildlife center sharjah"],
   },
   {
     slug: "sharjah-classic-cars-museum",
@@ -160,7 +165,7 @@ export const sharjahCulture: Attraction[] = [
     metaDescription:
       "Sharjah Classic Cars Museum: around 100 vehicles from 1915 onward including the Ruler's own cars, for AED 10. Hours and how to get there.",
     checked: "2026-09-18",
-    keywords: ["classic cars museum sharjah", "places to visit in sharjah for free", "best restaurant in sharjah"],
+    keywords: ["classic cars museum sharjah"],
   },
   {
     slug: "sharjah-national-park",
@@ -210,6 +215,6 @@ export const sharjahCulture: Attraction[] = [
     metaDescription:
       "Sharjah National Park: 630,000 m² of lawns, lakes, a miniature railway and barbecue areas for a few dirhams a head. Hours and directions.",
     checked: "2026-09-18",
-    keywords: ["national park sharjah", "sharjah national park sharjah", "places to visit in sharjah for free with family", "places to visit in sharjah for free"],
+    keywords: ["national park sharjah", "sharjah national park sharjah"],
   },
 ];

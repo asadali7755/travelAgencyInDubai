@@ -4,10 +4,12 @@ import { notFound } from "next/navigation";
 import { BookingCard } from "@/components/sections/BookingCard";
 import { FaqList } from "@/components/sections/FaqList";
 import { FinalCta } from "@/components/sections/FinalCta";
+import { PriceComparison } from "@/components/sections/PriceComparison";
 import { TourCard } from "@/components/sections/TourCard";
 import { Breadcrumbs, type Crumb } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { Reveal } from "@/components/ui/Reveal";
+import { priceComparisons } from "@/lib/data/price-comparisons";
 import { tourDetails } from "@/lib/data/tour-details";
 import { tourBySlug, tours } from "@/lib/data/tours";
 import { breadcrumbSchema, faqSchema, pageMetadata, touristTripSchema } from "@/lib/seo";
@@ -35,6 +37,7 @@ export default async function TourPage({ params }: PageProps<"/dubai-tours/[slug
   if (!tour) notFound();
 
   const detail = tourDetails[tour.slug];
+  const comparison = priceComparisons[tour.slug];
   const related = tours.filter((other) => other.slug !== tour.slug).slice(0, 3);
 
   const trail: Crumb[] = [
@@ -54,6 +57,7 @@ export default async function TourPage({ params }: PageProps<"/dubai-tours/[slug
             path: `/dubai-tours/${tour.slug}`,
             image: tour.image,
             durationHours: tour.durationIso,
+            places: tour.places,
           }),
           ...(detail?.faqs?.length ? [faqSchema(detail.faqs)] : []),
         ]}
@@ -159,6 +163,8 @@ export default async function TourPage({ params }: PageProps<"/dubai-tours/[slug
               </div>
             </Reveal>
           ) : null}
+
+          {comparison ? <PriceComparison data={comparison} /> : null}
 
           {detail?.faqs?.length ? <FaqList faqs={detail.faqs} className="mt-14" /> : null}
         </div>

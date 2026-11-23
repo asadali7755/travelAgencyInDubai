@@ -16,21 +16,7 @@ export const placeCategories: CategoryMeta[] = [
     blurb:
       "The UAE's public beaches are free, lifeguarded and genuinely good, which surprises people who have been told everything here costs money. Beach parks charge a few dirhams for grass, showers and barbecue pits; beach clubs charge properly and give you a pool and a day bed for it. All three are below.",
     accent: "sea",
-    keywords: [
-      "jumeirah beach",
-      "kite beach dubai",
-      "al mamzar beach",
-      "best beach in sharjah",
-      "al khan beach sharjah",
-      "khorfakkan beach sharjah",
-      "best beach fujairah",
-      "yas beach abu dhabi",
-      "beach in abu dhabi free",
-      "hameem beach abu dhabi",
-      "palm jumeirah island",
-      "beach club dubai",
-      "nikki beach dubai",
-    ],
+    keywords: [],
   },
   {
     id: "landmarks",
@@ -40,18 +26,7 @@ export const placeCategories: CategoryMeta[] = [
     blurb:
       "The buildings people fly here to stand under, plus the places to stand and look at them from — including the free ones, which are usually the better photograph.",
     accent: "gold",
-    keywords: [
-      "main attractions in dubai",
-      "dubai tourist attractions",
-      "famous places in dubai",
-      "top sights in abu dhabi",
-      "abu dhabi view point",
-      "places to visit in dubai",
-      "things to see in dubai",
-      "sky view dubai",
-      "bluewaters island",
-      "museum of the future dubai",
-    ],
+    keywords: ["main attractions in dubai", "dubai tourist attractions", "famous places in dubai"],
   },
   {
     id: "culture",
@@ -61,19 +36,7 @@ export const placeCategories: CategoryMeta[] = [
     blurb:
       "The part of the country that predates the skyline, and the museums built to explain it. Sharjah and Al Ain hold most of it, entry is usually under AED 20, and several of the best are free.",
     accent: "gold",
-    keywords: [
-      "qasr al hosn fort",
-      "emirates heritage village abu dhabi",
-      "hili archaeological park abu dhabi",
-      "fujairah fort",
-      "fujairah heritage village",
-      "al hayl castle fujairah",
-      "ajman museum",
-      "classic cars museum sharjah",
-      "ras al khaimah ghost town",
-      "haunted places in ras al khaimah",
-      "al ain farm visit",
-    ],
+    keywords: [],
   },
   {
     id: "nature",
@@ -83,15 +46,7 @@ export const placeCategories: CategoryMeta[] = [
     blurb:
       "Mangrove channels you can kayak through, a salt lake that turns pink, wadis with water in them year round, and the municipal parks that are the reason UAE cities are liveable in February.",
     accent: "palm",
-    keywords: [
-      "wathba salt lake",
-      "sharjah national park",
-      "national park sharjah",
-      "al noor island sharjah",
-      "hidden gems in abu dhabi",
-      "al ain oasis",
-      "wadi wurayah fujairah",
-    ],
+    keywords: ["sharjah national park", "al ain oasis", "wadi wurayah fujairah"],
   },
   {
     id: "shopping",
@@ -101,16 +56,7 @@ export const placeCategories: CategoryMeta[] = [
     blurb:
       "Malls here are civic space as much as retail — air conditioning, an aquarium, an ice rink and somewhere to walk in August. The outlet centres and the older Sharjah and Abu Dhabi malls are where the actual bargains are.",
     accent: "sea",
-    keywords: [
-      "malls in dubai",
-      "dubai outlet village",
-      "sharjah shopping mall",
-      "ajman shopping mall",
-      "shopping mall in al ain",
-      "bawadi mall al ain location",
-      "abu dhabi cheap shopping",
-      "cheapest market in abu dhabi",
-    ],
+    keywords: [],
   },
   {
     id: "souks",
@@ -120,16 +66,7 @@ export const placeCategories: CategoryMeta[] = [
     blurb:
       "Where the prices are negotiable and the produce is off a boat that morning. Fish markets open before dawn and are half the point; the Friday Market on the Fujairah road sells carpets and pottery seven days a week despite the name.",
     accent: "gold",
-    keywords: [
-      "al mina fish market",
-      "best souk in abu dhabi",
-      "sharjah fish market",
-      "ajman fish market",
-      "friday market fujairah",
-      "al ain camel market opening hours",
-      "spice souk dubai",
-      "gold souk deira",
-    ],
+    keywords: ["spice souk dubai", "gold souk deira"],
   },
   {
     id: "wildlife",
@@ -139,14 +76,6 @@ export const placeCategories: CategoryMeta[] = [
     blurb:
       "The UAE has more of these than you would expect, and they vary enormously in how the animals are kept. The ones below are the ones worth your money; where a place has a record we would rather you knew about, it says so.",
     accent: "palm",
-    keywords: [
-      "sharjah aquarium",
-      "sharjah aquarium tickets",
-      "ticket sharjah aquarium",
-      "arabian wildlife center sharjah",
-      "dubai safari park",
-      "al ain zoo",
-      "dolphinarium dubai",
-    ],
+    keywords: ["sharjah aquarium", "al ain zoo"],
   },
 ];

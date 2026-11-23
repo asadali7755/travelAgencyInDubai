@@ -67,7 +67,7 @@ export const sharjahCoast: Attraction[] = [
     metaDescription:
       "Khor Fakkan: a free lifeguarded beach on the Gulf of Oman, snorkelling at Shark Island, the 150 m waterfall and the hillside amphitheatre.",
     checked: "2026-09-18",
-    keywords: ["khorfakkan beach sharjah", "best beach in sharjah", "places to visit in sharjah for free", "best beach fujairah"],
+    keywords: ["khorfakkan beach sharjah"],
   },
   {
     slug: "al-khan-beach",
@@ -123,7 +123,7 @@ export const sharjahCoast: Attraction[] = [
     metaDescription:
       "Al Khan Beach: Sharjah's free lifeguarded city beach with showers, a corniche and the Dubai skyline opposite. Plus the dress rules that differ from Dubai.",
     checked: "2026-09-18",
-    keywords: ["al khan beach sharjah", "best beach in sharjah", "places to visit in sharjah for free", "al noor island sharjah"],
+    keywords: ["al khan beach sharjah"],
   },
   {
     slug: "sharjah-fish-market",
@@ -171,6 +171,6 @@ export const sharjahCoast: Attraction[] = [
     metaDescription:
       "Sharjah fish market: the biggest catch in the northern emirates, when to go, how the cleaning and cooking stalls work, and the souks next door.",
     checked: "2026-09-18",
-    keywords: ["sharjah fish market", "best restaurant in sharjah", "cheapest market in abu dhabi"],
+    keywords: ["sharjah fish market"],
   },
 ];

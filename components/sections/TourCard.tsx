@@ -45,13 +45,8 @@ export function TourCard({ tour, sizes }: { tour: Tour; sizes?: string }) {
       </div>
 
       <div className="flex items-center justify-between px-5 py-4">
-        <p className="text-[15px] text-ink/70">
-          from{" "}
-          <span className="font-bold text-ink underline decoration-dashed decoration-ink/30 underline-offset-4">
-            [AED price]
-          </span>{" "}
-          {tour.priceUnit}
-        </p>
+        {/* No confirmed tour prices yet, so no figure — not a placeholder. */}
+        <p className="text-[15px] font-semibold text-ink/70">Price on request</p>
         <span className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-sea">
           View tour
           <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

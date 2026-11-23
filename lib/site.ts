@@ -11,6 +11,9 @@ export const site = {
   domain: "travelagencyindubai.com",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelagencyindubai.com",
   email: "hello@travelagencyindubai.com",
+  /** One-sentence description of the business, reused by schema and the manifest. */
+  description:
+    "Dubai travel agency covering tours, attractions and holiday packages across all seven emirates, plus outbound trips for UAE residents and a directory of UAE services.",
 
   /**
    * Machine-readable contact details, for structured data only.
@@ -41,6 +44,13 @@ export const site = {
  * Search engines are only invited once the live domain is serving the site.
  * Set NEXT_PUBLIC_ALLOW_INDEXING=true in the production environment on launch.
  */
+/**
+ * True for a value still holding a bracketed client placeholder such as
+ * "[XX]+". Used to keep unconfirmed figures off the page entirely rather than
+ * showing visitors and crawlers a template marker.
+ */
+export const isPlaceholder = (value: string) => /\[[^\]]*\]/.test(value);
+
 export const indexingAllowed = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 
 /**
@@ -77,6 +87,8 @@ export const footerLinks = {
     { label: "Desert safaris", href: "/dubai-tours/desert-safari" },
     { label: "Dhow cruises", href: "/dubai-tours/dhow-cruise-marina" },
     { label: "Yacht charters", href: "/dubai-tours/yacht-charter" },
+    { label: "Speed boat tours", href: "/dubai-tours/speed-boat-tour" },
+    { label: "Skydiving", href: "/dubai-tours/skydiving" },
     { label: "City tours", href: "/dubai-tours/old-dubai-souks-abras" },
   ],
   attractions: [

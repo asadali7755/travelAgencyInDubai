@@ -17,6 +17,20 @@ import { site } from "@/lib/site";
 
 type Entry = MetadataRoute.Sitemap[number];
 
+const abs = (path: string) => `${site.url}${path}`;
+const newest = (dates: string[]) => new Date(dates.sort().at(-1) ?? "2026-09-18");
+
+/**
+ * The date the site's content was last verified: the newest `checked` across
+ * attractions and packages. Hubs, tours and static pages use it instead of the
+ * build time, because a lastmod that moves on every deploy without the page
+ * changing teaches crawlers to ignore lastmod everywhere on the site.
+ */
+const contentChecked = newest([
+  ...attractions.map((a) => a.checked),
+  ...packages.map((p) => p.checked),
+]);
+
 /**
  * Sitemap entries, grouped by section.
  *
@@ -29,7 +43,8 @@ type Entry = MetadataRoute.Sitemap[number];
  * package pages convert, attraction guides bring the traffic that finds them.
  */
 
-export function staticEntries(now: Date): Entry[] {
+export function staticEntries(): Entry[] {
+  const now = contentChecked;
   return [
     { url: site.url, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${site.url}/packages`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
@@ -51,7 +66,9 @@ export function attractionEntries(): Entry[] {
   return [
     ...emirates.map((emirate) => ({
       url: `${site.url}${emiratePath(emirate.id)}`,
-      lastModified: new Date(),
+      lastModified: newest(
+        attractions.filter((a) => a.emirate === emirate.id).map((a) => a.checked),
+      ),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
@@ -62,6 +79,7 @@ export function attractionEntries(): Entry[] {
       lastModified: new Date(attraction.checked),
       changeFrequency: "monthly" as const,
       priority: 0.75,
+      ...(attraction.image ? { images: [abs(attraction.image)] } : {}),
     })),
   ];
 }
@@ -71,7 +89,8 @@ export function attractionEntries(): Entry[] {
  * category pair that actually has something in it. The pairs are generated from
  * the data, so an empty combination never reaches the sitemap.
  */
-export function planEntries(now: Date): Entry[] {
+export function planEntries(): Entry[] {
+  const now = contentChecked;
   return [
     ...planCategories.map((category) => ({
       url: `${site.url}${categoryPath(category.id)}`,
@@ -94,13 +113,15 @@ export function packageEntries(): Entry[] {
     lastModified: new Date(pkg.checked),
     changeFrequency: "weekly" as const,
     priority: 0.85,
+    ...(pkg.image ? { images: [abs(pkg.image)] } : {}),
   }));
 }
 
-export function tourEntries(now: Date): Entry[] {
+export function tourEntries(): Entry[] {
   return tours.map((tour) => ({
     url: `${site.url}/dubai-tours/${tour.slug}`,
-    lastModified: now,
+    lastModified: contentChecked,
+    images: [abs(tour.image)],
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -112,6 +133,7 @@ export function guideEntries(): Entry[] {
     lastModified: new Date(guide.updated),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+    images: [abs(guide.image)],
   }));
 }
 

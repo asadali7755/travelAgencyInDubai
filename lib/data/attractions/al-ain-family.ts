@@ -59,7 +59,7 @@ export const alAinFamily: Attraction[] = [
     metaDescription:
       "Hili Fun City: the UAE's first theme park, entry around AED 10 including most rides, which ages it suits and when it is open.",
     checked: "2026-09-18",
-    keywords: ["al ain hili fun city ticket price", "alain fun city ticket price", "things to do in al ain", "fun city safeer mall ajman"],
+    keywords: ["al ain hili fun city ticket price", "alain fun city ticket price"],
   },
   {
     slug: "hili-archaeological-park",
@@ -105,7 +105,7 @@ export const alAinFamily: Attraction[] = [
     metaDescription:
       "Hili Archaeological Park: the 2500 BCE Grand Tomb with carved reliefs, the earliest known falaj irrigation, and free entry. Part of the UNESCO listing.",
     checked: "2026-09-18",
-    keywords: ["hili archaeological park abu dhabi", "things to do in al ain", "al ain tourist places free"],
+    keywords: ["hili archaeological park abu dhabi"],
   },
   {
     slug: "al-jahili-fort",
@@ -158,7 +158,7 @@ export const alAinFamily: Attraction[] = [
     metaDescription:
       "Al Jahili Fort: an 1890s mud-brick fort in Al Ain, free to enter, with a permanent exhibition of Wilfred Thesiger's Empty Quarter photographs.",
     checked: "2026-09-18",
-    keywords: ["things to do in al ain", "al ain tourist places free", "al alain uae"],
+    keywords: [],
   },
   {
     slug: "al-ain-camel-market",
@@ -213,7 +213,7 @@ export const alAinFamily: Attraction[] = [
     metaDescription:
       "Al Ain camel market: a working livestock souk, free to visit, trading from dawn until mid-morning. When to arrive and how to handle the informal guides.",
     checked: "2026-09-18",
-    keywords: ["al ain camel market opening hours", "things to do in al ain", "bawadi mall al ain location", "shopping mall in al ain"],
+    keywords: ["al ain camel market opening hours"],
   },
   {
     slug: "wadi-adventure",
@@ -273,6 +273,6 @@ export const alAinFamily: Attraction[] = [
     metaDescription:
       "Wadi Adventure: a surf pool with 3 m waves, artificial white water rafting and kayaking, zipline and climbing, at the foot of Jebel Hafeet in Al Ain.",
     checked: "2026-09-18",
-    keywords: ["wadi adventure al ain", "things to do in al ain", "dubai water park"],
+    keywords: ["wadi adventure al ain"],
   },
 ];

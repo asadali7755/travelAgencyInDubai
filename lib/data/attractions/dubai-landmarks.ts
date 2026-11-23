@@ -138,6 +138,7 @@ export const dubaiLandmarks: Attraction[] = [
     metaDescription:
       "What is actually inside the Museum of the Future, floor by floor, plus 2026 ticket prices, opening hours and why you must book a timed slot in advance.",
     checked: "2026-09-18",
+    keywords: ["museum of the future dubai"],
   },
   {
     slug: "dubai-frame",

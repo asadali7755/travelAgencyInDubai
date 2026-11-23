@@ -3,6 +3,7 @@ import {
   attractions,
   attractionsInCategory,
   categoryPath,
+  emiratePath,
   emirates,
   gateLabel,
   planCategories,
@@ -89,7 +90,12 @@ export async function GET() {
     const list = attractions.filter((a) => a.emirate === emirate.id);
     if (!list.length) continue;
 
-    lines.push(`### ${emirate.name}`, "");
+    lines.push(
+      `### ${emirate.name}`,
+      "",
+      `Overview: [Things to do in ${emirate.name}](${site.url}${emiratePath(emirate.id)})`,
+      "",
+    );
     for (const attraction of list) {
       lines.push(
         `- [${attraction.name}](${site.url}${attractionPath(attraction)}): ${attraction.tagline}. ` +

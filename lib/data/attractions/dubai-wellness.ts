@@ -72,6 +72,17 @@ export const dubaiWellness: Attraction[] = [
     metaDescription:
       "Massage and spa in Dubai: what a hammam, a hotel spa and a neighbourhood centre each cost, and how to check a massage centre is properly licensed.",
     checked: "2026-09-18",
-    keywords: ["spa in dubai", "massage center", "massage center near me", "massage therapy center", "home massage dubai", "lavana spa dubai", "lavana spa al barsha", "cora spa massage center sheikh zayed road dubai", "massagecenter near me", "massage center near to me"],
+    keywords: [
+      "spa in dubai",
+      "massage center",
+      "massage center near me",
+      "massage therapy center",
+      "home massage dubai",
+      "lavana spa dubai",
+      "lavana spa al barsha",
+      "cora spa massage center sheikh zayed road dubai",
+      "massagecenter near me",
+      "massage center near to me",
+    ],
   },
 ];

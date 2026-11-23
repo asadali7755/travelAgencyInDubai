@@ -71,6 +71,7 @@ export const sharjahAttractions: Attraction[] = [
     metaDescription:
       "Al Noor Island entry prices, the Butterfly House ticket, opening hours and why the light installations are worth seeing after dark rather than by day.",
     checked: "2026-09-18",
+    keywords: ["al noor island sharjah"],
   },
   {
     slug: "sharjah-museum-of-islamic-civilization",
@@ -247,5 +248,6 @@ export const sharjahAttractions: Attraction[] = [
     metaDescription:
       "Ajman Museum inside an eighteenth-century fort that served as the emirate's police station until 1978. Entry fee, hours and what else to see in Ajman.",
     checked: "2026-09-18",
+    keywords: ["ajman museum"],
   },
 ];

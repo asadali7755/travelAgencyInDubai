@@ -3,13 +3,13 @@
  * the sitemap all read from here, so a tour is added in exactly one place.
  *
  * Shaped like the `packages` table in supabase/migrations/0001_core_schema.sql.
- * Prices are never stored here — they stay bracketed placeholders in the UI
- * until the client confirms them.
+ * Prices are never stored here. Until the client confirms them the UI says
+ * "Price on request", and the TouristTrip schema carries no Offer.
  */
 
 export type Accent = "sun" | "sea" | "gold" | "palm" | "coral";
 
-export type TourCategory = "desert" | "cruise" | "city" | "water" | "tickets";
+export type TourCategory = "desert" | "cruise" | "city" | "water" | "adventure" | "tickets";
 
 export type Tour = {
   slug: string;
@@ -24,6 +24,8 @@ export type Tour = {
   durationLabel: string;
   /** ISO 8601 duration for TouristTrip schema. */
   durationIso?: string;
+  /** Cities the trip visits, for TouristTrip schema. Omitted means Dubai only. */
+  places?: string[];
   priceUnit: "pp" | "/hr";
   badge?: string;
   accent: Accent;
@@ -38,6 +40,7 @@ export const tourCategories: { id: TourCategory | "all"; label: string }[] = [
   { id: "cruise", label: "Cruises" },
   { id: "city", label: "City & sightseeing" },
   { id: "water", label: "Water & boats" },
+  { id: "adventure", label: "Adventure" },
   { id: "tickets", label: "Attraction tickets" },
 ];
 
@@ -171,6 +174,7 @@ export const tours: Tour[] = [
     alt: "The white marble domes of Sheikh Zayed Grand Mosque",
     durationLabel: "9 hours",
     durationIso: "PT9H",
+    places: ["Dubai", "Abu Dhabi"],
     priceUnit: "pp",
     badge: "Day trip",
     accent: "sea",
@@ -183,6 +187,53 @@ export const tours: Tour[] = [
     metaTitle: "Abu Dhabi Day Trip from Dubai | Grand Mosque Tour",
     metaDescription:
       "Full-day Abu Dhabi tour from Dubai: Sheikh Zayed Grand Mosque, the Corniche and an Emirates Palace stop, with hotel pick-up and an air-conditioned drive.",
+  },
+  {
+    slug: "speed-boat-tour",
+    title: "Dubai Speed Boat Tour",
+    detail: "45–99 min · Marina, Atlantis, Palm & Burj Al Arab · shared boat",
+    summary:
+      "A fast, open boat out of Dubai Marina along the Palm Jumeirah to Atlantis and the Burj Al Arab, with photo stops on the water. The cheapest way to see the coastline from the sea.",
+    category: "water",
+    image: "/images/marina-towers.jpg",
+    alt: "The Dubai Marina towers seen from the water",
+    durationLabel: "45–99 minutes",
+    durationIso: "PT1H30M",
+    priceUnit: "pp",
+    badge: "Price compared",
+    accent: "sea",
+    highlights: [
+      "Departs Dubai Marina, no transfer needed if you are staying nearby",
+      "Ain Dubai, Atlantis The Palm and Burj Al Arab from the sea",
+      "Photo stops with the boat held still on the water",
+      "Shared seats, or the whole boat for a private group",
+    ],
+    metaTitle: "Dubai Speed Boat Tour | Prices Compared, Marina to Atlantis",
+    metaDescription:
+      "Dubai speed boat tours compared: 45 to 99 minutes from the Marina to Atlantis and the Burj Al Arab, with each operator's published 2026 price side by side.",
+  },
+  {
+    slug: "skydiving",
+    title: "Tandem Skydive Dubai",
+    detail: "Half day · tandem jump over the Palm or the desert",
+    summary:
+      "A tandem skydive strapped to a licensed instructor, over the Palm Jumeirah or the open desert. No experience needed: training happens on the day, and the instructor handles the parachute.",
+    category: "adventure",
+    image: "/images/palm-aerial.jpg",
+    alt: "Palm Jumeirah seen from the air",
+    durationLabel: "3–4 hours on site",
+    durationIso: "PT4H",
+    priceUnit: "pp",
+    accent: "coral",
+    highlights: [
+      "Two drop zones: over the Palm Jumeirah, or the desert",
+      "Tandem with a licensed instructor, no experience needed",
+      "Briefing and harness fitting on the day",
+      "Photo and video packages available from the operator",
+    ],
+    metaTitle: "Skydiving in Dubai | Tandem Jump over the Palm or Desert",
+    metaDescription:
+      "Tandem skydiving in Dubai over the Palm Jumeirah or the desert: how the day works, what the two drop zones differ on, and what to know before you book.",
   },
 ];
 

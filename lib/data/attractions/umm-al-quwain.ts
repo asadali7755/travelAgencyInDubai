@@ -65,7 +65,7 @@ export const ummAlQuwainAttractions: Attraction[] = [
     metaDescription:
       "Kayaking the Umm Al Quwain mangroves at Khor Al Beidah: cormorant colonies, flamingos, the Al Sinniyah monastery site, and when to go for the tide.",
     checked: "2026-09-18",
-    keywords: ["hidden gems in abu dhabi", "places to visit in sharjah for free", "camping spots in fujairah"],
+    keywords: [],
   },
   {
     slug: "umm-al-quwain-old-town",
@@ -117,6 +117,6 @@ export const ummAlQuwainAttractions: Attraction[] = [
     metaDescription:
       "Umm Al Quwain's old quarter: an eighteenth-century fort and museum, Ed-Dur archaeology, coral-stone watchtowers and streets that were never redeveloped.",
     checked: "2026-09-18",
-    keywords: ["ajman museum", "places to visit in sharjah for free", "things to do in ras al khaimah"],
+    keywords: [],
   },
 ];

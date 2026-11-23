@@ -64,7 +64,7 @@ export const abuDhabiCity: Attraction[] = [
     metaDescription:
       "Abu Dhabi Corniche: 8 km of free promenade, a Blue Flag beach, cycle hire and the best free skyline viewpoint in the capital.",
     checked: "2026-09-18",
-    keywords: ["beach in abu dhabi free", "abu dhabi view point", "places to visit in abu dhabi for free", "abu dhabi at night", "visiting places abu dhabi"],
+    keywords: [],
   },
   {
     slug: "qasr-al-hosn",
@@ -119,7 +119,7 @@ export const abuDhabiCity: Attraction[] = [
     metaDescription:
       "Qasr Al Hosn: Abu Dhabi's oldest building, from the 1790s watchtower to the 1930s fort, plus ticket prices, hours and the House of Artisans.",
     checked: "2026-09-18",
-    keywords: ["qasr al hosn fort", "top sights in abu dhabi", "abu dhabi top things to do", "visiting places abu dhabi"],
+    keywords: ["qasr al hosn fort"],
   },
   {
     slug: "emirates-heritage-village",
@@ -177,7 +177,7 @@ export const abuDhabiCity: Attraction[] = [
     metaDescription:
       "Abu Dhabi's Heritage Village on the Breakwater: free entry, working craft workshops, a small beach and the best free view of the Corniche skyline.",
     checked: "2026-09-18",
-    keywords: ["emirates heritage village abu dhabi", "places to visit in abu dhabi for free", "hidden gems in abu dhabi", "best souk abu dhabi"],
+    keywords: ["emirates heritage village abu dhabi", "best souk abu dhabi"],
   },
   {
     slug: "mina-zayed-fish-market",
@@ -238,6 +238,6 @@ export const abuDhabiCity: Attraction[] = [
     metaDescription:
       "Abu Dhabi's Mina Zayed fish market: how buying, cleaning and cooking works, what it costs, and the date, plant and carpet souks next door.",
     checked: "2026-09-18",
-    keywords: ["al mina fish market", "best souk in abu dhabi", "best souk abu dhabi", "cheapest market in abu dhabi", "abu dhabi cheap shopping"],
+    keywords: ["al mina fish market", "best souk in abu dhabi"],
   },
 ];

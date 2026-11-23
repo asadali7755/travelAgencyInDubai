@@ -1,3 +1,5 @@
+import { adventureTourDetails } from "@/lib/data/tour-details-adventure";
+
 /**
  * Long-form content for each tour page: itinerary, what is and is not included,
  * and the questions people actually ask before booking.
@@ -5,7 +7,7 @@
  * Facts here are researched rather than assumed — Lahbab's red dunes sit about
  * 45 minutes from the city, Burj Khalifa's levels 124/125 are at roughly 456m
  * with level 148 at 555m, and the Creek abra fare is one dirham. Anything
- * commercial (our prices, our phone number) stays a bracketed placeholder.
+ * commercial (our prices, our phone number) is left out until the client confirms it.
  */
 
 export type ItineraryStop = { time: string; title: string; body: string };
@@ -19,6 +21,7 @@ export type TourDetail = {
 };
 
 export const tourDetails: Record<string, TourDetail> = {
+  ...adventureTourDetails,
   "desert-safari": {
     intro:
       "A driver collects you from your hotel in the afternoon and heads out to the red dunes at Lahbab, roughly forty-five minutes from the city. The sand there is genuinely red — iron oxide — and the dunes are steep enough for proper dune bashing rather than a car-park loop. After the drive comes camp: camel rides, sandboarding, henna, Arabic coffee, a BBQ buffet, and the tanoura and fire shows before the run home.",
@@ -62,6 +65,10 @@ export const tourDetails: Record<string, TourDetail> = {
       "Tips for your driver and the camp staff",
     ],
     faqs: [
+      {
+        q: "How much does an evening desert safari cost in Dubai?",
+        a: "Shared evening safaris with pick-up, dune bashing and a BBQ dinner were published from AED 120 to AED 150 per adult when we checked in November 2026, with premium versions from about AED 240. The comparison on this page shows what each price includes — the cheapest is not always the one with camel rides and sandboarding in the base price.",
+      },
       {
         q: "Is the dune bashing safe for children and older guests?",
         a: "Yes — tell us when you book and the driver keeps the drive gentle. Children under three, pregnant guests and anyone with back or heart problems should skip the dune bashing; we can take you straight to camp instead at the same price.",

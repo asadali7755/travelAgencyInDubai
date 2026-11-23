@@ -25,9 +25,9 @@
 24,dhow cruise marina,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
 25,dubai marina cruise,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
 26,dubai marina dinner cruise,https://travelagencyindubai.com/dubai-tours/dhow-cruise-marina,,Targeted
-27,boat tour dubai,https://travelagencyindubai.com/dubai-tours/yacht-charter,,Targeted
+27,boat tour dubai,https://travelagencyindubai.com/dubai-tours/speed-boat-tour,,Targeted
 28,dubai yacht tour,https://travelagencyindubai.com/dubai-tours/yacht-charter,,Targeted
-29,dubai yellow boats,https://travelagencyindubai.com/dubai-tours/yacht-charter,,Targeted
+29,dubai yellow boats,https://travelagencyindubai.com/dubai-tours/speed-boat-tour,,Targeted
 30,dubai safari tour,https://travelagencyindubai.com/dubai-tours/desert-safari,,Targeted
 31,holiday packages,https://travelagencyindubai.com/packages,,Targeted
 32,dubai tour attractions,https://travelagencyindubai.com/uae-attractions,,Targeted
@@ -50,8 +50,8 @@
 49,zero gravity dubai,https://travelagencyindubai.com/uae-attractions/dubai/dubai-beach-clubs,,Targeted
 50,dubai water park,https://travelagencyindubai.com/things-to-do/waterparks/dubai,,Targeted
 51,dubai hotel booking,https://travelagencyindubai.com/services/hotels,,Targeted
-52,dubai skydiving,https://travelagencyindubai.com/things-to-do/adventure/dubai,,Targeted
-53,museum of the future dubai,https://travelagencyindubai.com/things-to-do/landmarks,Landmarks & views in the UAE,Targeted
+52,dubai skydiving,https://travelagencyindubai.com/dubai-tours/skydiving,,Targeted
+53,museum of the future dubai,https://travelagencyindubai.com/uae-attractions/dubai/museum-of-the-future,Museum of the Future Dubai | Tickets & What to Expect,Targeted
 54,dubai outlet village,https://travelagencyindubai.com/uae-attractions/dubai/dubai-outlet-village,"Dubai Outlet Village | Discounts, Opening Hours & Getting There",Targeted
 55,bluewaters island,https://travelagencyindubai.com/uae-attractions/dubai/dubai-marina-jbr,,Targeted
 56,sky view dubai,https://travelagencyindubai.com/things-to-do/landmarks/dubai,,Targeted
@@ -105,7 +105,7 @@
 104,lavana spa al barsha,,,Single business — belongs in the directory
 105,cora spa massage center sheikh zayed road dubai,,,Single business — belongs in the directory
 106,ajman fish market,https://travelagencyindubai.com/uae-attractions/ajman/ajman-fish-market,"Ajman Fish Market | Times, Prices & the Dhow Yard Next Door",Targeted
-107,ajman museum,https://travelagencyindubai.com/uae-attractions/ajman/ajman-fish-market,"Ajman Fish Market | Times, Prices & the Dhow Yard Next Door",Targeted
+107,ajman museum,https://travelagencyindubai.com/uae-attractions/ajman/ajman-museum,"Ajman Museum | 1775 Fort, Entry Fee & Opening Hours",Targeted
 108,ajman shopping mall,https://travelagencyindubai.com/things-to-do/shopping/ajman,,Targeted
 109,fun city safeer mall ajman,https://travelagencyindubai.com/things-to-do/kids/ajman,,Targeted
 110,places in fujairah,https://travelagencyindubai.com/uae-attractions/fujairah,,Targeted
@@ -113,7 +113,7 @@
 112,friday market fujairah,https://travelagencyindubai.com/uae-attractions/fujairah/friday-market,"Friday Market Masafi | Carpets, Pottery & Haggling Guide",Targeted
 113,fujairah fort,https://travelagencyindubai.com/uae-attractions/fujairah/fujairah-fort,"Fujairah Fort | The UAE's Oldest Fort, Hours & Entry",Targeted
 114,fujairah fort fujairah,https://travelagencyindubai.com/uae-attractions/fujairah/fujairah-fort,"Fujairah Fort | The UAE's Oldest Fort, Hours & Entry",Targeted
-115,fujairah heritage village,https://travelagencyindubai.com/uae-attractions/fujairah/fujairah-fort,"Fujairah Fort | The UAE's Oldest Fort, Hours & Entry",Targeted
+115,fujairah heritage village,https://travelagencyindubai.com/uae-attractions/fujairah/fujairah-heritage-village,Fujairah Heritage Village & Ain Al Madhab Springs,Targeted
 116,adventure park fujairah,https://travelagencyindubai.com/things-to-do/adventure/fujairah,,Targeted
 117,al hayl castle fujairah,https://travelagencyindubai.com/uae-attractions/fujairah/al-hayl-castle,Al Hayl Castle Fujairah | Free Wadi Fort & How to Get There,Targeted
 118,beach camping in fujairah,https://travelagencyindubai.com/things-to-do/camping/fujairah,,Targeted
@@ -181,10 +181,10 @@
 180,mad yas island nightclub abu dhabi,https://travelagencyindubai.com/things-to-do/nightlife/abu-dhabi,,Targeted
 181,mushrif park abu dhabi,https://travelagencyindubai.com/uae-attractions/abu-dhabi/mushrif-central-park,"Mushrif Central Park Abu Dhabi | Entry Fee, Play Areas & Hours",Targeted
 182,wathba salt lake,https://travelagencyindubai.com/uae-attractions/abu-dhabi/al-wathba-salt-lake,"Al Wathba Salt Lake & Flamingos | Free, and When It's Pink",Targeted
-183,national park sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/arabian-wildlife-centre,Arabian Wildlife Centre Sharjah | Tickets & Desert Park,Targeted
+183,national park sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-national-park,"Sharjah National Park | Entry Fee, Barbecues & Play Areas",Targeted
 184,sharjah aquarium sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-aquarium,"Sharjah Aquarium | Tickets, Opening Hours & What's Inside",Targeted
-185,sharjah national park sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/arabian-wildlife-centre,Arabian Wildlife Centre Sharjah | Tickets & Desert Park,Targeted
-186,al noor island sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/al-khan-beach,"Al Khan Beach Sharjah | Free Entry, Facilities & Dress Code",Targeted
+185,sharjah national park sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-national-park,"Sharjah National Park | Entry Fee, Barbecues & Play Areas",Targeted
+186,al noor island sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/al-noor-island,"Al Noor Island Sharjah | Tickets, Butterfly House & Timings",Targeted
 187,places to visit in sharjah for free,https://travelagencyindubai.com/uae-attractions/sharjah,,Targeted
 188,sharjah aquarium tickets,https://travelagencyindubai.com/uae-attractions/sharjah/sharjah-aquarium,"Sharjah Aquarium | Tickets, Opening Hours & What's Inside",Targeted
 189,al khan beach sharjah,https://travelagencyindubai.com/uae-attractions/sharjah/al-khan-beach,"Al Khan Beach Sharjah | Free Entry, Facilities & Dress Code",Targeted
