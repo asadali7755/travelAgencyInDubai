@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import { TripCalculator } from "@/components/calculator/TripCalculator";
 import { AttractionsTeaser } from "@/components/sections/AttractionsTeaser";
+import { CinematicReveal } from "@/components/sections/CinematicReveal";
 import { DirectoryTeaser } from "@/components/sections/DirectoryTeaser";
 import { PackagesTeaser } from "@/components/sections/PackagesTeaser";
 import { Destinations } from "@/components/sections/Destinations";
+import { ExperienceOrbit } from "@/components/sections/ExperienceOrbit";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { GuideTeaser } from "@/components/sections/GuideTeaser";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
-import { SignatureExperiences } from "@/components/sections/SignatureExperiences";
 import { TrustBand } from "@/components/sections/TrustBand";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { attractions } from "@/lib/data/attractions";
+import { featuredTours } from "@/lib/data/home";
 import { pageMetadata } from "@/lib/seo";
 import { webPageSchema } from "@/lib/seo-schema";
 
@@ -41,8 +43,9 @@ export default function HomePage() {
       />
       <Hero />
       <TrustBand />
-      <SignatureExperiences />
+      <ExperienceOrbit tours={featuredTours} />
       <AttractionsTeaser />
+      <CinematicReveal />
       <PackagesTeaser />
       <TripCalculator />
       <Destinations />

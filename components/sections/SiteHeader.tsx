@@ -30,7 +30,7 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,padding] duration-300 ${
         solid
           ? "bg-page/90 py-2 shadow-[0_1px_0_var(--color-divider)] backdrop-blur-lg"
           : "py-4"
@@ -51,7 +51,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-[15px] no-underline transition-colors ${
+              className={`nav-link text-[15px] no-underline transition-colors ${
                 solid ? "text-ink hover:text-sea" : "text-white/90 hover:text-white"
               }`}
             >
@@ -72,15 +72,19 @@ export function SiteHeader() {
           >
             Sign in
           </Link>
-          <Button
-            href={whatsapp}
-            variant={solid ? "outline" : "ghost"}
-            className="hidden sm:inline-flex"
-          >
-            <WhatsAppIcon />
-            WhatsApp us
-          </Button>
-          <Button href="/contact">Get a free quote</Button>
+          {/* Below sm both actions live in the sticky MobileActionBar, so the
+              bar stays logo-only rather than wrapping at 360px. The wrappers
+              carry the visibility because Button's own inline-flex would
+              otherwise override a `hidden` passed to it. */}
+          <span className="hidden sm:contents">
+            <Button href={whatsapp} variant={solid ? "outline" : "ghost"}>
+              <WhatsAppIcon />
+              WhatsApp us
+            </Button>
+          </span>
+          <span className="hidden sm:contents">
+            <Button href="/contact">Get a free quote</Button>
+          </span>
         </div>
       </div>
     </header>

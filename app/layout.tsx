@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
+import "./motion.css";
+import "./cinematic.css";
+import "./hero.css";
+import "./hero-scroll.css";
 import { indexingAllowed, site } from "@/lib/site";
 
 const figtree = Figtree({
