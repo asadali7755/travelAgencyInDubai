@@ -3,45 +3,46 @@
 import { useEffect, type RefObject } from "react";
 
 /**
- * Publishes the pointer position over an element as `--px` and `--py`, each
- * from -1 to 1, for CSS to turn into parallax and 3D tilt.
+ * Follows the pointer over an element and writes its position, in pixels, as
+ * `--mx` / `--my` onto the one child marked `data-pointer-target` — in the
+ * hero, the spotlight.
  *
- * Mouse and trackpad only, and never for reduced motion: a phone has no
- * pointer to follow, and the layers simply sit still. Values are written in
- * requestAnimationFrame straight onto the element, so nothing re-renders.
+ * Only onto that child, never the section itself: custom properties inherit,
+ * so setting them on the section made the browser re-check the style of every
+ * element in the hero on every mouse move, which was the main cost of moving
+ * the mouse over it. Nothing else is written per move.
+ *
+ * Mouse and trackpad only, and never for reduced motion. Writes happen inside
+ * requestAnimationFrame, at most once a frame, so nothing re-renders.
  */
 export function usePointerParallax(ref: RefObject<HTMLElement | null>) {
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    const target = el?.querySelector<HTMLElement>("[data-pointer-target]");
+    if (!el || !target) return;
     if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let frame = 0;
-
-    const set = (x: number, y: number) => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        el.style.setProperty("--px", x.toFixed(3));
-        el.style.setProperty("--py", y.toFixed(3));
-      });
-    };
+    let x = 0;
+    let y = 0;
 
     const onMove = (event: PointerEvent) => {
       const rect = el.getBoundingClientRect();
-      set(
-        ((event.clientX - rect.left) / rect.width) * 2 - 1,
-        ((event.clientY - rect.top) / rect.height) * 2 - 1,
-      );
+      x = event.clientX - rect.left;
+      y = event.clientY - rect.top;
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        target.style.setProperty("--mx", `${Math.round(x)}px`);
+        target.style.setProperty("--my", `${Math.round(y)}px`);
+      });
     };
-    const onLeave = () => set(0, 0);
 
     el.addEventListener("pointermove", onMove);
-    el.addEventListener("pointerleave", onLeave);
     return () => {
       cancelAnimationFrame(frame);
       el.removeEventListener("pointermove", onMove);
-      el.removeEventListener("pointerleave", onLeave);
     };
   }, [ref]);
 }

@@ -14,39 +14,6 @@ import type { Accent } from "./tours";
 
 export type { Accent, Tour as TourCard } from "./tours";
 
-export type HeroSlide = {
-  image: string;
-  alt: string;
-  label: string;
-  /** Where the scene's postcard leads: the page that sells that moment. */
-  href: string;
-  cta: string;
-};
-
-export const heroSlides: HeroSlide[] = [
-  {
-    image: "/images/dunes-sunset.jpg",
-    alt: "Red desert dunes outside Dubai at sunset",
-    label: "The desert at golden hour",
-    href: "/dubai-tours/desert-safari",
-    cta: "Evening desert safari",
-  },
-  {
-    image: "/images/marina-night.jpg",
-    alt: "Dubai Marina towers lit up after dark",
-    label: "The Marina after dark",
-    href: "/uae-attractions/dubai/dubai-marina-jbr",
-    cta: "Dubai Marina & JBR",
-  },
-  {
-    image: "/images/dhow-cruise.jpg",
-    alt: "A dhow cruise boat lit with lanterns on Dubai Creek",
-    label: "Dinner on the water",
-    href: "/dubai-tours/dhow-cruise-marina",
-    cta: "Marina dhow dinner cruise",
-  },
-];
-
 /** The home page shows the whole list; the hub is where filtering happens. */
 export const featuredTours = tours;
 

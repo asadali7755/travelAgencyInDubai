@@ -74,15 +74,6 @@
 
 /* ---------- motion ---------- */
 
-@keyframes ken-burns {
-  from {
-    transform: scale(1.02);
-  }
-  to {
-    transform: scale(1.14);
-  }
-}
-
 /* The newsletter modal fades its backdrop in; motion-safe: guards it. */
 @keyframes fade-in {
   from {
@@ -91,20 +82,6 @@
   to {
     opacity: 1;
   }
-}
-
-@keyframes fill-bar {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-
-/* Slides hold a slow zoom for the whole time they are on screen. */
-.ken-burns {
-  animation: ken-burns 18s ease-out both;
 }
 
 /* Sections fade up as they enter the viewport; see components/ui/Reveal.tsx. */
@@ -121,33 +98,9 @@
   transform: none;
 }
 
-/* The active hero indicator fills over the 6s the slide is shown. */
-.indicator-fill::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--color-sea);
-  transform: scaleX(0);
-  transform-origin: left;
-  border-radius: inherit;
-}
-
-.indicator-fill[data-active="true"]::after {
-  animation: fill-bar 6s linear forwards;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .ken-burns,
-  .indicator-fill[data-active="true"]::after {
-    animation: none;
-  }
-
-  .indicator-fill[data-active="true"]::after {
-    transform: scaleX(1);
   }
 
   [data-reveal] {
